@@ -152,7 +152,7 @@
             var result = a.getReturnValue();
             component.set('v.isLoading',false);
             component.set('v.nameValue',result);
-            if(!skipTypeaheadLoading) self.createTypeaheadComponent(component);
+            //if(!skipTypeaheadLoading) self.createTypeaheadComponent(component);
         });
         $A.enqueueAction(action);
     }

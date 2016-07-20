@@ -2,11 +2,10 @@
  Author: Enrico Murru (http://enree.co, @enreeco)
  -->
 <aura:component controller="InputLookupController">
-    <ltng:require scripts="/resource/RequireJS" afterScriptsLoaded="{!c.initTypeahead}" />
+    <ltng:require scripts="/resource/RequireJS" 
+        styles="/resource/Lgt_InputLookup/css/bootstrap.min.css,/resource/Lgt_InputLookup/css/typeahead.css" 
+        afterScriptsLoaded="{!c.initTypeahead}" />
     <aura:handler name="init" value="{!this}" action="{!c.setup}"/>
-    
-    <link rel="stylesheet" type="text/css" href="/resource/Lgt_InputLookup/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/resource/Lgt_InputLookup/css/typeahead.css"/>
     
     <aura:attribute name="type" type="String" description="Sobject Type" required="true"/>
     <aura:attribute name="value" type="String" description="Source / Destination value" />

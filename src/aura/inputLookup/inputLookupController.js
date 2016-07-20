@@ -16,8 +16,14 @@
         When RequireJS is loaded, loads the typeahead component
     */
     initTypeahead : function(component, event, helper){
-        //first load the current value of the lookup field and then
-        //creates the typeahead component
-        helper.loadFirstValue(component);
+        console.log('v.value::' + component.get('v.value'));
+        console.log('v.type::' + component.get('v.type'));
+         try{
+            //first load the current value of the lookup field and then
+            //creates the typeahead component
+            helper.loadFirstValue(component, true);
+        }catch(ex){
+            console.log(ex);
+        }
     }
 })
