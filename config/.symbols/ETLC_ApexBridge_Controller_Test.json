@@ -1,0 +1,142 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002CIEnAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p50000002CIEnAAO",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testBasicData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testInvalidOperation",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ETLC_ApexBridge_Controller_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "ETLC_ApexBridge_Controller_Test",
+        "references": [],
+        "type": "ETLC_ApexBridge_Controller_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "d1",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "strD2",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "d2",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "d1",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "strD2",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "d2",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        }
+    ]
+}

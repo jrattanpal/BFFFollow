@@ -1,0 +1,172 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002CIEkAAO",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 30,
+                        "line": 17
+                    },
+                    "modifiers": [
+                        "public",
+                        "override"
+                    ],
+                    "name": "process",
+                    "parameters": [
+                        {
+                            "name": "data",
+                            "type": "ETLC_ApexBridge_Data"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "AbstractBasicImplementation",
+            "namespace": null,
+            "parentClass": "ETLC_ApexBridge_Abstract",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 16
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AbstractBasicImplementation",
+                "references": [],
+                "type": "AbstractBasicImplementation"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 17
+                    },
+                    "modifiers": [],
+                    "name": "data",
+                    "references": [],
+                    "type": "ETLC_ApexBridge_Data"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p50000002CIEkAAO",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testNonAbstractMethods",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ETLC_ApexBridge_Abstract_test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "ETLC_ApexBridge_Abstract_test",
+        "references": [],
+        "type": "ETLC_ApexBridge_Abstract_test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "abs",
+            "references": [],
+            "type": "AbstractBasicImplementation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "dt2",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "dttm",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "dttm2",
+            "references": [],
+            "type": "Datetime"
+        }
+    ]
+}

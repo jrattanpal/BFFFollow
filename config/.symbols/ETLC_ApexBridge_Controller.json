@@ -1,0 +1,94 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002CIEmAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p50000002CIEmAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "dataJson",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "ETLC_ApexBridge_Controller",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "ETLC_ApexBridge_Controller",
+        "references": [],
+        "type": "ETLC_ApexBridge_Controller"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "dataJson",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "data",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "executor",
+            "references": [],
+            "type": "ETLC_ApexBridge_Abstract"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "strEx",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

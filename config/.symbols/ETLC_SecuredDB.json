@@ -1,0 +1,681 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002CIEtAAO",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "Operation",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 14,
+                    "line": 8
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "Operation",
+                "references": [],
+                "type": "Operation"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p50000002CIEtAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "query",
+            "parameters": [
+                {
+                    "name": "SOQL",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateQuery",
+            "parameters": [
+                {
+                    "name": "dbRecord",
+                    "type": "SObject"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 28
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateQuery",
+            "parameters": [
+                {
+                    "name": "dbRecords",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 31
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "performDML",
+            "parameters": [
+                {
+                    "name": "op",
+                    "type": "Operation"
+                },
+                {
+                    "name": "dbRecord",
+                    "type": "SObject"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "performDML",
+            "parameters": [
+                {
+                    "name": "op",
+                    "type": "Operation"
+                },
+                {
+                    "name": "dbRecords",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 55
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "validate",
+            "parameters": [
+                {
+                    "name": "op",
+                    "type": "Operation"
+                },
+                {
+                    "name": "mapFieldNames",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 108
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "findFields",
+            "parameters": [
+                {
+                    "name": "dbRecords",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 124
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "findFieldsRecursive",
+            "parameters": [
+                {
+                    "name": "mapFields",
+                    "type": "Map"
+                },
+                {
+                    "name": "record",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 155
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "throwSecurityException",
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ETLC_SecuredDB",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ETLC_SecuredDB",
+        "references": [],
+        "type": "ETLC_SecuredDB"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "SOQL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "dbRecord",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "op",
+            "references": [],
+            "type": "Operation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "dbRecord",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "op",
+            "references": [],
+            "type": "Operation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "counterDMLBefore",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "op",
+            "references": [],
+            "type": "Operation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "mapFieldNames",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "securityMessage",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "mapObjects",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "drSObj",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "mapFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "drField",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "strJSON",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "mapFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "objectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "mapFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "strAttributes",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "strRecord",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "attributes",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "objectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "fieldNames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "children",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "child",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

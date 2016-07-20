@@ -9,6 +9,7 @@
     "subscription": [
         "ApexClass",
         "ApexTrigger",
+        "AuraDefinitionBundle",
         "StaticResource"
     ]
 }

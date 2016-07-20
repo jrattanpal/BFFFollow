@@ -1,0 +1,61 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002CIEqAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p50000002CIEqAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 2
+            },
+            "modifiers": [
+                "public",
+                "override"
+            ],
+            "name": "process",
+            "parameters": [
+                {
+                    "name": "data",
+                    "type": "ETLC_ApexBridge_Data"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ETLC_ApexBridge_DemoEcho",
+    "namespace": null,
+    "parentClass": "ETLC_ApexBridge_Abstract",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "ETLC_ApexBridge_DemoEcho",
+        "references": [],
+        "type": "ETLC_ApexBridge_DemoEcho"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "data",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002CIEjAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p50000002CIEjAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 2
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "process",
+            "parameters": [
+                {
+                    "name": "data",
+                    "type": "ETLC_ApexBridge_Data"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateFromJSON",
+            "parameters": [
+                {
+                    "name": "dt",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Date",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateTimeFromJSON",
+            "parameters": [
+                {
+                    "name": "dttm",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Datetime",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateToJSON",
+            "parameters": [
+                {
+                    "name": "dt",
+                    "type": "Date"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateTimeToJSON",
+            "parameters": [
+                {
+                    "name": "dttm",
+                    "type": "Datetime"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "ETLC_ApexBridge_Abstract",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 23,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "abstract"
+        ],
+        "name": "ETLC_ApexBridge_Abstract",
+        "references": [],
+        "type": "ETLC_ApexBridge_Abstract"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "data",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "dttm",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "dttm",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "dttm",
+            "references": [],
+            "type": "Datetime"
+        }
+    ]
+}
