@@ -7,7 +7,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
 <aura:component controller="LookupSObjectController" >
     <!-- Required Scripts/Styles -->
     <!-- Salesforce Lightning Design System : https://www.lightningdesignsystem.com/ -->
-    <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system.css" />
+    <ltng:require styles="/resource/SLDS202/assets/styles/salesforce-lightning-design-system.css" />
     
     <!-- Attributes -->
     <aura:attribute name="sObjectAPIName" type="String" required="true" 
@@ -18,7 +18,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
         description="The label to assign to the lookup, eg: Account" />
     <aura:attribute name="pluralLabel" type="String" required="true" 
         description="The plural label to assign to the lookup, eg: Accounts" />
-    <aura:attribute name="listIconSVGPath" type="String" default="/resource/SLDS/assets/icons/custom-sprite/svg/symbols.svg#custom11" 
+    <aura:attribute name="listIconSVGPath" type="String" default="/resource/SLDS202/assets/icons/custom-sprite/svg/symbols.svg#custom11" 
         description="The static resource path to the svg icon to use." />
     <aura:attribute name="listIconClass" type="String" default="slds-icon-custom-11" 
         description="The SLDS class to use for the icon." />
@@ -38,7 +38,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
             <div class="slds-form-element">
                 <label class="slds-form-element__label" for="lookup">{!v.label}</label>
                 <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
-                    <c:svg class="slds-input__icon" xlinkHref="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                    <c:svg class="slds-input__icon" xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#search" />
                     <!-- This markup is for when an item is currently selected -->
                     <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
                         <span class="slds-pill slds-pill--bare">
@@ -46,7 +46,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
                                 <c:svg class="{!'slds-icon ' + v.listIconClass + ' slds-icon--small'}" xlinkHref="{!v.listIconSVGPath}" />{!v.searchString}
                             </span>
                             <button class="slds-button slds-button--icon-bare" onclick="{!c.clear}">
-                                <c:svg class="slds-button__icon" xlinkHref="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#close" />
+                                <c:svg class="slds-button__icon" xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#close" />
                                 <span class="slds-assistive-text">Remove</span>
                             </button>
                         </span>
@@ -59,7 +59,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
             <div aura:id="lookuplist" class="slds-dropdown slds-dropdown--left slds-hide" role="listbox">
                 <div class="slds-lookup__item">
                     <button class="slds-button">
-                        <c:svg class="slds-icon slds-icon-text-default slds-icon--small" xlinkHref="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                        <c:svg class="slds-icon slds-icon-text-default slds-icon--small" xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#search" />
                         &quot;{!v.searchString}&quot; in {!v.pluralLabel}
                     </button>
                 </div>
