@@ -6,11 +6,11 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApexTrigger</name>
+        <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    <version>34.0</version>
+    <version>37.0</version>
 </Package>
