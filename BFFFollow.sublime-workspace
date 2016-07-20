@@ -1,0 +1,764 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ass",
+				"assert()"
+			],
+			[
+				"E",
+				"ETLC_SecuredDB	[Custom Apex Class]"
+			],
+			[
+				"lView",
+				"lViewList"
+			],
+			[
+				"off",
+				"offsetvalue"
+			],
+			[
+				"return",
+				"returnSoql"
+			],
+			[
+				"is",
+				"isInsert"
+			],
+			[
+				"tri",
+				"triggerName"
+			],
+			[
+				"trigge",
+				"triggerList"
+			],
+			[
+				"trigg",
+				"triggerHasRun"
+			],
+			[
+				"put",
+				"PUBLIC put(ANY key, ANY value) 	String"
+			],
+			[
+				"c",
+				"PUBLIC containsKey(ANY key) 	Boolean"
+			],
+			[
+				"Lc",
+				"LCListViewHelper	[Custom Apex Class]"
+			],
+			[
+				"LCL",
+				"LCListView__c"
+			],
+			[
+				"generated",
+				"generatedQuery"
+			],
+			[
+				"gener",
+				"generatedQuery"
+			],
+			[
+				"LCList",
+				"LCListViewHelper	[Custom Apex Class]"
+			],
+			[
+				"esca",
+				"PUBLIC escapeSingleQuotes(String s) 	String"
+			],
+			[
+				"F",
+				"Fields__c"
+			],
+			[
+				"LC",
+				"LCListViewHelper	[Custom Apex Class]"
+			],
+			[
+				"get",
+				"PUBLIC getMessage() 	String"
+			],
+			[
+				"listV",
+				"listViewstemp"
+			],
+			[
+				"lv",
+				"lViewList"
+			],
+			[
+				"lV",
+				"lViewList"
+			],
+			[
+				"a",
+				"assertEquals()"
+			],
+			[
+				"con",
+				"contactArr"
+			],
+			[
+				"list",
+				"listings"
+			],
+			[
+				"show",
+				"showHeader	(Boolean)"
+			],
+			[
+				"p",
+				"PUBLIC put(ANY key, ANY value) 	String"
+			],
+			[
+				"Finan",
+				"FinancialSummaryChart"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "00DU0000000gCrl\nphillipshsdp@te.team / test12345\nrattanpal@salesforce.com\n\n\n\nmobile1@jrte.com\ntest1234\n00DR00000008lrZ\n\n\nReminder\nBFF Follow",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Windows",
+				"name": "00DU0000000gCrl"
+			}
+		},
+		{
+			"contents": "<aura:application >\n    <ltng:require styles=\"{!$Resource.ETLC_SLDS + '/assets/styles/salesforce-lightning-design-system-ltng.css'}\"/>\n    <c:ETLC_PleaseWait sldsRoot=\"{!$Resource.ETLC_SLDS}\" />\n    <aura:handler name=\"accountChanged\" event=\"c:AccountChanged\" action=\"{!c.accountChanged}\"/>\n    \n    <aura:attribute name=\"accountSelected\" type=\"Id\" />\n    <c:AccountList />\n    <c:contactGrid accountId=\"{!v.accountSelected}\" />\n</aura:application>",
+			"file": "aura/DemoApp/DemoApp.app",
+			"file_size": 448,
+			"file_write_time": 131129134210000000,
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "aura/ETLC_ApexBridge/ETLC_ApexBridge.cmp",
+			"settings":
+			{
+				"buffer_size": 315,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/package.xml",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pacakge.xml",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/README.md",
+			"settings":
+			{
+				"buffer_size": 1739,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 232,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control sett",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Server/Workspace/MavensMate/BFFFollow",
+		"/C/Server/Workspace/MavensMate/BFFFollow/aura",
+		"/C/Server/Workspace/MavensMate/BFFFollow/aura/ETLC_ApexBridge",
+		"/C/Server/Workspace/MavensMate/BFFFollow/aura/ETLC_PleaseWait",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src"
+	],
+	"file_history":
+	[
+		"/C/Server/jMeter_Project/LC-AccountList-User-5.jtl",
+		"/C/Server/Workspace/MavensMate/LC List View/src/aura/LCListViewPaginationChanged/LCListViewPaginationChanged.evt",
+		"/C/Server/Workspace/MavensMate/LC List View/src/classes/LCListViewHelper.cls",
+		"/C/Server/Workspace/MavensMate/LC List View/src/classes/LCListViewController.cls",
+		"/C/Server/Workspace/MavensMate/LC List View/src/classes/LCListViewHelper_test.cls",
+		"/C/Server/Workspace/MavensMate/LC List View/src/aura/LCListViewPagination/LCListViewPagination.cmp",
+		"/C/Server/Workspace/MavensMate/LC List View/src/aura/LCListViewPagination/LCListViewPaginationController.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/settings/ChatterAnswers.settings",
+		"/C/Server/Workspace/MavensMate/LC List View/src/triggers/LCListView_Trigger.trigger",
+		"/C/Server/Workspace/MavensMate/LC List View/src/aura/LCListViewOptionSelected/LCListViewOptionSelected.evt",
+		"/C/Server/Workspace/MavensMate/LC List View/src/aura/LCListViewItemSelected/LCListViewItemSelected.evt",
+		"/C/Server/Workspace/MavensMate/LC List View/src/classes/ETLC_SecuredDB.cls",
+		"/C/Server/Workspace/MavensMate/LC List View/src/package.xml",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/Realtor/sendlistings.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/Realtor/index.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Controller/OauthController.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Controller/RealtorController.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/layout.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/Realtor/emaillisting.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/config/routing.yml",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/config/config.yml",
+		"/C/Server/Tools/php7/php.ini",
+		"/C/Server/web/symfony/SalesforceProject/.gitignore",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/DependencyInjection/LightningOutLoutTwigExtension.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/Realtor/lout.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/config/services.xml",
+		"/C/Users/jrattanpal/Downloads/startbootstrap-3-col-portfolio-1.0.4/index.html",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/Default/index.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Helper/SessionHelper.php",
+		"/C/Server/web/symfony/SalesforceProject/app/.htaccess",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/DependencyInjection/LightningOutLoutExtension.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/views/Oauth/authorize.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/layout.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme1/DemoBundle/Resources/views/layout.html.twig",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme1/DemoBundle/DependencyInjection/AcmeDemoExtension.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/DependencyInjection/Configuration.php",
+		"/C/Server/web/symfony/SalesforceProject/app/config/routing.yml",
+		"/C/Server/web/symfony/SalesforceProject/app/config/routing_dev.yml",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme1/DemoBundle/Resources/config/routing.yml",
+		"/C/Server/web/symfony/SalesforceProject/app/AppKernel.php",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme/DemoBundle/Resources/config/routing.yml",
+		"/C/Server/web/symfony/SalesforceProject/app/cache/dev/appDevUrlMatcher.php",
+		"/C/Server/web/symfony/SalesforceProject/web/app.php",
+		"/C/Server/web/symfony/SalesforceProject/web/app_dev.php",
+		"/C/Server/web/LOut_php/web/config.php",
+		"/C/Server/web/LOut_php/web/oauth.php",
+		"/C/Server/web/LOut_php/web/oauth_callback.php",
+		"/C/Server/web/symfony/SalesforceProject/Procfile",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Controller/OauthController1.php",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme/DemoBundle/AcmeDemoBundle.php",
+		"/C/Server/web/symfony/SalesforceProject/app/config/parameters.yml",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/LightningOutLoutBundle.php",
+		"/C/Server/web/symfony/SalesforceProject/composer.json",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Resources/config/routing.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/Bundle/LoutBundle/Controller/DefaultController.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/LoutBundle/LightningOutLoutBundle.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/LoutBundle/LightningoutLoutBundle.php",
+		"/C/Server/web/symfony/SalesforceProject/src/.htaccess",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme/DemoBundle/Controller/DemoController.php",
+		"/C/Server/web/symfony/SalesforceProject/src/Acme/DemoBundle/Controller/SecuredController.php",
+		"/C/Server/web/symfony/SalesforceProject/src/Lightningout/LoutBundle/Controller/OauthController.php",
+		"/C/Server/web/symfony/SalesforceProject/src/Lightningout/LoutBundle/LightningoutLoutBundle.php",
+		"/C/Server/web/symfony/SalesforceProject/src/LightningOut/LoutBundle/Controller/OauthController.php",
+		"/C/Server/web/symfony/SalesforceProject/app/cache/dev/classes.php",
+		"/C/Server/web/symfony/LightningOut/src/LoutBundle/Controller/OauthController.php",
+		"/C/Server/web/symfony/MySymfonyProject/composer.json",
+		"/C/Server/web/symfony/LightningOut/web/config.php",
+		"/C/Server/web/symfony/LightningOut/src/Acme/LoutBundle/Controller/OauthController.php",
+		"/C/Server/web/symfony/LightningOut/app/config/config.yml",
+		"/C/Server/web/php/LOut/index.html",
+		"/C/Server/web/php-getting-started/composer.json",
+		"/C/Server/web/php-getting-started/web/index.php",
+		"/C/Server/web/LOut_php/composer.json",
+		"/C/Server/web/LOut_php/.gitignore",
+		"/C/Server/web/LOut_php/readme.txt",
+		"/C/Server/web/LOut_php/web/demo_rest.php",
+		"/C/Server/web/LOut_php/commit.bat",
+		"/C/Server/web/php-getting-started/web/views/layout.html",
+		"/C/Server/web/php-getting-started/web/views/header.html",
+		"/C/Server/web/php-getting-started/web/views/index.twig",
+		"/C/Server/web/php-getting-started/Procfile",
+		"/C/Server/web/php/LOut/config.php",
+		"/C/Server/web/php/LOut/oauth.php",
+		"/C/Server/web/php/LOut/oauth_callback.php",
+		"/C/Server/web/php/LOut/demo_rest.php",
+		"/C/Program Files (x86)/Heroku/lib/heroku/updater.rb",
+		"/C/Program Files (x86)/Heroku/bin/heroku.bat",
+		"/C/Users/jrattanpal/AppData/Local/heroku/tmp/updating",
+		"/C/Users/jrattanpal/Downloads/testfile.txt",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/classes/CarePlan.cls",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanList.cmp",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanListHelper.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/Paginator.cmp",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/Paginator.css",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlan/CarePlan.app",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanSummary/CarePlanSummary.cmp",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/classes/HSDP_Helper.cls",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svg/svg.cmp",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svg/svgRenderer.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svg/svgHelper.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/classes/PagedResult.cls",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanListController.js",
+		"/C/Users/jrattanpal/Downloads/VFPage-AccountList-INTERNAL.jtl",
+		"/C/Server/Tools/SmartMeter_1.1.1_W_Light/logs/editor.log",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/PaginatorController.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/PageChange/PageChange.evt",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/PaginatorHelper.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanList.design",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/Paginator.cmp-meta.xml",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/PaginatorRenderer.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanList.auradoc",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svgIcon/svgIconHelper.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svgIcon/svgIconRenderer.js",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svgIcon/svgIcon.cmp",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/LoadCommonStaticResources/LoadCommonStaticResources.cmp",
+		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/LoadCommonStaticResources/LoadCommonStaticResourcesRenderer.js",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChartApp/FinancialSummaryChartApp.app",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChart/FinancialSummaryChart.cmp",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/pages/FinancialSummaryChart.page",
+		"/C/Users/jrattanpal/Downloads/CreateRelatedRecordForCase.txt",
+		"/C/Server/Heroku/apps/1/server.js",
+		"/C/Server/Heroku/apps/1/package.json",
+		"/C/Users/jrattanpal/Downloads/Visualforce_SLDS_Modal.page",
+		"/C/Users/jrattanpal/Downloads/navigateToUrl_issue.txt",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/classes/FinancialSummaryChart.cls",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/classes/FinancialSummaryChart_test.cls",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChart/FinancialSummaryChartHelper.js",
+		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChartAccount/FinancialSummaryChartAccount.cmp"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			"C:\\Server\\web\\symfony\\SalesforceProject",
+			"C:\\Program Files (x86)\\Heroku"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Account",
+			"AccountPagination_app",
+			"APPLICATION",
+			"/l/%7B%22mode%22%3A%22PRO",
+			"l/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22app%22%3A%22one%3Aone%22%2C%22fwuid%22%3A%22HARM87fxppWmsEY_Ve9awQ%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fone%3Aone%22%3A%22PoCrtEvaxEZnhJ-4Mul9nA%22%7D%2C%22styleContext%22%3A%7B%22c%22%3A%22webkit%22%2C%22x%22%3A%5B%22isDesktop%22%5D%2C%22tokens%22%3A%5B%22markup%3A%2F%2Fone%3AoneNamespace%22%2C%22markup%3A%2F%2Fone%3AformFactorLarge%22%2C%22markup%3A%2F%2Fforce%3Aslds%22%5D%7D%2C%22ls%22%3A%22NN%22%7D/",
+			"/l/%7B%22mode%22%3A%22PRODDEBUG%22%2C%22app%22%3A%22one%3Aone%22%2C%22fwuid%22%3A%22HARM87fxppWmsEY_Ve9awQ%22%2C%22loaded%22%3A%7B%22APPLICATION%40markup%3A%2F%2Fone%3Aone%22%3A%22PoCrtEvaxEZnhJ-4Mul9nA%22%7D%2C%22styleContext%22%3A%7B%22c%22%3A%22webkit%22%2C%22x%22%3A%5B%22isDesktop%22%5D%2C%22tokens%22%3A%5B%22markup%3A%2F%2Fone%3AoneNamespace%22%2C%22markup%3A%2F%2Fone%3AformFactorLarge%22%2C%22markup%3A%2F%2Fforce%3Aslds%22%5D%7D%2C%22ls%22%3A%22NN%22%7D/",
+			"mode",
+			"fwuid",
+			"one%",
+			"fwuid",
+			"token",
+			"validateQuery",
+			"validate\nvalidate",
+			"validate",
+			"insertDataListViewOptions",
+			"lvHelper",
+			"listView",
+			"calendar",
+			"getListViews",
+			"name=\"con",
+			"http:",
+			"http",
+			"twigbundle",
+			"layout.html.twig",
+			"const",
+			"code",
+			"oauth",
+			"panic",
+			"updating",
+			"background_update",
+			"background",
+			"x",
+			"this.log(",
+			"</svg>",
+			"<svg",
+			"svg",
+			"test",
+			"ext",
+			"penss",
+			"openss",
+			"secure",
+			"https",
+			"vlociFinServ__Chartjs_chart_min_js",
+			"null",
+			"Account"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"LCListViewHelper",
+			"getListViewOptions",
+			"this.log(cmp,",
+			"</svgIcon>",
+			"<c:svgIcon",
+			"c:svgIcon"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"auto_name": "00DU0000000gCrl",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "aura/DemoApp/DemoApp.app",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "aura/ETLC_ApexBridge/ETLC_ApexBridge.cmp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/package.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 97.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pacakge.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								577,
+								561
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 232,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 334.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "BFFFollow.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 372.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,7 +1,7 @@
 <!--
  Author: Enrico Murru (http://enree.co, @enreeco)
  -->
-<aura:component controller="InputLookupAuraController">
+<aura:component controller="InputLookupController">
     <ltng:require scripts="/resource/RequireJS" afterScriptsLoaded="{!c.initTypeahead}" />
     <aura:handler name="init" value="{!this}" action="{!c.setup}"/>
     
