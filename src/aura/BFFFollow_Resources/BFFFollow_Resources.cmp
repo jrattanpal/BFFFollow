@@ -1,0 +1,8 @@
+<aura:component >
+	
+    <aura:attribute name="SLDSVERSION" type="String" />
+
+    <ltng:require styles="{!'/resource/'+ v.SLDSVERSION + '/assets/styles/salesforce-lightning-design-system.css'}" />
+    <ltng:require scripts="{!join(',', $Resource.jquery)}" />
+
+</aura:component>

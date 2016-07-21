@@ -16,6 +16,8 @@
         // Clear any errors and destroy the old lookup items container
         inputElement.set('v.errors', null);
         
+        var lookupList = cmp.find('lookuplist').getElement();
+                
         // We need at least 2 characters for an effective search
         if (typeof searchString === 'undefined' || searchString.length < 2)
         {
@@ -52,7 +54,6 @@
                     cmp.set('v.matches', null);
                     return;
                 }
-                var lookupList = cmp.find('lookuplist').getElement();
                 // Show the lookuplist
                 $A.util.removeClass(lookupList, 'slds-hide');
                 

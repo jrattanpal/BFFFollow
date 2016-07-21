@@ -10,6 +10,9 @@ public class ETLC_ApexBridge_Data {
     
     @AuraEnabled
     public String output { get; set; }
+
+    @AuraEnabled
+    public Boolean outputFlag { get; set; }
     
     @AuraEnabled
     public Boolean debug { get; set; }

@@ -1,0 +1,17 @@
+<aura:component >	
+    <aura:attribute name="debug" type="Boolean" default="false" />
+    <aura:attribute name="followedUsers" type="Object[]" />
+
+    <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
+    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"/>
+    
+    <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
+	
+
+    <ui:inputSelect aura:id="UserList" label="Followed Users: "  change="{!c.onSelectChange}">
+        <ui:inputSelectOption text="0" label="Select a User"/>
+        <aura:iteration items="{!v.followedUsers}" var="obj">
+             <ui:inputSelectOption text="{!obj.id}" label="{!obj.name}"/>
+        </aura:iteration>
+    </ui:inputSelect>
+</aura:component>

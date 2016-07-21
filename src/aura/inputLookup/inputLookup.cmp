@@ -1,7 +1,7 @@
 <!--
  Author: Enrico Murru (http://enree.co, @enreeco)
  -->
-<aura:component controller="InputLookupController">
+<aura:component >
     <ltng:require scripts="/resource/RequireJS" 
         styles="/resource/Lgt_InputLookup/css/bootstrap.min.css,/resource/Lgt_InputLookup/css/typeahead.css" 
         afterScriptsLoaded="{!c.initTypeahead}" />

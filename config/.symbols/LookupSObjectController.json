@@ -1,0 +1,245 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002D2uAAAS",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 48
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "Result",
+                    "parameters": [
+                        {
+                            "name": "sObjectLabel",
+                            "type": "String"
+                        },
+                        {
+                            "name": "sObjectId",
+                            "type": "Id"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "Result",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 45
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "SObjectLabel",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 46
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "SObjectId",
+                    "references": [],
+                    "type": "Id"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 43
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "Result",
+                "references": [],
+                "type": "Result"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 30,
+                        "line": 48
+                    },
+                    "modifiers": [],
+                    "name": "sObjectLabel",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 47,
+                        "line": 48
+                    },
+                    "modifiers": [],
+                    "name": "sObjectId",
+                    "references": [],
+                    "type": "Id"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p50000002D2uAAAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "lookup",
+            "parameters": [
+                {
+                    "name": "searchString",
+                    "type": "String"
+                },
+                {
+                    "name": "sObjectAPIName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "LookupSObjectController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 11
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "LookupSObjectController",
+        "references": [],
+        "type": "LookupSObjectController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "searchString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "sObjectAPIName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "sanitizedSearchString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "sanitizedSObjectAPIName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "searchQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "searchList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "so",
+            "references": [],
+            "type": "SObject"
+        }
+    ]
+}

@@ -38,7 +38,7 @@
             "annotations": [],
             "location": {
                 "column": 17,
-                "line": 38
+                "line": 41
             },
             "modifiers": [
                 "public"
@@ -62,7 +62,7 @@
             "annotations": [],
             "location": {
                 "column": 19,
-                "line": 49
+                "line": 52
             },
             "modifiers": [
                 "public"
@@ -82,7 +82,7 @@
             "annotations": [],
             "location": {
                 "column": 19,
-                "line": 54
+                "line": 57
             },
             "modifiers": [
                 "public"
@@ -97,7 +97,7 @@
             "annotations": [],
             "location": {
                 "column": 40,
-                "line": 57
+                "line": 60
             },
             "modifiers": [
                 "static",
@@ -118,7 +118,7 @@
             "annotations": [],
             "location": {
                 "column": 26,
-                "line": 61
+                "line": 64
             },
             "modifiers": [
                 "static",
@@ -139,7 +139,7 @@
             "annotations": [],
             "location": {
                 "column": 26,
-                "line": 64
+                "line": 67
             },
             "modifiers": [
                 "static",
@@ -213,7 +213,7 @@
             "modifiers": [
                 "public"
             ],
-            "name": "debug",
+            "name": "outputFlag",
             "references": [],
             "type": "Boolean"
         },
@@ -226,6 +226,19 @@
             "modifiers": [
                 "public"
             ],
+            "name": "debug",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
             "name": "isSuccess",
             "references": [],
             "type": "Boolean"
@@ -234,7 +247,7 @@
             "annotations": [],
             "location": {
                 "column": 43,
-                "line": 27
+                "line": 30
             },
             "modifiers": [
                 "public"
@@ -247,7 +260,7 @@
             "annotations": [],
             "location": {
                 "column": 26,
-                "line": 36
+                "line": 39
             },
             "modifiers": [
                 "public"
@@ -275,7 +288,7 @@
             "annotations": [],
             "location": {
                 "column": 40,
-                "line": 38
+                "line": 41
             },
             "modifiers": [],
             "name": "msgType",
@@ -286,7 +299,7 @@
             "annotations": [],
             "location": {
                 "column": 56,
-                "line": 38
+                "line": 41
             },
             "modifiers": [],
             "name": "text",
@@ -297,7 +310,7 @@
             "annotations": [],
             "location": {
                 "column": 22,
-                "line": 39
+                "line": 42
             },
             "modifiers": [],
             "name": "ls",
@@ -308,7 +321,7 @@
             "annotations": [],
             "location": {
                 "column": 40,
-                "line": 49
+                "line": 52
             },
             "modifiers": [],
             "name": "key",
@@ -319,7 +332,7 @@
             "annotations": [],
             "location": {
                 "column": 29,
-                "line": 50
+                "line": 53
             },
             "modifiers": [],
             "name": "inputMap",
@@ -330,7 +343,7 @@
             "annotations": [],
             "location": {
                 "column": 56,
-                "line": 57
+                "line": 60
             },
             "modifiers": [],
             "name": "strJson",
@@ -341,7 +354,7 @@
             "annotations": [],
             "location": {
                 "column": 44,
-                "line": 61
+                "line": 64
             },
             "modifiers": [],
             "name": "value",
@@ -352,7 +365,7 @@
             "annotations": [],
             "location": {
                 "column": 44,
-                "line": 64
+                "line": 67
             },
             "modifiers": [],
             "name": "value",
@@ -363,7 +376,7 @@
             "annotations": [],
             "location": {
                 "column": 56,
-                "line": 64
+                "line": 67
             },
             "modifiers": [],
             "name": "t",

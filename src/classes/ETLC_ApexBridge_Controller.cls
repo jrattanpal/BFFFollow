@@ -4,6 +4,7 @@ public class ETLC_ApexBridge_Controller {
         ETLC_ApexBridge_Data data;
         try {
             data = ETLC_ApexBridge_Data.fromJSON(dataJson);
+            System.debug('data::' + data);
             ETLC_ApexBridge_Abstract executor = (ETLC_ApexBridge_Abstract) Type.forName(data.operation).newInstance();
             executor.process(data);
         } catch (Exception ex) {

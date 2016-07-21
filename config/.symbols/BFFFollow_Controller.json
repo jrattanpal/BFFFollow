@@ -1,0 +1,262 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p50000002D8iwAAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p50000002D8iwAAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 3
+            },
+            "modifiers": [
+                "public",
+                "override"
+            ],
+            "name": "process",
+            "parameters": [
+                {
+                    "name": "data",
+                    "type": "ETLC_ApexBridge_Data"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "fetchFollowedUsers",
+            "parameters": [
+                {
+                    "name": "followedById",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveFollowedUsers",
+            "parameters": [
+                {
+                    "name": "followedById",
+                    "type": "Id"
+                },
+                {
+                    "name": "followedUsers",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 63
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "fetchUserFeed",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "BFFFollow_Controller",
+    "namespace": null,
+    "parentClass": "ETLC_ApexBridge_Abstract",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 2
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "debugFlag",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "BFFFollow_Controller",
+        "references": [],
+        "type": "BFFFollow_Controller"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "data",
+            "references": [],
+            "type": "ETLC_ApexBridge_Data"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "mode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "followedById",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "followedById",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "followedUsers",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "dbRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "BFFFollow__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "fep",
+            "references": [],
+            "type": "FeedElementPage"
+        }
+    ]
+}

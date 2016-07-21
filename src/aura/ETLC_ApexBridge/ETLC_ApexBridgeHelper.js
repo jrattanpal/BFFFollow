@@ -9,6 +9,7 @@
         action.setParams({
             dataJson: JSON.stringify({
                 operation: data.operation,
+                mode: data.mode,
                 input: JSON.stringify(data.input),
                 debug: component.get("v.debugServer"),
                 records: data.records
@@ -42,7 +43,7 @@
                         dataReturned.output = JSON.parse(dataReturned.output);
                         if (component.get("v.debugClient")) {
                             console.log('Back from Apex. ', dataReturned);
-                            debugger;
+                            //debugger;
                         }
                         callBackMethod.call(this, dataReturned);
                     } else {
