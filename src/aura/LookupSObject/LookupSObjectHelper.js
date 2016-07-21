@@ -96,21 +96,9 @@
         console.log('objectId=' + objectId);
         console.log('objectLabel=' + objectLabel);
                 
-        // Create the UpdateLookupId event
-        var updateEvent = cmp.getEvent("updateLookupIdEvent");
-        
-        // Get the Instance Id of the Component
-        var instanceId = cmp.get('v.instanceId');
+        cmp.set('v.objectId',objectId);
+        cmp.set('v.objectLabel', objectLabel);
 
-        // Populate the event with the selected Object Id and Instance Id
-        updateEvent.setParams({
-            "sObjectId" : objectId, 
-            "instanceId" : instanceId,
-            "sObjectname" : objectLabel
-        });
-
-        // Fire the event
-        updateEvent.fire();
 
         // Update the Searchstring with the Label
         cmp.set("v.searchString", objectLabel);
@@ -131,6 +119,31 @@
         var inputElement = cmp.find('lookup-div');
         $A.util.addClass(inputElement, 'slds-has-selection');
 
+    },
+
+    fireEvent: function(cmp){
+        // Resolve the Object Id from the events Element Id (this will be the <a> tag)
+        var objectId = cmp.get('v.objectId');
+
+        // The Object label is the inner text)
+        var objectLabel = cmp.get('v.objectLabel');
+
+        // Create the UpdateLookupId event
+        var updateEvent = cmp.getEvent("updateLookupIdEvent");
+        
+        // Get the Instance Id of the Component
+        var instanceId = cmp.get('v.instanceId');
+console.log('objectId:' + objectId);
+console.log('objectLabel:' + objectLabel);
+        // Populate the event with the selected Object Id and Instance Id
+        updateEvent.setParams({
+            "sObjectId" : objectId, 
+            "instanceId" : instanceId,
+            "sObjectname" : objectLabel
+        });
+
+        // Fire the event
+        updateEvent.fire();
     },
 
     /**

@@ -1,17 +1,42 @@
 <aura:component >	
     <aura:attribute name="debug" type="Boolean" default="false" />
     <aura:attribute name="followedUsers" type="Object[]" />
+    <aura:attribute name="currentDisplayedUser" type="String" />
 
     <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"/>
     
     <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
-	
 
-    <ui:inputSelect aura:id="UserList" label="Followed Users: "  change="{!c.onSelectChange}">
-        <ui:inputSelectOption text="0" label="Select a User"/>
-        <aura:iteration items="{!v.followedUsers}" var="obj">
-             <ui:inputSelectOption text="{!obj.id}" label="{!obj.name}"/>
-        </aura:iteration>
-    </ui:inputSelect>
+    <aura:attribute name="feedElements" type="Object[]" />
+    <div class="slds-form--inline">
+        <div class="slds-form-element">
+            <div class="slds-select_container">
+                <ui:inputSelect class="slds-select" aura:id="UserList"  change="{!c.onSelectChange}">
+                    <ui:inputSelectOption text="0" label="Select a User"/>
+                    <aura:iteration items="{!v.followedUsers}" var="obj">
+                         <ui:inputSelectOption text="{!obj.id}" label="{!obj.name}"/>
+                    </aura:iteration>
+                </ui:inputSelect>
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <button type="button" onclick="{!c.refreshFeed}" class="slds-button slds-button--brand">
+                Refresh Feed
+            </button>
+        </div>
+    </div>
+
+    <aura:if isTrue="{!v.feedElements.length > 0}">
+        <div class="slds-feed">
+            <ul class="slds-feed__list">
+                <aura:iteration items="{!v.feedElements}" var="obj">
+                    &nbsp;
+                    <aura:if isTrue="{! obj.body.text != null}">
+                        <c:BFFFollow_FeedItem feedElement="{!obj}" />
+                    </aura:if>
+                </aura:iteration>
+            </ul>
+        </div>
+    </aura:if>
 </aura:component>

@@ -31,7 +31,7 @@
             "annotations": [],
             "location": {
                 "column": 16,
-                "line": 22
+                "line": 24
             },
             "modifiers": [
                 "public"
@@ -51,7 +51,7 @@
             "annotations": [],
             "location": {
                 "column": 17,
-                "line": 42
+                "line": 44
             },
             "modifiers": [
                 "public"
@@ -74,8 +74,8 @@
         {
             "annotations": [],
             "location": {
-                "column": 17,
-                "line": 63
+                "column": 16,
+                "line": 65
             },
             "modifiers": [
                 "public"
@@ -88,7 +88,7 @@
                 }
             ],
             "references": [],
-            "returnType": "Boolean",
+            "returnType": "String",
             "type": null
         }
     ],
@@ -152,7 +152,7 @@
             "annotations": [],
             "location": {
                 "column": 38,
-                "line": 22
+                "line": 24
             },
             "modifiers": [],
             "name": "followedById",
@@ -163,7 +163,7 @@
             "annotations": [],
             "location": {
                 "column": 10,
-                "line": 23
+                "line": 25
             },
             "modifiers": [],
             "name": "soql",
@@ -174,7 +174,7 @@
             "annotations": [],
             "location": {
                 "column": 18,
-                "line": 26
+                "line": 28
             },
             "modifiers": [],
             "name": "dbRecords",
@@ -185,7 +185,7 @@
             "annotations": [],
             "location": {
                 "column": 38,
-                "line": 42
+                "line": 44
             },
             "modifiers": [],
             "name": "followedById",
@@ -196,7 +196,7 @@
             "annotations": [],
             "location": {
                 "column": 59,
-                "line": 42
+                "line": 44
             },
             "modifiers": [],
             "name": "followedUsers",
@@ -206,8 +206,8 @@
         {
             "annotations": [],
             "location": {
-                "column": 10,
-                "line": 43
+                "column": 11,
+                "line": 46
             },
             "modifiers": [],
             "name": "soql",
@@ -218,7 +218,7 @@
             "annotations": [],
             "location": {
                 "column": 18,
-                "line": 47
+                "line": 49
             },
             "modifiers": [],
             "name": "dbRecords",
@@ -229,7 +229,7 @@
             "annotations": [],
             "location": {
                 "column": 17,
-                "line": 48
+                "line": 50
             },
             "modifiers": [],
             "name": "record",
@@ -239,8 +239,8 @@
         {
             "annotations": [],
             "location": {
-                "column": 34,
-                "line": 63
+                "column": 33,
+                "line": 65
             },
             "modifiers": [],
             "name": "userId",
@@ -250,8 +250,8 @@
         {
             "annotations": [],
             "location": {
-                "column": 30,
-                "line": 64
+                "column": 31,
+                "line": 67
             },
             "modifiers": [],
             "name": "fep",

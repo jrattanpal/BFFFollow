@@ -18,6 +18,13 @@
     select: function(cmp, event, helper) {
     	helper.handleSelection(cmp, event);
     },
+
+    /**
+     * Fire event when button is clicked
+     */
+    fireEvent: function(cmp, event, helper) {
+        helper.fireEvent(cmp);
+    },
     
     /**
      * Clear the currently selected SObject

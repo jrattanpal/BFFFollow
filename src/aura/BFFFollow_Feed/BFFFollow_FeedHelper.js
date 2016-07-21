@@ -4,6 +4,9 @@
 		if(selectedUser == 0){
 			return;
 		}
+        if(selectedUser == component.get('v.currentDisplayedUser')){
+            return;
+        }
 		var apexBridge = component.find("ApexBridge");
         apexBridge.callApex({
             component: component, 
@@ -13,14 +16,13 @@
                 debug: component.get('v.debug')
             },
             callBackMethod: function (data) {
-
-            	BFFHelper.log({m: 'data:'});
-            	BFFHelper.log({m: data.output});
             	if(data.outputFlag == true){
                 	BFFHelper.log({m: 'data.output :'});
             		BFFHelper.log({m: data.output});
-
-            		component.set('v.followedUsers', data.output);
+                    BFFHelper.log({m: data.output.elements});
+                    
+                    component.set('v.currentDisplayedUser', selectedUser);
+                    component.set('v.feedElements', data.output.elements);
                 }
             }
         });

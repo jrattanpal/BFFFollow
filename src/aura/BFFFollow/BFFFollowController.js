@@ -10,18 +10,20 @@
         component.set('v.followedUsers', followedUsers);
 	},
 	onClick: function(component, event, helper){
-		//debugger;
-
 		var selectedItem = event.currentTarget;
-		$('li.slds-tabs--scoped__item').removeClass('slds-active');
+		var tabindex = selectedItem.getAttribute('tabindex');
 
-		$('div.slds-tabs--scoped__content').removeClass('slds-show');
-		$('div.slds-tabs--scoped__content').addClass('slds-hide');
+		for(var i=1;i<4;i++){
+			if(tabindex == i){
+				$A.util.addClass(component.find('tab-li-scoped-'+i),'slds-active');
+				$A.util.removeClass(component.find('tab-div-scoped-'+i),'slds-hide');
+				$A.util.addClass(component.find('tab-div-scoped-'+i),'slds-show');
 
-		var tabLiId = selectedItem.getAttribute('aria-selectedTabLi');
-		var tabDivId = selectedItem.getAttribute('aria-selectedTabDiv');
-
-		$('#'+tabLiId).addClass('slds-active');
-		$('#'+tabDivId).addClass('slds-show');
+			}else{
+				$A.util.removeClass(component.find('tab-li-scoped-'+i),'slds-active');
+				$A.util.addClass(component.find('tab-div-scoped-'+i),'slds-hide');
+				$A.util.removeClass(component.find('tab-div-scoped-'+i),'slds-show');
+			}
+		}
 	}
 })

@@ -4,8 +4,56 @@
 		"selected_items":
 		[
 			[
+				"check",
+				"checkboxData"
+			],
+			[
+				"chc",
+				"checkboxData"
+			],
+			[
+				"chec",
+				"checkboxData"
+			],
+			[
+				"sls",
+				"SLDSVERSION"
+			],
+			[
+				"record",
+				"recordExists"
+			],
+			[
+				"foll",
+				"followedUserArr"
+			],
+			[
+				"getUser",
+				"PUBLIC getUserId() 	String"
+			],
+			[
+				"debu",
+				"debugFlag"
+			],
+			[
+				"otu",
+				"PUBLIC outputFlag	Boolean"
+			],
+			[
 				"ass",
-				"assert()"
+				"assertEquals()"
+			],
+			[
+				"out",
+				"PUBLIC outputFlag	Boolean"
+			],
+			[
+				"ET",
+				"ETLC_SecuredDB	[Custom Apex Class]"
+			],
+			[
+				"Follo",
+				"FollowedById"
 			],
 			[
 				"E",
@@ -133,53 +181,26 @@
 			}
 		},
 		{
-			"contents": "<aura:application >\n    <ltng:require styles=\"{!$Resource.ETLC_SLDS + '/assets/styles/salesforce-lightning-design-system-ltng.css'}\"/>\n    <c:ETLC_PleaseWait sldsRoot=\"{!$Resource.ETLC_SLDS}\" />\n    <aura:handler name=\"accountChanged\" event=\"c:AccountChanged\" action=\"{!c.accountChanged}\"/>\n    \n    <aura:attribute name=\"accountSelected\" type=\"Id\" />\n    <c:AccountList />\n    <c:contactGrid accountId=\"{!v.accountSelected}\" />\n</aura:application>",
-			"file": "aura/DemoApp/DemoApp.app",
-			"file_size": 448,
-			"file_write_time": 131129134210000000,
+			"file": "src/classes/BFFFollow_Controller.cls",
 			"settings":
 			{
-				"buffer_size": 448,
+				"buffer_size": 2422,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "aura/ETLC_ApexBridge/ETLC_ApexBridge.cmp",
+			"file": "src/aura/LookupSObject/LookupSObject.cmp",
 			"settings":
 			{
-				"buffer_size": 315,
+				"buffer_size": 4819,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/package.xml",
+			"file": "src/aura/BFFFollow/BFFFollow.cmp",
 			"settings":
 			{
-				"buffer_size": 398,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pacakge.xml",
-			"settings":
-			{
-				"buffer_size": 406,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/README.md",
-			"settings":
-			{
-				"buffer_size": 1739,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 232,
+				"buffer_size": 2811,
 				"line_ending": "Windows"
 			}
 		}
@@ -247,13 +268,72 @@
 	"expanded_folders":
 	[
 		"/C/Server/Workspace/MavensMate/BFFFollow",
-		"/C/Server/Workspace/MavensMate/BFFFollow/aura",
-		"/C/Server/Workspace/MavensMate/BFFFollow/aura/ETLC_ApexBridge",
-		"/C/Server/Workspace/MavensMate/BFFFollow/aura/ETLC_PleaseWait",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src"
+		"/C/Server/Workspace/MavensMate/BFFFollow/src",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersUpdated",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ClearLookupId",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/DemoApp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_ApexBridge",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_PleaseWait",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/staticresources"
 	],
 	"file_history":
 	[
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_Feed.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_FeedHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_FeedController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove/BFFFollow_UsersRemove.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_UsersHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove/BFFFollow_UsersRemoveHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove/BFFFollow_UsersRemoveController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_Users.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollowController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Helper/BFFFollow_Helper.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/DemoApp/DemoApp.app",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollow.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Resources/BFFFollow_Resources.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_ApexBridge/ETLC_ApexBridgeHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObject.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_UsersController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/classes/BFFFollow_Controller_Test.cls",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollowHelper.js",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/aura/AccountList/AccountListController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersUpdated/BFFFollow_UsersUpdated.evt",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Helper/BFFFollow_HelperController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObjectHelper.js",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/aura/AccountList/AccountList.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/classes/ETLC_ApexBridge_Data.cls",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/classes/ContactsController.cls",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/classes/ETLC_ApexBridge_Controller.cls",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/classes/ETLC_ApexBridge_Data_Test.cls",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/classes/FindAccounts.cls",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/aura/contactRow/contactRowController.js",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/aura/contactRow/contactRowHelper.js",
+		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/README.md",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/inputLookup/inputLookupRenderer.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/inputLookup/inputLookup.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/inputLookup/inputLookupController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/inputLookup/inputLookupHelper.js",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/src/aura/AccountLookup/AccountLookupController.js",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/README.md",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/src/aura/AccountLookup/AccountLookup.cmp",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/src/aura/LookupSObject/LookupSObject.cmp",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/src/aura/UpdateLookupId/UpdateLookupId.evt",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/src/aura/LookupSObject/LookupSObjectHelper.js",
+		"/C/Server/Workspace/MavensMate/Lightning-Lookup/src/classes/LookupSObjectControllerTest.cls-meta.xml",
+		"/C/Server/Workspace/MavensMate/BFFFollow/README.md",
+		"/C/Server/Workspace/MavensMate/BFFFollow/BFFFollow.sublime-workspace",
+		"/C/Server/Workspace/MavensMate/BFFFollow/BFFFollow.sublime-project",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/package.xml",
+		"/C/Server/Workspace/MavensMate/BFFFollow/.gitignore",
+		"/C/Server/Workspace/MavensMate/BFFFollow/aura/DemoApp/DemoApp.app",
+		"/C/Server/Workspace/MavensMate/BFFFollow/pacakge.xml",
+		"/C/Server/Workspace/MavensMate/BFFFollow/aura/ETLC_ApexBridge/ETLC_ApexBridge.cmp",
 		"/C/Server/jMeter_Project/LC-AccountList-User-5.jtl",
 		"/C/Server/Workspace/MavensMate/LC List View/src/aura/LCListViewPaginationChanged/LCListViewPaginationChanged.evt",
 		"/C/Server/Workspace/MavensMate/LC List View/src/classes/LCListViewHelper.cls",
@@ -331,67 +411,20 @@
 		"/C/Server/web/LOut_php/readme.txt",
 		"/C/Server/web/LOut_php/web/demo_rest.php",
 		"/C/Server/web/LOut_php/commit.bat",
-		"/C/Server/web/php-getting-started/web/views/layout.html",
-		"/C/Server/web/php-getting-started/web/views/header.html",
-		"/C/Server/web/php-getting-started/web/views/index.twig",
-		"/C/Server/web/php-getting-started/Procfile",
-		"/C/Server/web/php/LOut/config.php",
-		"/C/Server/web/php/LOut/oauth.php",
-		"/C/Server/web/php/LOut/oauth_callback.php",
-		"/C/Server/web/php/LOut/demo_rest.php",
-		"/C/Program Files (x86)/Heroku/lib/heroku/updater.rb",
-		"/C/Program Files (x86)/Heroku/bin/heroku.bat",
-		"/C/Users/jrattanpal/AppData/Local/heroku/tmp/updating",
-		"/C/Users/jrattanpal/Downloads/testfile.txt",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/classes/CarePlan.cls",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanList.cmp",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanListHelper.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/Paginator.cmp",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/Paginator.css",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlan/CarePlan.app",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanSummary/CarePlanSummary.cmp",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/classes/HSDP_Helper.cls",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svg/svg.cmp",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svg/svgRenderer.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svg/svgHelper.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/classes/PagedResult.cls",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanListController.js",
-		"/C/Users/jrattanpal/Downloads/VFPage-AccountList-INTERNAL.jtl",
-		"/C/Server/Tools/SmartMeter_1.1.1_W_Light/logs/editor.log",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/PaginatorController.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/PageChange/PageChange.evt",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/PaginatorHelper.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanList.design",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/Paginator.cmp-meta.xml",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/Paginator/PaginatorRenderer.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/CarePlanList/CarePlanList.auradoc",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svgIcon/svgIconHelper.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svgIcon/svgIconRenderer.js",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/svgIcon/svgIcon.cmp",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/LoadCommonStaticResources/LoadCommonStaticResources.cmp",
-		"/C/Server/Workspace/MavensMate/Philips HSDP/src/aura/LoadCommonStaticResources/LoadCommonStaticResourcesRenderer.js",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChartApp/FinancialSummaryChartApp.app",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChart/FinancialSummaryChart.cmp",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/pages/FinancialSummaryChart.page",
-		"/C/Users/jrattanpal/Downloads/CreateRelatedRecordForCase.txt",
-		"/C/Server/Heroku/apps/1/server.js",
-		"/C/Server/Heroku/apps/1/package.json",
-		"/C/Users/jrattanpal/Downloads/Visualforce_SLDS_Modal.page",
-		"/C/Users/jrattanpal/Downloads/navigateToUrl_issue.txt",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/classes/FinancialSummaryChart.cls",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/classes/FinancialSummaryChart_test.cls",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChart/FinancialSummaryChartHelper.js",
-		"/C/Server/Workspace/MavensMate/JR FSC Org/src/aura/FinancialSummaryChartAccount/FinancialSummaryChartAccount.cmp"
+		"/C/Server/web/php-getting-started/web/views/layout.html"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 105.0,
 		"where_history":
 		[
+			"C:\\Server\\Workspace\\MavensMate\\BFFFollow\\src",
+			"C:\\Server\\Workspace\\MavensMate\\Lightning-Lookup\\src\\aura",
+			"C:\\Server\\Workspace\\MavensMate\\BFFFollow",
 			"C:\\Server\\web\\symfony\\SalesforceProject",
 			"C:\\Program Files (x86)\\Heroku"
 		]
@@ -401,6 +434,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"followedUsersArr",
+			"symbols.svg",
+			"SLDSVERSION",
+			"c:BFFFollow_Helper",
+			"salesforce-lightning-design-system.css",
+			"salesforce-lightning-design-system.css ",
+			"BFFFollow_UsersUpdated",
+			"followedUsers",
+			"{!v.SLDSVERSION}",
+			"lookupList",
+			"\\\"",
+			"output",
+			"SLDS/",
+			"SLDS202",
+			"SLDS/",
+			"SLDS092",
+			"skipTypeaheadLoading",
+			"createTypeaheadComponent",
+			"substringMatcher",
+			"title",
+			"require",
 			"Account",
 			"AccountPagination_app",
 			"APPLICATION",
@@ -453,6 +507,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"followedUsersNew",
+			"v.SLDSVERSION",
+			"\"",
+			"SLDS202/",
+			"SLDS202",
+			"SLDS",
 			"LCListViewHelper",
 			"getListViewOptions",
 			"this.log(cmp,",
@@ -469,7 +529,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -497,179 +557,94 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "aura/DemoApp/DemoApp.app",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 448,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								428,
-								428
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "aura/ETLC_ApexBridge/ETLC_ApexBridge.cmp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 315,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								315,
-								315
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/package.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 398,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								398,
-								398
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 97.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "pacakge.xml",
+					"buffer": 1,
+					"file": "src/classes/BFFFollow_Controller.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 406,
+						"buffer_size": 2422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								406,
-								406
+								2204,
+								2204
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/aura/LookupSObject/LookupSObject.cmp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1739,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								577,
-								561
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 396.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "README.md",
+					"buffer": 3,
+					"file": "src/aura/BFFFollow/BFFFollow.cmp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 232,
+						"buffer_size": 2811,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								108,
-								108
+								2299,
+								2299
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 528.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -708,7 +683,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 334.0
+		"height": 164.0
 	},
 	"output.find_results":
 	{
@@ -718,7 +693,7 @@
 	"project": "BFFFollow.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":

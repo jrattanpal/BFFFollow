@@ -270,6 +270,13 @@
             "xmlName": "EscalationRules"
         },
         {
+            "directoryName": "postTemplates",
+            "inFolder": false,
+            "metaFile": false,
+            "suffix": "postTemplate",
+            "xmlName": "PostTemplate"
+        },
+        {
             "directoryName": "approvalProcesses",
             "inFolder": false,
             "metaFile": false,

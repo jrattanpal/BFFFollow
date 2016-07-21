@@ -15,7 +15,7 @@
 	/**
      * Handler for receiving the updateLookupIdEvent event
      */
-    handleAccountIdUpdate : function(component, event, helper) {
+    handleIdUpdate : function(component, event, helper) {
 		var BFFHelper = component.find("BFFFollow_Helper");
 
         // Get the Id from the Event
@@ -25,13 +25,18 @@
  		// Set the Id bound to the View
         component.set('v.recordId', recordId);        
         component.set('v.recordName', recordName);
+
+        var BFFHelper = component.find("BFFFollow_Helper");
+                    
+        helper.saveFollowedUsers(component, helper, BFFHelper);
     },
  
     /**
      * Handler for receiving the clearLookupIdEvent event
      */
-    handleAccountIdClear : function(component, event, helper) {
+    handleIdClear : function(component, event, helper) {
         // Clear the Id bound to the View
-        component.set('v.recordId', null);
+        component.set('v.recordId', null);      
+        component.set('v.recordName', null);
     }
 })

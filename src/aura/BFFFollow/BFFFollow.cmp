@@ -18,35 +18,32 @@
     <div class="slds">
 		<div class="slds-tabs--scoped">
 			<ul class="slds-tabs--scoped__nav" role="tablist">
-				<li id="tab-li-scoped-1"
+				<li aura:id="tab-li-scoped-1"
 					class="slds-tabs--scoped__item slds-text-heading--label slds-active" title="Item One" role="presentation">
 					<a aura:id="tabA" class="slds-tabs--scoped__link" href="javascript:void(0);" 
-						role="tab" tabindex="0" aria-selected="true"
-						aria-controls="tab-scoped-1" aria-selectedTabDiv="tab-scoped-1" aria-selectedTabLi="tab-li-scoped-1"
-						id="tab-scoped-1__item" onclick="{!c.onClick}">Feeds</a>
+						role="tab" tabindex="1" aria-selected="true"
+						id="tab-scoped-1__item" onclick="{!c.onClick}">Feed</a>
 				</li>
-				<li id="tab-li-scoped-2"
+				<li aura:id="tab-li-scoped-2"
 					class="slds-tabs--scoped__item slds-text-heading--label" title="Item Two" role="presentation">
 					<a aura:id="tabA" class="slds-tabs--scoped__link" href="javascript:void(0);" 
-						role="tab" tabindex="1" aria-selected="false" 
-						aria-controls="tab-scoped-2" aria-selectedTabDiv="tab-scoped-2" aria-selectedTabLi="tab-li-scoped-2"
-						id="tab-scoped-2__item" onclick="{!c.onClick}">Follow Users</a>
+						role="tab" tabindex="2" aria-selected="false" 
+						id="tab-scoped-2__item" onclick="{!c.onClick}">Follow</a>
 				</li>
-				<li id="tab-li-scoped-3"
+				<li aura:id="tab-li-scoped-3"
 					class="slds-tabs--scoped__item slds-text-heading--label" title="Item Three" role="presentation">
 					<a aura:id="tabA" class="slds-tabs--scoped__link" href="javascript:void(0);" 
-						role="tab" tabindex="2" aria-selected="false" 
-						aria-controls="tab-scoped-3" aria-selectedTabDiv="tab-scoped-3" aria-selectedTabLi="tab-li-scoped-3"
-						id="tab-scoped-3__item" onclick="{!c.onClick}">Un-Follow Users</a>
+						role="tab" tabindex="3" aria-selected="false" 
+						id="tab-scoped-3__item" onclick="{!c.onClick}">Un-Follow</a>
 				</li>
 			</ul>
-			<div id="tab-scoped-1" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item">
+			<div aura:id="tab-div-scoped-1" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item">
 				<c:BFFFollow_Feed debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 			</div>
-			<div id="tab-scoped-2" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-2__item">
+			<div aura:id="tab-div-scoped-2" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-2__item">
 				<c:BFFFollow_Users debug="{!v.debug}" followedUsers="{!v.followedUsers}" SLDSVERSION="{!v.SLDSVERSION}"/>
 			</div>
-			<div id="tab-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">
+			<div aura:id="tab-div-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">
 				<c:BFFFollow_UsersRemove debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 			</div>
 		</div>
