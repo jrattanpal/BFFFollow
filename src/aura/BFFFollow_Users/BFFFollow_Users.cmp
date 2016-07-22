@@ -1,6 +1,6 @@
 <aura:component >
 
-    <aura:attribute name="debug" type="Boolean" default="false" />
+    <aura:attribute name="debug" type="Boolean"  default="false" />
     <aura:attribute name="SLDSVERSION" type="String" />
 
     <aura:attribute name="followedUsers" type="Object[]" />
@@ -27,6 +27,8 @@
 		        instanceId="BFFFollow_Users"
                 buttonLabel="Follow User"
                 placeholder="Search User"
+                SLDSVERSION="{!v.SLDSVERSION}"
+                debug="{!v.debug}"
 		    />
 		<!--<aura:set attribute="else"></aura:set>-->
 	<!--</aura:if> -->

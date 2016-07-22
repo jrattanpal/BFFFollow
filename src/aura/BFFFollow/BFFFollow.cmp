@@ -1,7 +1,7 @@
-<aura:component >
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes">
 	
     <aura:attribute name="debug" type="Boolean" default="false" access="GLOBAL"/>
-    <aura:attribute name="SLDSVERSION" type="String" />
+    <aura:attribute name="SLDSVERSION" type="String"  default="SLDS202" />
 
     <c:BFFFollow_Resources SLDSVERSION="{!v.SLDSVERSION}" />
 	<c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>

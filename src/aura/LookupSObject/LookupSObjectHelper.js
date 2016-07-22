@@ -9,6 +9,7 @@
      * Perform the SObject search via an Apex Controller
      */
     doSearch : function(cmp) {
+        var BFFHelper = cmp.find("BFFFollow_Helper");
         // Get the search string, input element and the selection container
         var searchString = cmp.get('v.searchString');
         var inputElement = cmp.find('lookup');
@@ -41,10 +42,10 @@
         // Define the callback
         action.setCallback(this, function(response) {
             var state = response.getState();
-
             // Callback succeeded
             if (cmp.isValid() && state === "SUCCESS")
             {
+                BFFHelper.hideToast();
                 // Get the search matches
                 var matches = response.getReturnValue();
 
@@ -62,18 +63,19 @@
             }
             else if (state === "ERROR") // Handle any error by reporting it
             {
+                console.log('test');
                 var errors = response.getError();
                 
                 if (errors) 
                 {
                     if (errors[0] && errors[0].message) 
                     {
-                        this.displayToast('Error', errors[0].message);
+                        this.displayToast(cmp, 'Error', errors[0].message);
                     }
                 }
                 else
                 {
-                    this.displayToast('Error', 'Unknown error.');
+                    this.displayToast(cmp, 'Error', 'Unknown error.');
                 }
             }
         });
@@ -194,24 +196,9 @@
     /**
      * Display a message
      */
-    displayToast : function (title, message) 
+    displayToast : function (cmp, title, message) 
     {
-        var toast = $A.get("e.force:showToast");
-
-        // For lightning1 show the toast
-        if (toast)
-        {
-            //fire the toast event in Salesforce1
-            toast.setParams({
-                "title": title,
-                "message": message
-            });
-
-            toast.fire();
-        }
-        else // otherwise throw an alert
-        {
-            alert(title + ': ' + message);
-        }
+        var BFFHelper = cmp.find("BFFFollow_Helper");
+        BFFHelper.showToast({s: 'error', t: title, m: message});
     }
 })

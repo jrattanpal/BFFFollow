@@ -38,13 +38,6 @@
 				      		</aura:set>
 				      	</aura:if>
 				      </p>
-				      <!--
-				      <button class="slds-button slds-button-||-icon-border-filled slds-button-||-icon-x-small slds-shrink-none">
-				      	<c:svg class="slds-input__icon slds-button__icon-||-hint slds-button__icon-||-small" 
-				      		xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#down" />
-				        <span class="slds-assistive-text">Show More</span>
-				      </button>
-				  -->
 				    </div>
 				    <p class="slds-text-body--small">
 				    	<a href="javascript:void(0);" title="Click for single-item view of this post">
@@ -67,17 +60,6 @@
 					    </div>
 				    </aura:if>
 				    <ul class="slds-list--horizontal slds-has-dividers--right slds-text-body--small">
-				    	<!--
-				      <li class="slds-item">
-				        <a href="javascript:void(0);" title="Like this item">
-				          <button class="slds-button slds-button-||-icon-border slds-button-||-icon-small slds-m-right-||-small">
-
-				      		<c:svg class="slds-button__icon" 
-				      			xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#like" />
-				            <span class="slds-assistive-text">Like</span>
-				          </button>Like</a>
-				      </li>
-				  	  -->
 				  	  <li class="slds-item">{!v.feedElement.capabilities.chatterLikes.likesMessage.text}</li>
 				    </ul>
 				  </div>

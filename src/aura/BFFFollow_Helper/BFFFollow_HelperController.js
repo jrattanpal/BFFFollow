@@ -1,13 +1,12 @@
 ({
     log : function(component, event, helper) {
         var params = event.getParam('arguments');
-        if (params && params[0]) {
+        if (component.get('v.debug') == true && params && params[0]) {
             console.log(params[0].m);
         }
     },
     hideToast: function(component, event, helper){
     	var div1 = component.find("showToastDiv");
-        console.log('div1::' + div1);
     	$A.util.removeClass(div1, 'slds-show');
     	$A.util.addClass(div1, 'slds-hide');
     },

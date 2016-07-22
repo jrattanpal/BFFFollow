@@ -6,7 +6,12 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
 -->
 <aura:component controller="LookupSObjectController" >
 
-    <aura:attribute name="SLDSVERSION" type="String" />    
+    <aura:attribute name="SLDSVERSION" type="String" />   
+    <aura:attribute name="debug" type="boolean" />  
+
+
+    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
+
     <!-- Attributes -->
     <aura:attribute name="sObjectAPIName" type="String" required="true"  description="The API name of the SObject to search" />
     <aura:attribute name="instanceId" type="String" required="true"  description="An id to identify the instance the component" />
@@ -39,7 +44,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
             <div class="slds-form-element slds-lookup" data-select="single" data-scope="single">
                 <!--<label class="slds-form-element__label" for="lookup">{!v.label}</label>-->
                 <div class="slds-form-element slds-input-has-icon slds-input-has-icon--right">
-                    <c:svg class="slds-input__icon" xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                    <c:svg class="slds-input__icon" xlinkHref="{! '/resource/' + v.SLDSVERSION + '/assets/icons/utility-sprite/svg/symbols.svg#search'}" />
                     <!-- This markup is for when an item is currently selected -->
                     <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
                         <span class="slds-pill slds-pill--bare">
@@ -47,7 +52,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
                                 <c:svg class="{!'slds-icon ' + v.listIconClass + ' slds-icon--small'}" xlinkHref="{!v.listIconSVGPath}" />{!v.searchString}
                             </span>
                             <button class="slds-button slds-button--icon-bare" onclick="{!c.clear}">
-                                <c:svg class="slds-button__icon" xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#close" />
+                                <c:svg class="slds-button__icon" xlinkHref="{! '/resource/' + v.SLDSVERSION + '/assets/icons/utility-sprite/svg/symbols.svg#close'}" />
                                 <span class="slds-assistive-text">Remove</span>
                             </button>
                         </span>
@@ -65,7 +70,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
             <div aura:id="lookuplist" class="slds-dropdown slds-dropdown--left slds-hide" role="listbox">
                 <div class="slds-lookup__item">
                     <button class="slds-button">
-                        <c:svg class="slds-icon slds-icon-text-default slds-icon--small" xlinkHref="/resource/SLDS202/assets/icons/utility-sprite/svg/symbols.svg#search" />
+                        <c:svg class="slds-icon slds-icon-text-default slds-icon--small" xlinkHref="{! '/resource/' + v.SLDSVERSION + '/assets/icons/utility-sprite/svg/symbols.svg#search'}" />
                         &quot;{!v.searchString}&quot; in {!v.pluralLabel}
                     </button>
                 </div>

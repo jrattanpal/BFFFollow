@@ -27,6 +27,9 @@
      * Handler for receiving the clearLookupIdEvent event
      */
     handleIdClear : function(component, event, helper) {
+        var BFFHelper = component.find("BFFFollow_Helper");
+        BFFHelper.hideToast();
+        
         // Clear the Id bound to the View
         component.set('v.recordId', null);      
         component.set('v.recordName', null);
