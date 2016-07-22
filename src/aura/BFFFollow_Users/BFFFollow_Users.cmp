@@ -5,31 +5,40 @@
 
     <aura:attribute name="followedUsers" type="Object[]" />
     <aura:attribute name="maxFollowedUsers" type="Integer" default="1" />
-
-    <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
-    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}" />
-
-    <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
-
-	<!-- Attributes -->
     <aura:attribute name="recordId" type="Id" description="The current record Id to display" />
     <aura:attribute name="recordName" type="String" description="The current record name to display" />
-     
+
+
+    <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
+    <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
+
+    <!-- Component for helper functions like log, gotoURL, showToast -->
+    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
+
+    <!-- Fire event when new users are added -->
+    <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
+
     <!-- Event handlers -->
+    <!-- Fired (& caught) when a user is searched and selected -->
     <aura:handler name="updateLookupIdEvent" event="c:UpdateLookupId" action="{!c.handleIdUpdate}"/>
     <aura:handler name="clearLookupIdEvent" event="c:ClearLookupId" action="{!c.handleIdClear}"/>
- 	
-	<!--<aura:if isTrue="{!lessthanorequal(v.followedUsers.length,v.maxFollowedUsers) }">-->
-		    <!-- Lookup component -->
-		    <c:LookupSObject label="User" pluralLabel="Users" sObjectAPIName="User"
-		        listIconSVGPath="{!'/resource/'+v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
-		        listIconClass="slds-icon-standard-user"
-		        instanceId="BFFFollow_Users"
-                buttonLabel="Follow User"
-                placeholder="Search User"
-                SLDSVERSION="{!v.SLDSVERSION}"
-                debug="{!v.debug}"
-		    />
-		<!--<aura:set attribute="else"></aura:set>-->
-	<!--</aura:if> -->
+
+
+	<aura:if isTrue="{!lessthan(v.followedUsers.length,v.maxFollowedUsers) }">
+        <!-- Lookup component -->
+        <c:LookupSObject label="User" pluralLabel="Users" sObjectAPIName="User"
+            listIconSVGPath="{!'/resource/'+v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
+            listIconClass="slds-icon-standard-user"
+            instanceId="BFFFollow_Users"
+            buttonLabel="Follow User"
+            placeholder="Search User"
+            SLDSVERSION="{!v.SLDSVERSION}"
+            debug="{!v.debug}"
+        />
+		<aura:set attribute="else">
+            <ui:message title="Info!" severity="info">
+                Maximum number of allowed users ({!v.maxFollowedUsers}) have already been followed!
+            </ui:message>
+        </aura:set>
+	</aura:if>
 </aura:component>

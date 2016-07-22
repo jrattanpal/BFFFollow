@@ -6,7 +6,9 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 		// Depending on the mode, determine which operation to perform
         String mode = (String) data.getInputValue('mode');
 
-        if (mode == 'fetchFollowedUsers') {
+		if (mode == 'checkChatterEnabled') {
+			data.outputFlag = checkChatterEnabled();
+		} else if (mode == 'fetchFollowedUsers') {
         	data.output = fetchFollowedUsers(UserInfo.getUserId());
         	data.outputFlag = (data.output == null)?false:true;
         } else if (mode == 'saveFollowedUsers') {
@@ -18,6 +20,21 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 
         if(debugFlag){System.debug('data AFTER:' + data);}
     }
+
+	/**
+	 *
+	 */
+	public Boolean checkChatterEnabled(){
+		try{
+			Map<String, Schema.SObjectType> gd = Schema.getGlobalDescribe();
+			if(gd.containsKey('FeedItem')){
+				return true;
+			}
+		}catch(Exception e){
+			System.debug(e.getMessage());
+		}
+		return false;
+	}
 	/**
 	 *
 	 */
@@ -66,8 +83,10 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 	}
 
 	public String fetchUserFeed(Id userId){
-		System.debug('userId:' + userId);
 		try{
+			if(!checkChatterEnabled()){
+				return null;
+			}
 			ConnectApi.FeedElementPage fep = ConnectApi.ChatterFeeds.getFeedElementsFromFeed(Network.getNetworkId(), ConnectApi.FeedType.UserProfile, userId);
 			if(debugFlag){ System.debug(fep); }
 			return JSON.serialize(fep);

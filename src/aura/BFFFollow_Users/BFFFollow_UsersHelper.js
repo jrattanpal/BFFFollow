@@ -1,5 +1,7 @@
 ({
-	
+	/**
+	 * Update followed Users in database
+	 */
 	saveFollowedUsers : function(component, helper, BFFHelper, recordId, recordName) {
 		//Add current user to existing user list
 		var followedUsers = this.processFollowedUsers(component, BFFHelper, recordId, recordName);
@@ -9,6 +11,7 @@
             BFFHelper.showToast({s: 'info', t: 'Info!', m: 'You have already followed selected user.'});
 			return;
 		}
+
 		BFFHelper.log({m: 'BFFFollow_UserHelper.js:saveFollowedusers:followedUsers:: ' + followedUsers});
 
 		
@@ -32,6 +35,9 @@
         /**/
         
 	},
+	/**
+	 * Raise event when usrs have been successfully followed
+	 */
 	alertForFollowedUsers: function(component, BFFHelper, followedUsers){
 		var appEvent = $A.get("e.c:BFFFollow_UsersUpdated");
 		BFFHelper.log({m: 'appEvent: '+ appEvent});
@@ -39,6 +45,10 @@
 		BFFHelper.log({m: 'Firing e.c:BFFFollow_UsersUpdated'});
 		appEvent.fire();
 	},
+	/**
+	 * Process users before saving
+	 * This should tell whether the user has already been added or not
+	 */
 	processFollowedUsers: function(component, BFFHelper, recordId, recordName){
 		var followedUsers = component.get('v.followedUsers');
 
@@ -50,7 +60,6 @@
 			if(recordExists == false && followedUsers[i].id ==  recordId){
 				recordExists = true;
 			}
-
 			followedUsersNew.push({id: followedUsers[i].id, name: followedUsers[i].name});
 		}
 

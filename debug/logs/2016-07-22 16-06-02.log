@@ -1,0 +1,214 @@
+37.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:06:01.1 (1869093)|USER_INFO|[EXTERNAL]|00550000005cg71|bfffollow@jr.te|Eastern Standard Time|GMT-04:00
+16:06:01.1 (2318173)|HEAP_ALLOCATE|[72]|Bytes:3
+16:06:01.1 (2475615)|HEAP_ALLOCATE|[77]|Bytes:152
+16:06:01.1 (2508539)|HEAP_ALLOCATE|[342]|Bytes:408
+16:06:01.1 (2550062)|HEAP_ALLOCATE|[355]|Bytes:408
+16:06:01.1 (2648160)|HEAP_ALLOCATE|[467]|Bytes:48
+16:06:01.3 (3690475)|USER_INFO|[EXTERNAL]|00550000005cg71|bfffollow@jr.te|Eastern Standard Time|GMT-04:00
+16:06:01.3 (6899236)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (6915044)|METHOD_EXIT|[1]|ETLC_ApexBridge_Controller
+16:06:01.3 (6921652)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:94
+16:06:01.3 (6932128)|SYSTEM_MODE_ENTER|false
+16:06:01.3 (6943353)|VARIABLE_SCOPE_BEGIN|[3]|dataJson|String|false|false
+16:06:01.3 (6988356)|VARIABLE_ASSIGNMENT|[3]|dataJson|"{\"operation\":\"BFFFol (74 more) ..."
+16:06:01.3 (7001618)|STATEMENT_EXECUTE|[3]
+16:06:01.3 (7004142)|STATEMENT_EXECUTE|[4]
+16:06:01.3 (12848903)|VARIABLE_SCOPE_BEGIN|[4]|data|BFFFollow.ETLC_ApexBridge_Data|true|false
+16:06:01.3 (12877150)|VARIABLE_ASSIGNMENT|[4]|data|null|
+16:06:01.3 (12882115)|STATEMENT_EXECUTE|[5]
+16:06:01.3 (12884747)|STATEMENT_EXECUTE|[5]
+16:06:01.3 (12885914)|STATEMENT_EXECUTE|[6]
+16:06:01.3 (12913312)|HEAP_ALLOCATE|[6]|Bytes:11
+16:06:01.3 (12923080)|HEAP_ALLOCATE|[6]|Bytes:248
+16:06:01.3 (12926817)|HEAP_ALLOCATE|[6]|Bytes:39
+16:06:01.3 (12984987)|METHOD_ENTRY|[2]|01p50000002CIEo|ETLC_ApexBridge_Data.ETLC_ApexBridge_Data()
+16:06:01.3 (12989478)|STATEMENT_EXECUTE|[2]
+16:06:01.3 (12995427)|STATEMENT_EXECUTE|[2]
+16:06:01.3 (13003649)|METHOD_EXIT|[2]|ETLC_ApexBridge_Data
+16:06:01.3 (13039276)|METHOD_ENTRY|[6]|01p50000002CIEo|BFFFollow.ETLC_ApexBridge_Data.fromJSON(String)
+16:06:01.3 (13073366)|VARIABLE_SCOPE_BEGIN|[60]|strJson|String|false|false
+16:06:01.3 (13088397)|VARIABLE_ASSIGNMENT|[60]|strJson|"{\"operation\":\"BFFFol (74 more) ..."
+16:06:01.3 (13093622)|STATEMENT_EXECUTE|[60]
+16:06:01.3 (13095141)|STATEMENT_EXECUTE|[61]
+16:06:01.3 (13106133)|HEAP_ALLOCATE|[61]|Bytes:30
+16:06:01.3 (13128143)|HEAP_ALLOCATE|[50]|Bytes:5
+16:06:01.3 (13149942)|HEAP_ALLOCATE|[56]|Bytes:5
+16:06:01.3 (13158649)|HEAP_ALLOCATE|[64]|Bytes:7
+16:06:01.3 (13272766)|HEAP_ALLOCATE|[61]|Bytes:24
+16:06:01.3 (13287139)|SYSTEM_METHOD_ENTRY|[1]|Type.Type()
+16:06:01.3 (13290364)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (13298921)|SYSTEM_METHOD_EXIT|[1]|Type
+16:06:01.3 (13304321)|HEAP_ALLOCATE|[61]|Bytes:8
+16:06:01.3 (13329076)|HEAP_ALLOCATE|[61]|Bytes:8
+16:06:01.3 (13333837)|VARIABLE_SCOPE_BEGIN|[4]|this|System.Type|true|false
+16:06:01.3 (13369327)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x2f5d731a
+16:06:01.3 (13373655)|VARIABLE_SCOPE_BEGIN|[4]|apextype|java:common.apex.runtime.ApexObjectType|true|false
+16:06:01.3 (13881222)|VARIABLE_ASSIGNMENT|[4]|apextype|"BFFFollow.ETLC_ApexBridge_Data"|0xe6b5dd
+16:06:01.3 (13948963)|HEAP_ALLOCATE|[61]|Bytes:8
+16:06:01.3 (13986476)|HEAP_ALLOCATE|[61]|Bytes:24
+16:06:01.3 (14002221)|SYSTEM_METHOD_ENTRY|[1]|JSON.JSON()
+16:06:01.3 (14006083)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (14013633)|SYSTEM_METHOD_EXIT|[1]|JSON
+16:06:01.3 (14027285)|METHOD_ENTRY|[61]||System.JSON.deserializeStrict(String, System.Type)
+16:06:01.3 (14606746)|METHOD_EXIT|[61]||System.JSON.deserializeStrict(String, System.Type)
+16:06:01.3 (14619305)|METHOD_EXIT|[6]|01p50000002CIEo|BFFFollow.ETLC_ApexBridge_Data.fromJSON(String)
+16:06:01.3 (14678560)|VARIABLE_ASSIGNMENT|[6]|data|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (14684317)|STATEMENT_EXECUTE|[7]
+16:06:01.3 (14696871)|HEAP_ALLOCATE|[7]|Bytes:6
+16:06:01.3 (14729558)|ENTERING_MANAGED_PKG|
+16:06:01.3 (14791347)|HEAP_ALLOCATE|[7]|Bytes:178
+16:06:01.3 (14812505)|HEAP_ALLOCATE|[7]|Bytes:184
+16:06:01.3 (14833736)|ENTERING_MANAGED_PKG|
+16:06:01.3 (14839509)|USER_DEBUG|[7]|DEBUG|data::ETLC_ApexBridge_Data:[debug=true, input={"mode":"checkChatterEnabled"}, isSuccess=null, messages=null, operation=BFFFollow_Controller, output=null, outputFlag=null, records=null]
+16:06:01.3 (14847781)|STATEMENT_EXECUTE|[8]
+16:06:01.3 (14908642)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (14930427)|METHOD_ENTRY|[8]||System.Type.forName(String)
+16:06:01.3 (20471346)|METHOD_EXIT|[8]||System.Type.forName(String)
+16:06:01.3 (20493952)|METHOD_ENTRY|[8]||System.Type.newInstance()
+16:06:01.3 (24079994)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (24094654)|HEAP_ALLOCATE|[33]|Bytes:5
+16:06:01.3 (24113396)|METHOD_EXIT|[1]|BFFFollow_Controller
+16:06:01.3 (24143790)|HEAP_ALLOCATE|[33]|Bytes:4
+16:06:01.3 (24157623)|VARIABLE_SCOPE_BEGIN|[1]|this|BFFFollow.BFFFollow_Controller|true|false
+16:06:01.3 (24196455)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x5c00a4c9
+16:06:01.3 (24210573)|HEAP_ALLOCATE|[33]|Bytes:5
+16:06:01.3 (24223656)|HEAP_ALLOCATE|[33]|Bytes:11
+16:06:01.3 (24255576)|METHOD_ENTRY|[1]|01p50000002CIEj|ETLC_ApexBridge_Abstract.ETLC_ApexBridge_Abstract()
+16:06:01.3 (24261644)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (24268246)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (24278849)|METHOD_EXIT|[1]|ETLC_ApexBridge_Abstract
+16:06:01.3 (24290769)|CONSTRUCTOR_ENTRY|[EXTERNAL]|01p50000002CIEj|<init>()
+16:06:01.3 (24315883)|VARIABLE_SCOPE_BEGIN|[1]|this|BFFFollow.ETLC_ApexBridge_Abstract|true|false
+16:06:01.3 (24339899)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x5c00a4c9
+16:06:01.3 (24365442)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (24373073)|CONSTRUCTOR_EXIT|[EXTERNAL]|01p50000002CIEj|<init>()
+16:06:01.3 (24380342)|STATEMENT_EXECUTE|[1]
+16:06:01.3 (24387371)|HEAP_ALLOCATE|[33]|Bytes:5
+16:06:01.3 (24416321)|METHOD_EXIT|[8]||System.Type.newInstance()
+16:06:01.3 (24430823)|VARIABLE_SCOPE_BEGIN|[8]|executor|BFFFollow.ETLC_ApexBridge_Abstract|true|false
+16:06:01.3 (24456369)|VARIABLE_ASSIGNMENT|[8]|executor|{}|0x5c00a4c9
+16:06:01.3 (24461341)|STATEMENT_EXECUTE|[9]
+16:06:01.3 (24535628)|METHOD_ENTRY|[9]|01p50000002D8iw|BFFFollow.BFFFollow_Controller.process(BFFFollow.ETLC_ApexBridge_Data)
+16:06:01.3 (24570774)|VARIABLE_SCOPE_BEGIN|[3]|this|BFFFollow.BFFFollow_Controller|true|false
+16:06:01.3 (24592970)|VARIABLE_ASSIGNMENT|[3]|this|{}|0x5c00a4c9
+16:06:01.3 (24624098)|VARIABLE_SCOPE_BEGIN|[3]|data|BFFFollow.ETLC_ApexBridge_Data|true|false
+16:06:01.3 (24682281)|VARIABLE_ASSIGNMENT|[3]|data|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (24697339)|HEAP_ALLOCATE|[4]|Bytes:5
+16:06:01.3 (24704307)|STATEMENT_EXECUTE|[3]
+16:06:01.3 (24706457)|STATEMENT_EXECUTE|[4]
+16:06:01.3 (24842131)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (24895859)|VARIABLE_ASSIGNMENT|[4]|BFFFollow_Controller.debugFlag|true
+16:06:01.3 (24963374)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (24985605)|STATEMENT_EXECUTE|[5]
+16:06:01.3 (25001519)|HEAP_ALLOCATE|[5]|Bytes:12
+16:06:01.3 (25073597)|ENTERING_MANAGED_PKG|
+16:06:01.3 (25130129)|HEAP_ALLOCATE|[5]|Bytes:178
+16:06:01.3 (25159890)|HEAP_ALLOCATE|[5]|Bytes:190
+16:06:01.3 (25187873)|ENTERING_MANAGED_PKG|
+16:06:01.3 (25196363)|USER_DEBUG|[5]|DEBUG|data BEFORE:ETLC_ApexBridge_Data:[debug=true, input={"mode":"checkChatterEnabled"}, isSuccess=null, messages=null, operation=BFFFollow_Controller, output=null, outputFlag=null, records=null]
+16:06:01.3 (25208297)|STATEMENT_EXECUTE|[7]
+16:06:01.3 (25222325)|HEAP_ALLOCATE|[7]|Bytes:4
+16:06:01.3 (25260121)|METHOD_ENTRY|[7]|01p50000002CIEo|BFFFollow.ETLC_ApexBridge_Data.getInputValue(String)
+16:06:01.3 (25293720)|VARIABLE_SCOPE_BEGIN|[52]|this|BFFFollow.ETLC_ApexBridge_Data|true|false
+16:06:01.3 (25337338)|VARIABLE_ASSIGNMENT|[52]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (25346822)|VARIABLE_SCOPE_BEGIN|[52]|key|String|false|false
+16:06:01.3 (25354460)|VARIABLE_ASSIGNMENT|[52]|key|"mode"
+16:06:01.3 (25361206)|STATEMENT_EXECUTE|[52]
+16:06:01.3 (25363402)|STATEMENT_EXECUTE|[53]
+16:06:01.3 (25449578)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (25483867)|METHOD_ENTRY|[53]||System.JSON.deserializeUntyped(String)
+16:06:01.3 (25846594)|METHOD_EXIT|[53]||System.JSON.deserializeUntyped(String)
+16:06:01.3 (25861039)|VARIABLE_SCOPE_BEGIN|[53]|inputMap|Map<String,ANY>|true|false
+16:06:01.3 (25895441)|VARIABLE_ASSIGNMENT|[53]|inputMap|{"s":1,"v":{"mode":"checkChatterEnabled"}}|0x5ec5f23a
+16:06:01.3 (25902092)|STATEMENT_EXECUTE|[54]
+16:06:01.3 (25936184)|ENTERING_MANAGED_PKG|
+16:06:01.3 (25981646)|METHOD_EXIT|[7]|01p50000002CIEo|BFFFollow.ETLC_ApexBridge_Data.getInputValue(String)
+16:06:01.3 (25991196)|VARIABLE_SCOPE_BEGIN|[7]|mode|String|false|false
+16:06:01.3 (26003099)|VARIABLE_ASSIGNMENT|[7]|mode|"checkChatterEnabled"
+16:06:01.3 (26011484)|HEAP_ALLOCATE|[9]|Bytes:19
+16:06:01.3 (26047379)|STATEMENT_EXECUTE|[9]
+16:06:01.3 (26065334)|STATEMENT_EXECUTE|[10]
+16:06:01.3 (26092157)|METHOD_ENTRY|[10]|01p50000002D8iw|BFFFollow.BFFFollow_Controller.checkChatterEnabled()
+16:06:01.3 (26119071)|VARIABLE_SCOPE_BEGIN|[27]|this|BFFFollow.BFFFollow_Controller|true|false
+16:06:01.3 (26141240)|VARIABLE_ASSIGNMENT|[27]|this|{}|0x5c00a4c9
+16:06:01.3 (26154811)|HEAP_ALLOCATE|[28]|Bytes:5
+16:06:01.3 (26161481)|STATEMENT_EXECUTE|[27]
+16:06:01.3 (26163340)|STATEMENT_EXECUTE|[28]
+16:06:01.3 (26164999)|STATEMENT_EXECUTE|[28]
+16:06:01.3 (26166776)|STATEMENT_EXECUTE|[29]
+16:06:01.3 (26207584)|ENTERING_MANAGED_PKG|
+16:06:01.3 (146720307)|HEAP_ALLOCATE|[29]|Bytes:1440
+16:06:01.3 (146754177)|VARIABLE_SCOPE_BEGIN|[29]|gd|Map<String,Schema.SObjectType>|true|false
+16:06:01.3 (146996416)|VARIABLE_ASSIGNMENT|[29]|gd|"{acceptedeventrelation=AcceptedEventRelation, account=Account, accountcontactrole=AccountContactRole, accountfeed=AccountFeed, accounthistory=AccountHistory, accountpartner=AccountPartner, accountshare=AccountShare, actionlinkgrouptemplate=ActionLinkGroupTemplate, actionlinktemplate=ActionLinkTemplate, activityhistory=ActivityHistory, ...}"|0x1f53b148
+16:06:01.3 (147007261)|HEAP_ALLOCATE|[30]|Bytes:8
+16:06:01.3 (147038508)|ENTERING_MANAGED_PKG|
+16:06:01.3 (147092000)|STATEMENT_EXECUTE|[30]
+16:06:01.3 (147095361)|STATEMENT_EXECUTE|[31]
+16:06:01.3 (147114389)|HEAP_ALLOCATE|[31]|Bytes:5
+16:06:01.3 (147127422)|METHOD_EXIT|[10]|01p50000002D8iw|BFFFollow.BFFFollow_Controller.checkChatterEnabled()
+16:06:01.3 (147211260)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller"}|0x54715283
+16:06:01.3 (147221214)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+16:06:01.3 (147226880)|HEAP_ALLOCATE|[15]|Bytes:5
+16:06:01.3 (147237632)|VARIABLE_ASSIGNMENT|[15]|this.outputFlag|true|0x54715283
+16:06:01.3 (147251102)|STATEMENT_EXECUTE|[21]
+16:06:01.3 (147252645)|STATEMENT_EXECUTE|[21]
+16:06:01.3 (147264700)|HEAP_ALLOCATE|[21]|Bytes:11
+16:06:01.3 (147290134)|ENTERING_MANAGED_PKG|
+16:06:01.3 (147344761)|HEAP_ALLOCATE|[21]|Bytes:178
+16:06:01.3 (147361696)|HEAP_ALLOCATE|[21]|Bytes:189
+16:06:01.3 (147379694)|ENTERING_MANAGED_PKG|
+16:06:01.3 (147385902)|USER_DEBUG|[21]|DEBUG|data AFTER:ETLC_ApexBridge_Data:[debug=true, input={"mode":"checkChatterEnabled"}, isSuccess=null, messages=null, operation=BFFFollow_Controller, output=null, outputFlag=true, records=null]
+16:06:01.3 (147401922)|METHOD_EXIT|[9]|01p50000002D8iw|BFFFollow.BFFFollow_Controller.process(BFFFollow.ETLC_ApexBridge_Data)
+16:06:01.3 (147406083)|STATEMENT_EXECUTE|[24]
+16:06:01.3 (147431406)|METHOD_ENTRY|[24]|01p50000002CIEo|BFFFollow.ETLC_ApexBridge_Data.toJSON()
+16:06:01.3 (147452315)|VARIABLE_SCOPE_BEGIN|[57]|this|BFFFollow.ETLC_ApexBridge_Data|true|false
+16:06:01.3 (147481766)|VARIABLE_ASSIGNMENT|[57]|this|{"debug":true,"input":"{\"mode\":\"checkChatte (10 more) ...","operation":"BFFFollow_Controller","outputFlag":true}|0x54715283
+16:06:01.3 (147487890)|STATEMENT_EXECUTE|[57]
+16:06:01.3 (147489324)|STATEMENT_EXECUTE|[58]
+16:06:01.3 (147514409)|METHOD_ENTRY|[58]||System.JSON.serialize(Object)
+16:06:01.3 (147616511)|STATEMENT_EXECUTE|[22]
+16:06:01.3 (147622650)|STATEMENT_EXECUTE|[23]
+16:06:01.3 (147634413)|HEAP_ALLOCATE|[23]|Bytes:5
+16:06:01.3 (147644678)|VARIABLE_ASSIGNMENT|[23]|this.isSuccess|true|0x54715283
+16:06:01.3 (147647524)|STATEMENT_EXECUTE|[24]
+16:06:01.3 (147695636)|STATEMENT_EXECUTE|[31]
+16:06:01.3 (147700424)|STATEMENT_EXECUTE|[32]
+16:06:01.3 (147710664)|HEAP_ALLOCATE|[32]|Bytes:4
+16:06:01.3 (147783791)|VARIABLE_ASSIGNMENT|[32]|this.messages|{"s":1,"v":{}}|0x54715283
+16:06:01.3 (147789077)|STATEMENT_EXECUTE|[33]
+16:06:01.3 (148129261)|METHOD_EXIT|[58]||System.JSON.serialize(Object)
+16:06:01.3 (148137392)|METHOD_EXIT|[24]|01p50000002CIEo|BFFFollow.ETLC_ApexBridge_Data.toJSON()
+16:06:01.3 (148144942)|SYSTEM_MODE_EXIT|false
+16:06:01.148 (148190429)|CUMULATIVE_LIMIT_USAGE
+16:06:01.148 (148190429)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:06:01.148 (148190429)|LIMIT_USAGE_FOR_NS|BFFFollow|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:06:01.148 (148190429)|CUMULATIVE_LIMIT_USAGE_END
+
+16:06:01.3 (148253537)|CODE_UNIT_FINISHED|ETLC_ApexBridge_Controller.execute

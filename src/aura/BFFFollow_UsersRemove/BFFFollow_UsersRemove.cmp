@@ -1,14 +1,17 @@
 <aura:component >	
     <aura:attribute name="debug" type="Boolean" default="false" />
     <aura:attribute name="followedUsers" type="Object[]" />
+    <aura:attribute name="selectedUserId" type="String" Default="0" access='private' />
+    <aura:attribute name="selectedUserName" type="String" access='private' />
 
+    <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
     <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
-    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"/>
+
+    <!-- Component for helper functions like log, gotoURL, showToast -->
+    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
     
     <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
 
-    <aura:attribute name="selectedUserId" type="String" Default="0" access='private' />
-    <aura:attribute name="selectedUserName" type="String" access='private' />
 	
     <div class="slds-form--inline">
         <div class="slds-form-element">

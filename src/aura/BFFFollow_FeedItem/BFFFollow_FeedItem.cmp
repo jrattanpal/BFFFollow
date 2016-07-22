@@ -1,68 +1,70 @@
 <aura:component >	
     <aura:attribute name="debug" type="Boolean" default="false" />
-    <aura:attribute name="feedElement" type="Object" />
+    <aura:attribute name="feedElement" type="Object" /> 
 
+    <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
     <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
-    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"/>
 
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- Component for helper functions like log, gotoURL, showToast -->
+    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
       
     
-    		<li class="slds-feed__item">  
-				<article class="slds-media slds-comment slds-hint-parent">
-				  <div class="slds-media__figure">
-				    <div class="slds-avatar slds-avatar--circle">
-				      <a href="{! '/' + v.feedElement.actor.id}" title="{!v.feedElement.actor.name}">
-				        <img src="{!v.feedElement.photoUrl}" alt="{!v.feedElement.actor.name}" />
-				      </a>
-				    </div>
-				  </div>
-				  <div class="slds-media__body">
-				    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
-				      <p class="slds-truncate">
-				      	<aura:if isTrue="{! v.feedElement.header.messageSegments.length>1}">
-				      		<a href="{! '/' + v.feedElement.header.messageSegments[0].reference.id}" 
-				      			title="{!v.feedElement.header.messageSegments[0].text}">
-				      				{!v.feedElement.header.messageSegments[0].text}
-				      		</a>
-				      		 - 
-					      	<a href="{! '/' + v.feedElement.header.messageSegments[2].reference.id}" 
-					      		title="{! '/' + v.feedElement.header.messageSegments[2].text}">
-					      			{!v.feedElement.header.messageSegments[2].text}
-				      		</a>
-				      		<aura:set attribute="else">
-						      	<a href="{! '/' + v.feedElement.header.messageSegments[0].reference.id}" 
-						      		title="{! '/' + v.feedElement.header.messageSegments[0].text}">
-						      			{!v.feedElement.header.messageSegments[0].text}
-					      		</a>
-				      		</aura:set>
-				      	</aura:if>
-				      </p>
-				    </div>
-				    <p class="slds-text-body--small">
-				    	<a href="javascript:void(0);" title="Click for single-item view of this post">
-				    		<ui:outputDate value="{!v.feedElement.modifiedDate}" format="MMM d, Y"/>
-			    		</a>
-			    	</p>
-				    <div class="slds-comment__content slds-text-longform">
-				      <p>{!v.feedElement.body.text}</p>
-				    </div>
-				    <aura:if isTrue="{! v.feedElement.capabilities.topics.items.length > 0}">
-					    <div class="slds-tags slds-text-body--small slds-p-bottom--x-small">
-					      <span>Topics:</span>
-					      <ul class="slds-tags__list">
-					      	<aura:iteration items="{!v.feedElement.capabilities.topics.items}" var="obj">
-									<li class="slds-tags__item">
-										<a href="{! '/' + obj.id}" title="Powerpoint">{!obj.name}</a>
-									</li>
-							</aura:iteration>
-					      </ul>
-					    </div>
-				    </aura:if>
-				    <ul class="slds-list--horizontal slds-has-dividers--right slds-text-body--small">
-				  	  <li class="slds-item">{!v.feedElement.capabilities.chatterLikes.likesMessage.text}</li>
-				    </ul>
-				  </div>
-				</article>
-			</li>
+	<li class="slds-feed__item">
+		<article class="slds-media slds-comment slds-hint-parent">
+		  <div class="slds-media__figure">
+			<div class="slds-avatar slds-avatar--circle">
+			  <a href="{! '/' + v.feedElement.actor.id}" title="{!v.feedElement.actor.name}">
+				<img src="{!v.feedElement.photoUrl}" alt="{!v.feedElement.actor.name}" />
+			  </a>
+			</div>
+		  </div>
+		  <div class="slds-media__body">
+			<div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+			  <p class="slds-truncate">
+				<aura:if isTrue="{! v.feedElement.header.messageSegments.length>1}">
+					<a href="{! '/' + v.feedElement.header.messageSegments[0].reference.id}"
+						title="{!v.feedElement.header.messageSegments[0].text}"  onclick="{!c.gotoURL}">
+							{!v.feedElement.header.messageSegments[0].text}
+					</a>
+					{!v.feedElement.header.messageSegments[1].text}
+					<a href="{! '/' + v.feedElement.header.messageSegments[2].reference.id}"
+						title="{! '/' + v.feedElement.header.messageSegments[2].text}" onclick="{!c.gotoURL}">
+							{!v.feedElement.header.messageSegments[2].text}
+					</a>
+					{!v.feedElement.header.messageSegments[3].text}
+					<aura:set attribute="else">
+						<a href="{! '/' + v.feedElement.header.messageSegments[0].reference.id}"
+							title="{! '/' + v.feedElement.header.messageSegments[0].text}" onclick="{!c.gotoURL}">
+								{!v.feedElement.header.messageSegments[0].text}
+						</a>
+					</aura:set>
+				</aura:if>
+			  </p>
+			</div>
+			<p class="slds-text-body--small">
+				<a href="{! '/' + v.feedElement.id}" title="Click for single-item view of this post" onclick="{!c.gotoURL}">
+					<ui:outputDate value="{!v.feedElement.modifiedDate}" format="MMM d, Y"/>
+				</a>
+			</p>
+			<div class="slds-comment__content slds-text-longform">
+			  <p>{!v.feedElement.body.text}</p>
+			</div>
+			<aura:if isTrue="{! v.feedElement.capabilities.topics.items.length > 0}">
+				<div class="slds-tags slds-text-body--small slds-p-bottom--x-small">
+				  <span>Topics:</span>
+				  <ul class="slds-tags__list">
+					<aura:iteration items="{!v.feedElement.capabilities.topics.items}" var="obj">
+							<li class="slds-tags__item">
+								<a href="{! '/' + obj.id}" title="Powerpoint" onclick="{!c.gotoURL}">{!obj.name}</a>
+							</li>
+					</aura:iteration>
+				  </ul>
+				</div>
+			</aura:if>
+			<ul class="slds-list--horizontal slds-has-dividers--right slds-text-body--small">
+			  <li class="slds-item">{!v.feedElement.capabilities.chatterLikes.likesMessage.text}</li>
+			</ul>
+		  </div>
+		</article>
+	</li>
 </aura:component>

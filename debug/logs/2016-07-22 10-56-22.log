@@ -1,0 +1,585 @@
+37.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+10:56:19.0 (381718)|USER_INFO|[EXTERNAL]|00550000005cg71|bfffollow@jr.te|Eastern Standard Time|GMT-04:00
+10:56:19.0 (413663)|EXECUTION_STARTED
+10:56:19.0 (418355)|CODE_UNIT_STARTED|[EXTERNAL]|aura
+10:56:19.0 (772017)|HEAP_ALLOCATE|[72]|Bytes:3
+10:56:19.0 (828792)|HEAP_ALLOCATE|[77]|Bytes:152
+10:56:19.0 (841604)|HEAP_ALLOCATE|[342]|Bytes:408
+10:56:19.0 (858008)|HEAP_ALLOCATE|[355]|Bytes:408
+10:56:19.0 (873102)|HEAP_ALLOCATE|[467]|Bytes:48
+10:56:19.0 (900716)|HEAP_ALLOCATE|[139]|Bytes:6
+10:56:19.0 (921484)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:122
+10:56:19.0 (962621)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:122
+10:56:19.0 (2409932)|CODE_UNIT_STARTED|[EXTERNAL]|01p50000002CIEm|ETLC_ApexBridge_Controller.execute
+10:56:19.0 (2542107)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:1
+10:56:19.0 (2548392)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+10:56:19.0 (2584755)|METHOD_ENTRY|[1]|01p50000002CIEm|ETLC_ApexBridge_Controller.ETLC_ApexBridge_Controller()
+10:56:19.0 (2590219)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (2594517)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (2613721)|METHOD_EXIT|[1]|ETLC_ApexBridge_Controller
+10:56:19.0 (2619403)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:122
+10:56:19.0 (2627910)|SYSTEM_MODE_ENTER|false
+10:56:19.0 (2641634)|VARIABLE_SCOPE_BEGIN|[3]|dataJson|String|false|false
+10:56:19.0 (2680310)|VARIABLE_ASSIGNMENT|[3]|dataJson|"{\"operation\":\"BFFFol (102 more) ..."
+10:56:19.0 (2693091)|STATEMENT_EXECUTE|[3]
+10:56:19.0 (2694555)|STATEMENT_EXECUTE|[4]
+10:56:19.0 (4595194)|VARIABLE_SCOPE_BEGIN|[4]|data|ETLC_ApexBridge_Data|true|false
+10:56:19.0 (4608925)|VARIABLE_ASSIGNMENT|[4]|data|null|
+10:56:19.0 (4612039)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (4613352)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (4614219)|STATEMENT_EXECUTE|[6]
+10:56:19.0 (4629751)|HEAP_ALLOCATE|[6]|Bytes:11
+10:56:19.0 (4636693)|HEAP_ALLOCATE|[6]|Bytes:248
+10:56:19.0 (4639479)|HEAP_ALLOCATE|[6]|Bytes:39
+10:56:19.0 (4682107)|METHOD_ENTRY|[2]|01p50000002CIEo|ETLC_ApexBridge_Data.ETLC_ApexBridge_Data()
+10:56:19.0 (4686050)|STATEMENT_EXECUTE|[2]
+10:56:19.0 (4689937)|STATEMENT_EXECUTE|[2]
+10:56:19.0 (4696149)|METHOD_EXIT|[2]|ETLC_ApexBridge_Data
+10:56:19.0 (4724235)|METHOD_ENTRY|[6]|01p50000002CIEo|ETLC_ApexBridge_Data.fromJSON(String)
+10:56:19.0 (4745990)|VARIABLE_SCOPE_BEGIN|[60]|strJson|String|false|false
+10:56:19.0 (4756902)|VARIABLE_ASSIGNMENT|[60]|strJson|"{\"operation\":\"BFFFol (102 more) ..."
+10:56:19.0 (4761257)|STATEMENT_EXECUTE|[60]
+10:56:19.0 (4762551)|STATEMENT_EXECUTE|[61]
+10:56:19.0 (4771248)|HEAP_ALLOCATE|[61]|Bytes:20
+10:56:19.0 (4790388)|HEAP_ALLOCATE|[50]|Bytes:5
+10:56:19.0 (4809557)|HEAP_ALLOCATE|[56]|Bytes:5
+10:56:19.0 (4818449)|HEAP_ALLOCATE|[64]|Bytes:7
+10:56:19.0 (4903198)|HEAP_ALLOCATE|[61]|Bytes:24
+10:56:19.0 (4917589)|SYSTEM_METHOD_ENTRY|[1]|Type.Type()
+10:56:19.0 (4920679)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (4929461)|SYSTEM_METHOD_EXIT|[1]|Type
+10:56:19.0 (4934610)|HEAP_ALLOCATE|[61]|Bytes:8
+10:56:19.0 (4956290)|HEAP_ALLOCATE|[61]|Bytes:8
+10:56:19.0 (4960972)|VARIABLE_SCOPE_BEGIN|[4]|this|System.Type|true|false
+10:56:19.0 (5007144)|VARIABLE_ASSIGNMENT|[4]|this|{}|0x100434df
+10:56:19.0 (5012806)|VARIABLE_SCOPE_BEGIN|[4]|apextype|java:common.apex.runtime.ApexObjectType|true|false
+10:56:19.0 (5143669)|VARIABLE_ASSIGNMENT|[4]|apextype|"ETLC_ApexBridge_Data"|0x39ee5f19
+10:56:19.0 (5219097)|HEAP_ALLOCATE|[61]|Bytes:8
+10:56:19.0 (5256979)|HEAP_ALLOCATE|[61]|Bytes:24
+10:56:19.0 (5269941)|SYSTEM_METHOD_ENTRY|[1]|JSON.JSON()
+10:56:19.0 (5272663)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (5279324)|SYSTEM_METHOD_EXIT|[1]|JSON
+10:56:19.0 (5292011)|METHOD_ENTRY|[61]||System.JSON.deserializeStrict(String, System.Type)
+10:56:19.0 (5821092)|METHOD_EXIT|[61]||System.JSON.deserializeStrict(String, System.Type)
+10:56:19.0 (5830262)|METHOD_EXIT|[6]|01p50000002CIEo|ETLC_ApexBridge_Data.fromJSON(String)
+10:56:19.0 (5889292)|VARIABLE_ASSIGNMENT|[6]|data|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (5894438)|STATEMENT_EXECUTE|[7]
+10:56:19.0 (5904020)|HEAP_ALLOCATE|[7]|Bytes:6
+10:56:19.0 (5968143)|HEAP_ALLOCATE|[7]|Bytes:202
+10:56:19.0 (5987278)|HEAP_ALLOCATE|[7]|Bytes:208
+10:56:19.0 (6004923)|USER_DEBUG|[7]|DEBUG|data::ETLC_ApexBridge_Data:[debug=true, input={"mode":"fetchUserFeed","userId":"00550000005d7KnAAI"}, isSuccess=null, messages=null, operation=BFFFollow_Controller, output=null, outputFlag=null, records=null]
+10:56:19.0 (6013186)|STATEMENT_EXECUTE|[8]
+10:56:19.0 (6067965)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (6087397)|METHOD_ENTRY|[8]||System.Type.forName(String)
+10:56:19.0 (7884063)|METHOD_EXIT|[8]||System.Type.forName(String)
+10:56:19.0 (7896181)|METHOD_ENTRY|[8]||System.Type.newInstance()
+10:56:19.0 (9156098)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (9167455)|HEAP_ALLOCATE|[33]|Bytes:5
+10:56:19.0 (9183282)|METHOD_EXIT|[1]|BFFFollow_Controller
+10:56:19.0 (9199794)|HEAP_ALLOCATE|[33]|Bytes:4
+10:56:19.0 (9208524)|VARIABLE_SCOPE_BEGIN|[1]|this|BFFFollow_Controller|true|false
+10:56:19.0 (9227039)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3ea5de4d
+10:56:19.0 (9235823)|HEAP_ALLOCATE|[33]|Bytes:5
+10:56:19.0 (9244803)|HEAP_ALLOCATE|[33]|Bytes:11
+10:56:19.0 (9264776)|METHOD_ENTRY|[1]|01p50000002CIEj|ETLC_ApexBridge_Abstract.ETLC_ApexBridge_Abstract()
+10:56:19.0 (9268173)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (9271857)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (9277523)|METHOD_EXIT|[1]|ETLC_ApexBridge_Abstract
+10:56:19.0 (9285458)|CONSTRUCTOR_ENTRY|[EXTERNAL]|01p50000002CIEj|<init>()
+10:56:19.0 (9304231)|VARIABLE_SCOPE_BEGIN|[1]|this|ETLC_ApexBridge_Abstract|true|false
+10:56:19.0 (9320811)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3ea5de4d
+10:56:19.0 (9335857)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (9340310)|CONSTRUCTOR_EXIT|[EXTERNAL]|01p50000002CIEj|<init>()
+10:56:19.0 (9345849)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (9350734)|HEAP_ALLOCATE|[33]|Bytes:5
+10:56:19.0 (9367266)|METHOD_EXIT|[8]||System.Type.newInstance()
+10:56:19.0 (9375013)|VARIABLE_SCOPE_BEGIN|[8]|executor|ETLC_ApexBridge_Abstract|true|false
+10:56:19.0 (9389088)|VARIABLE_ASSIGNMENT|[8]|executor|{}|0x3ea5de4d
+10:56:19.0 (9391946)|STATEMENT_EXECUTE|[9]
+10:56:19.0 (9427753)|METHOD_ENTRY|[9]|01p50000002D8iw|BFFFollow_Controller.process(ETLC_ApexBridge_Data)
+10:56:19.0 (9451683)|VARIABLE_SCOPE_BEGIN|[3]|this|BFFFollow_Controller|true|false
+10:56:19.0 (9466808)|VARIABLE_ASSIGNMENT|[3]|this|{}|0x3ea5de4d
+10:56:19.0 (9471583)|VARIABLE_SCOPE_BEGIN|[3]|data|ETLC_ApexBridge_Data|true|false
+10:56:19.0 (9495841)|VARIABLE_ASSIGNMENT|[3]|data|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (9505808)|HEAP_ALLOCATE|[4]|Bytes:5
+10:56:19.0 (9509686)|STATEMENT_EXECUTE|[3]
+10:56:19.0 (9510969)|STATEMENT_EXECUTE|[4]
+10:56:19.0 (9587635)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (9610219)|VARIABLE_ASSIGNMENT|[4]|BFFFollow_Controller.debugFlag|true
+10:56:19.0 (9646410)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (9659444)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (9668435)|HEAP_ALLOCATE|[5]|Bytes:12
+10:56:19.0 (9705755)|HEAP_ALLOCATE|[5]|Bytes:202
+10:56:19.0 (9720419)|HEAP_ALLOCATE|[5]|Bytes:214
+10:56:19.0 (9732000)|USER_DEBUG|[5]|DEBUG|data BEFORE:ETLC_ApexBridge_Data:[debug=true, input={"mode":"fetchUserFeed","userId":"00550000005d7KnAAI"}, isSuccess=null, messages=null, operation=BFFFollow_Controller, output=null, outputFlag=null, records=null]
+10:56:19.0 (9738634)|STATEMENT_EXECUTE|[7]
+10:56:19.0 (9745519)|HEAP_ALLOCATE|[7]|Bytes:4
+10:56:19.0 (9767463)|METHOD_ENTRY|[7]|01p50000002CIEo|ETLC_ApexBridge_Data.getInputValue(String)
+10:56:19.0 (9789874)|VARIABLE_SCOPE_BEGIN|[52]|this|ETLC_ApexBridge_Data|true|false
+10:56:19.0 (9816892)|VARIABLE_ASSIGNMENT|[52]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (9824382)|VARIABLE_SCOPE_BEGIN|[52]|key|String|false|false
+10:56:19.0 (9828300)|VARIABLE_ASSIGNMENT|[52]|key|"mode"
+10:56:19.0 (9832929)|STATEMENT_EXECUTE|[52]
+10:56:19.0 (9834261)|STATEMENT_EXECUTE|[53]
+10:56:19.0 (9885414)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (9904886)|METHOD_ENTRY|[53]||System.JSON.deserializeUntyped(String)
+10:56:19.0 (10134939)|METHOD_EXIT|[53]||System.JSON.deserializeUntyped(String)
+10:56:19.0 (10145276)|VARIABLE_SCOPE_BEGIN|[53]|inputMap|Map<String,ANY>|true|false
+10:56:19.0 (10172542)|VARIABLE_ASSIGNMENT|[53]|inputMap|{"s":1,"v":{"mode":"fetchUserFeed","userId":"00550000005d7KnAAI"}}|0x6410d088
+10:56:19.0 (10176367)|STATEMENT_EXECUTE|[54]
+10:56:19.0 (10217194)|METHOD_EXIT|[7]|01p50000002CIEo|ETLC_ApexBridge_Data.getInputValue(String)
+10:56:19.0 (10223040)|VARIABLE_SCOPE_BEGIN|[7]|mode|String|false|false
+10:56:19.0 (10229784)|VARIABLE_ASSIGNMENT|[7]|mode|"fetchUserFeed"
+10:56:19.0 (10234418)|HEAP_ALLOCATE|[9]|Bytes:18
+10:56:19.0 (10255788)|HEAP_ALLOCATE|[12]|Bytes:17
+10:56:19.0 (10265119)|HEAP_ALLOCATE|[14]|Bytes:13
+10:56:19.0 (10275164)|STATEMENT_EXECUTE|[14]
+10:56:19.0 (10276697)|STATEMENT_EXECUTE|[15]
+10:56:19.0 (10283048)|HEAP_ALLOCATE|[15]|Bytes:6
+10:56:19.0 (10293778)|METHOD_ENTRY|[15]|01p50000002CIEo|ETLC_ApexBridge_Data.getInputValue(String)
+10:56:19.0 (10305620)|VARIABLE_SCOPE_BEGIN|[52]|this|ETLC_ApexBridge_Data|true|false
+10:56:19.0 (10333035)|VARIABLE_ASSIGNMENT|[52]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (10337207)|VARIABLE_SCOPE_BEGIN|[52]|key|String|false|false
+10:56:19.0 (10340499)|VARIABLE_ASSIGNMENT|[52]|key|"userId"
+10:56:19.0 (10344003)|STATEMENT_EXECUTE|[52]
+10:56:19.0 (10345074)|STATEMENT_EXECUTE|[53]
+10:56:19.0 (10375295)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (10387235)|METHOD_ENTRY|[53]||System.JSON.deserializeUntyped(String)
+10:56:19.0 (10507814)|METHOD_EXIT|[53]||System.JSON.deserializeUntyped(String)
+10:56:19.0 (10516238)|VARIABLE_SCOPE_BEGIN|[53]|inputMap|Map<String,ANY>|true|false
+10:56:19.0 (10536900)|VARIABLE_ASSIGNMENT|[53]|inputMap|{"s":1,"v":{"mode":"fetchUserFeed","userId":"00550000005d7KnAAI"}}|0x685c62b1
+10:56:19.0 (10540617)|STATEMENT_EXECUTE|[54]
+10:56:19.0 (10561270)|METHOD_EXIT|[15]|01p50000002CIEo|ETLC_ApexBridge_Data.getInputValue(String)
+10:56:19.0 (10573882)|HEAP_ALLOCATE|[15]|Bytes:4
+10:56:19.0 (10588095)|METHOD_ENTRY|[15]|01p50000002D8iw|BFFFollow_Controller.fetchUserFeed(Id)
+10:56:19.0 (10596055)|VARIABLE_SCOPE_BEGIN|[68]|this|BFFFollow_Controller|true|false
+10:56:19.0 (10610711)|VARIABLE_ASSIGNMENT|[68]|this|{}|0x3ea5de4d
+10:56:19.0 (10615351)|VARIABLE_SCOPE_BEGIN|[68]|userId|Id|false|false
+10:56:19.0 (10707752)|VARIABLE_ASSIGNMENT|[68]|userId|"00550000005d7KnAAI"
+10:56:19.0 (10719565)|HEAP_ALLOCATE|[69]|Bytes:5
+10:56:19.0 (10723538)|STATEMENT_EXECUTE|[68]
+10:56:19.0 (10724750)|STATEMENT_EXECUTE|[69]
+10:56:19.0 (10732119)|HEAP_ALLOCATE|[69]|Bytes:7
+10:56:19.0 (10766250)|HEAP_ALLOCATE|[69]|Bytes:18
+10:56:19.0 (10780120)|HEAP_ALLOCATE|[69]|Bytes:25
+10:56:19.0 (10791117)|USER_DEBUG|[69]|DEBUG|userId:00550000005d7KnAAI
+10:56:19.0 (10796359)|STATEMENT_EXECUTE|[70]
+10:56:19.0 (10797736)|STATEMENT_EXECUTE|[70]
+10:56:19.0 (10798631)|STATEMENT_EXECUTE|[71]
+10:56:19.0 (10840878)|HEAP_ALLOCATE|[71]|Bytes:24
+10:56:19.0 (10855733)|SYSTEM_METHOD_ENTRY|[1]|Network.Network()
+10:56:19.0 (10858760)|STATEMENT_EXECUTE|[1]
+10:56:19.0 (10866444)|SYSTEM_METHOD_EXIT|[1]|Network
+10:56:19.0 (10878515)|METHOD_ENTRY|[71]||System.Network.getNetworkId()
+10:56:19.0 (10912926)|METHOD_EXIT|[71]||System.Network.getNetworkId()
+10:56:19.0 (11131770)|HEAP_ALLOCATE|[71]|Bytes:18
+10:56:19.0 (11170893)|HEAP_ALLOCATE|[71]|Bytes:968
+10:56:19.0 (11184386)|SYSTEM_METHOD_ENTRY|[5]|ChatterFeeds.ChatterFeeds()
+10:56:19.0 (11187184)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (11193998)|SYSTEM_METHOD_EXIT|[5]|ChatterFeeds
+10:56:19.0 (11207239)|METHOD_ENTRY|[71]||ConnectApi.ChatterFeeds.getFeedElementsFromFeed(String, ConnectApi.FeedType, String)
+10:56:19.0 (152671743)|SYSTEM_METHOD_EXIT|[5]|FeedElementPage
+10:56:19.0 (152689088)|HEAP_ALLOCATE|[3649]|Bytes:84
+10:56:19.0 (152698949)|HEAP_ALLOCATE|[3649]|Bytes:12
+10:56:19.0 (152704928)|HEAP_ALLOCATE|[3649]|Bytes:8
+10:56:19.0 (152713527)|VARIABLE_SCOPE_BEGIN|[39]|this|ConnectApi.FeedElementPage|true|false
+10:56:19.0 (152815096)|VARIABLE_ASSIGNMENT|[39]|this|{}|0x13c21f8d
+10:56:19.0 (152823036)|VARIABLE_SCOPE_BEGIN|[39]|versionIn|Double|false|false
+10:56:19.0 (152833702)|VARIABLE_ASSIGNMENT|[39]|versionIn|34.0
+10:56:19.0 (152837321)|VARIABLE_SCOPE_BEGIN|[39]|javaObj|java:sfdc.chatter.connect.api.output.feeds.FeedElementCollectionRepresentation|true|false
+10:56:19.0 (152967149)|VARIABLE_ASSIGNMENT|[39]|javaObj|"sfdc.chatter.connect.api.output.feeds.FeedElementCollectionRepresentation@351097ab"|0x351097ab
+10:56:19.0 (153533366)|SYSTEM_METHOD_EXIT|[5]|FeedItem
+10:56:19.0 (153542553)|HEAP_ALLOCATE|[59]|Bytes:252
+10:56:19.0 (153547770)|HEAP_ALLOCATE|[59]|Bytes:12
+10:56:19.0 (153551369)|HEAP_ALLOCATE|[59]|Bytes:8
+10:56:19.0 (153555626)|VARIABLE_SCOPE_BEGIN|[56]|this|ConnectApi.FeedItem|true|false
+10:56:19.0 (153596762)|HEAP_ALLOCATE|[59]|Bytes:312
+10:56:19.0 (153603002)|HEAP_ALLOCATE|[59]|Bytes:75
+10:56:19.0 (153640627)|SYSTEM_METHOD_ENTRY|[5]|FeedElement.FeedElement()
+10:56:19.0 (153645043)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (153653351)|SYSTEM_METHOD_EXIT|[5]|FeedElement
+10:56:19.0 (153683712)|VARIABLE_ASSIGNMENT|[56]|this|{}|0x692c7485
+10:56:19.0 (153687918)|VARIABLE_SCOPE_BEGIN|[56]|versionIn|Double|false|false
+10:56:19.0 (153694323)|VARIABLE_ASSIGNMENT|[56]|versionIn|34.0
+10:56:19.0 (153698207)|VARIABLE_SCOPE_BEGIN|[56]|javaObj|java:sfdc.chatter.connect.api.output.feeds.FeedItemRepresentation|true|false
+10:56:19.0 (153807191)|VARIABLE_ASSIGNMENT|[56]|javaObj|"\n\u003CFeedItem id(0D55000003LnC3uCAF)\u003E\n\u003CUser id(00550000005d7KnAAI) name(Test User) /\u003E\n\u003CFeedBody text(Account test 1\n), isRichText(true) /\u003Esfdc.chatter.connect.api.output.feeds.FeedElementCommentCollectionRepresentation@5ce5af3\n\u003C/FeedItem\u003E"|0x67313b0
+10:56:19.0 (154043951)|SYSTEM_METHOD_EXIT|[5]|FeedBody
+10:56:19.0 (154055300)|HEAP_ALLOCATE|[46]|Bytes:36
+10:56:19.0 (154068837)|HEAP_ALLOCATE|[46]|Bytes:12
+10:56:19.0 (154074504)|HEAP_ALLOCATE|[46]|Bytes:8
+10:56:19.0 (154080282)|VARIABLE_SCOPE_BEGIN|[16]|this|ConnectApi.FeedBody|true|false
+10:56:19.0 (154107792)|HEAP_ALLOCATE|[46]|Bytes:164
+10:56:19.0 (154117896)|HEAP_ALLOCATE|[46]|Bytes:44
+10:56:19.0 (154158095)|SYSTEM_METHOD_ENTRY|[5]|AbstractMessageBody.AbstractMessageBody()
+10:56:19.0 (154163892)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (154174286)|SYSTEM_METHOD_EXIT|[5]|AbstractMessageBody
+10:56:19.0 (154189960)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x37ef611a
+10:56:19.0 (154194007)|VARIABLE_SCOPE_BEGIN|[16]|versionIn|Double|false|false
+10:56:19.0 (154200029)|VARIABLE_ASSIGNMENT|[16]|versionIn|34.0
+10:56:19.0 (154202065)|VARIABLE_SCOPE_BEGIN|[16]|javaObj|java:sfdc.chatter.connect.api.output.feeds.FeedBodyRepresentation|true|false
+10:56:19.0 (154271216)|VARIABLE_ASSIGNMENT|[16]|javaObj|"\n\u003CFeedBody text(Account test 1\n), isRichText(true) /\u003E"|0x3deda33e
+10:56:19.0 (154625950)|SYSTEM_METHOD_EXIT|[5]|MarkupBeginSegment
+10:56:19.0 (154633633)|HEAP_ALLOCATE|[43]|Bytes:44
+10:56:19.0 (154638220)|HEAP_ALLOCATE|[43]|Bytes:12
+10:56:19.0 (154641480)|HEAP_ALLOCATE|[43]|Bytes:8
+10:56:19.0 (154645264)|VARIABLE_SCOPE_BEGIN|[20]|this|ConnectApi.MarkupBeginSegment|true|false
+10:56:19.0 (154668451)|HEAP_ALLOCATE|[43]|Bytes:120
+10:56:19.0 (154673611)|HEAP_ALLOCATE|[43]|Bytes:40
+10:56:19.0 (154702534)|SYSTEM_METHOD_ENTRY|[5]|MessageSegment.MessageSegment()
+10:56:19.0 (154705242)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (154712414)|SYSTEM_METHOD_EXIT|[5]|MessageSegment
+10:56:19.0 (154724652)|VARIABLE_ASSIGNMENT|[20]|this|{}|0x4a837fb2
+10:56:19.0 (154728997)|VARIABLE_SCOPE_BEGIN|[20]|versionIn|Double|false|false
+10:56:19.0 (154734302)|VARIABLE_ASSIGNMENT|[20]|versionIn|34.0
+10:56:19.0 (154736480)|VARIABLE_SCOPE_BEGIN|[20]|javaObj|java:sfdc.chatter.connect.api.output.feeds.MarkupBeginMessageSegmentRepresentation|true|false
+10:56:19.0 (154833786)|VARIABLE_ASSIGNMENT|[20]|javaObj|"MarkupBegin(\"Paragraph\", \"p\")"|0x54730bc1
+10:56:19.0 (155676607)|SYSTEM_METHOD_EXIT|[5]|TextSegment
+10:56:19.0 (155684658)|HEAP_ALLOCATE|[43]|Bytes:28
+10:56:19.0 (155689480)|HEAP_ALLOCATE|[43]|Bytes:12
+10:56:19.0 (155692661)|HEAP_ALLOCATE|[43]|Bytes:8
+10:56:19.0 (155696393)|VARIABLE_SCOPE_BEGIN|[16]|this|ConnectApi.TextSegment|true|false
+10:56:19.0 (155718875)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x48fce382
+10:56:19.0 (155722245)|VARIABLE_SCOPE_BEGIN|[16]|versionIn|Double|false|false
+10:56:19.0 (155726772)|VARIABLE_ASSIGNMENT|[16]|versionIn|34.0
+10:56:19.0 (155728922)|VARIABLE_SCOPE_BEGIN|[16]|javaObj|java:sfdc.chatter.connect.api.output.feeds.TextMessageSegmentRepresentation|true|false
+10:56:19.0 (155795688)|VARIABLE_ASSIGNMENT|[16]|javaObj|"Text(\"Account test 1\")"|0x19d36bc0
+10:56:19.0 (156110995)|SYSTEM_METHOD_EXIT|[5]|MarkupEndSegment
+10:56:19.0 (156122559)|HEAP_ALLOCATE|[43]|Bytes:44
+10:56:19.0 (156129285)|HEAP_ALLOCATE|[43]|Bytes:12
+10:56:19.0 (156132850)|HEAP_ALLOCATE|[43]|Bytes:8
+10:56:19.0 (156137246)|VARIABLE_SCOPE_BEGIN|[20]|this|ConnectApi.MarkupEndSegment|true|false
+10:56:19.0 (156166187)|VARIABLE_ASSIGNMENT|[20]|this|{}|0x55325638
+10:56:19.0 (156169742)|VARIABLE_SCOPE_BEGIN|[20]|versionIn|Double|false|false
+10:56:19.0 (156174402)|VARIABLE_ASSIGNMENT|[20]|versionIn|34.0
+10:56:19.0 (156176561)|VARIABLE_SCOPE_BEGIN|[20]|javaObj|java:sfdc.chatter.connect.api.output.feeds.MarkupEndMessageSegmentRepresentation|true|false
+10:56:19.0 (156246253)|VARIABLE_ASSIGNMENT|[20]|javaObj|"MarkupEnd(\"Paragraph\", \"p\")"|0xf8fcc0d
+10:56:19.0 (156710167)|SYSTEM_METHOD_EXIT|[5]|FeedElementCapabilities
+10:56:19.0 (156721421)|HEAP_ALLOCATE|[49]|Bytes:236
+10:56:19.0 (156729083)|HEAP_ALLOCATE|[49]|Bytes:12
+10:56:19.0 (156734720)|HEAP_ALLOCATE|[49]|Bytes:8
+10:56:19.0 (156741339)|VARIABLE_SCOPE_BEGIN|[77]|this|ConnectApi.FeedElementCapabilities|true|false
+10:56:19.0 (156802200)|VARIABLE_ASSIGNMENT|[77]|this|{}|0x2040de8d
+10:56:19.0 (156807157)|VARIABLE_SCOPE_BEGIN|[77]|versionIn|Double|false|false
+10:56:19.0 (156812414)|VARIABLE_ASSIGNMENT|[77]|versionIn|34.0
+10:56:19.0 (156814500)|VARIABLE_SCOPE_BEGIN|[77]|javaObj|java:sfdc.chatter.connect.api.output.feeds.FeedElementCapabilitySetRepresentation|true|false
+10:56:19.0 (156878329)|VARIABLE_ASSIGNMENT|[77]|javaObj|"sfdc.chatter.connect.api.output.feeds.FeedElementCapabilitySetRepresentation@22cf3c2e"|0x22cf3c2e
+10:56:19.0 (157072048)|SYSTEM_METHOD_EXIT|[5]|AssociatedActionsCapability
+10:56:19.0 (157080724)|HEAP_ALLOCATE|[85]|Bytes:20
+10:56:19.0 (157085475)|HEAP_ALLOCATE|[85]|Bytes:12
+10:56:19.0 (157088710)|HEAP_ALLOCATE|[85]|Bytes:8
+10:56:19.0 (157092578)|VARIABLE_SCOPE_BEGIN|[18]|this|ConnectApi.AssociatedActionsCapability|true|false
+10:56:19.0 (157114759)|VARIABLE_ASSIGNMENT|[18]|this|{}|0x658b2dd9
+10:56:19.0 (157118564)|VARIABLE_SCOPE_BEGIN|[18]|versionIn|Double|false|false
+10:56:19.0 (157123051)|VARIABLE_ASSIGNMENT|[18]|versionIn|34.0
+10:56:19.0 (157125213)|VARIABLE_SCOPE_BEGIN|[18]|javaObj|java:sfdc.chatter.connect.api.output.feeds.AssociatedActionsCapabilityRepresentation|true|false
+10:56:19.0 (157190527)|VARIABLE_ASSIGNMENT|[18]|javaObj|"sfdc.chatter.connect.api.output.feeds.AssociatedActionsCapabilityRepresentation@14157ac1"|0x14157ac1
+10:56:19.0 (157586162)|SYSTEM_METHOD_EXIT|[5]|BookmarksCapability
+10:56:19.0 (157593316)|HEAP_ALLOCATE|[91]|Bytes:20
+10:56:19.0 (157597903)|HEAP_ALLOCATE|[91]|Bytes:12
+10:56:19.0 (157601152)|HEAP_ALLOCATE|[91]|Bytes:8
+10:56:19.0 (157604955)|VARIABLE_SCOPE_BEGIN|[18]|this|ConnectApi.BookmarksCapability|true|false
+10:56:19.0 (157625688)|VARIABLE_ASSIGNMENT|[18]|this|{}|0x32876a78
+10:56:19.0 (157629218)|VARIABLE_SCOPE_BEGIN|[18]|versionIn|Double|false|false
+10:56:19.0 (157633657)|VARIABLE_ASSIGNMENT|[18]|versionIn|34.0
+10:56:19.0 (157635737)|VARIABLE_SCOPE_BEGIN|[18]|javaObj|java:sfdc.chatter.connect.api.output.feeds.BookmarksCapabilityRepresentation|true|false
+10:56:19.0 (157699096)|VARIABLE_ASSIGNMENT|[18]|javaObj|"sfdc.chatter.connect.api.output.feeds.BookmarksCapabilityRepresentation@69f21e4a"|0x69f21e4a
+10:56:19.0 (157913305)|SYSTEM_METHOD_EXIT|[5]|ChatterLikesCapability
+10:56:19.0 (157920391)|HEAP_ALLOCATE|[103]|Bytes:44
+10:56:19.0 (157925001)|HEAP_ALLOCATE|[103]|Bytes:12
+10:56:19.0 (157928352)|HEAP_ALLOCATE|[103]|Bytes:8
+10:56:19.0 (157932512)|VARIABLE_SCOPE_BEGIN|[24]|this|ConnectApi.ChatterLikesCapability|true|false
+10:56:19.0 (157957679)|VARIABLE_ASSIGNMENT|[24]|this|{}|0x55ab0348
+10:56:19.0 (157961259)|VARIABLE_SCOPE_BEGIN|[24]|versionIn|Double|false|false
+10:56:19.0 (157965691)|VARIABLE_ASSIGNMENT|[24]|versionIn|34.0
+10:56:19.0 (157967481)|VARIABLE_SCOPE_BEGIN|[24]|javaObj|java:sfdc.chatter.connect.api.output.feeds.ChatterLikesCapabilityRepresentation|true|false
+10:56:19.0 (158030591)|VARIABLE_ASSIGNMENT|[24]|javaObj|"sfdc.chatter.connect.api.output.feeds.ChatterLikesCapabilityRepresentation@6a57b84e"|0x6a57b84e
+10:56:19.0 (158217225)|SYSTEM_METHOD_EXIT|[5]|MessageBody
+10:56:19.0 (158225425)|HEAP_ALLOCATE|[32]|Bytes:36
+10:56:19.0 (158230148)|HEAP_ALLOCATE|[32]|Bytes:12
+10:56:19.0 (158233347)|HEAP_ALLOCATE|[32]|Bytes:8
+10:56:19.0 (158237366)|VARIABLE_SCOPE_BEGIN|[16]|this|ConnectApi.MessageBody|true|false
+10:56:19.0 (158261374)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x630acbd6
+10:56:19.0 (158264870)|VARIABLE_SCOPE_BEGIN|[16]|versionIn|Double|false|false
+10:56:19.0 (158269324)|VARIABLE_ASSIGNMENT|[16]|versionIn|34.0
+10:56:19.0 (158271194)|VARIABLE_SCOPE_BEGIN|[16]|javaObj|java:sfdc.chatter.connect.api.output.feeds.MessageBodyRepresentation|true|false
+10:56:19.0 (158339937)|VARIABLE_ASSIGNMENT|[16]|javaObj|"\n\u003CMessageBody text(You and Test User like this.), isRichText(null) /\u003E"|0x1a7399b3
+10:56:19.0 (158794812)|SYSTEM_METHOD_EXIT|[5]|EntityLinkSegment
+10:56:19.0 (158801993)|HEAP_ALLOCATE|[43]|Bytes:44
+10:56:19.0 (158806709)|HEAP_ALLOCATE|[43]|Bytes:12
+10:56:19.0 (158809844)|HEAP_ALLOCATE|[43]|Bytes:8
+10:56:19.0 (158813597)|VARIABLE_SCOPE_BEGIN|[20]|this|ConnectApi.EntityLinkSegment|true|false
+10:56:19.0 (158838616)|VARIABLE_ASSIGNMENT|[20]|this|{}|0x17cf78f6
+10:56:19.0 (158842041)|VARIABLE_SCOPE_BEGIN|[20]|versionIn|Double|false|false
+10:56:19.0 (158846532)|VARIABLE_ASSIGNMENT|[20]|versionIn|34.0
+10:56:19.0 (158848549)|VARIABLE_SCOPE_BEGIN|[20]|javaObj|java:sfdc.chatter.connect.api.output.feeds.EntityLinkMessageSegmentRepresentation|true|false
+10:56:19.0 (158916897)|VARIABLE_ASSIGNMENT|[20]|javaObj|"EntityLink(\"Test User\")"|0x408d3789
+10:56:19.0 (159194724)|SYSTEM_METHOD_EXIT|[5]|Motif
+10:56:19.0 (159202974)|HEAP_ALLOCATE|[25]|Bytes:52
+10:56:19.0 (159207567)|HEAP_ALLOCATE|[25]|Bytes:12
+10:56:19.0 (159210689)|HEAP_ALLOCATE|[25]|Bytes:8
+10:56:19.0 (159215163)|VARIABLE_SCOPE_BEGIN|[31]|this|ConnectApi.Motif|true|false
+10:56:19.0 (159242053)|VARIABLE_ASSIGNMENT|[31]|this|{}|0x756c1035
+10:56:19.0 (159246298)|VARIABLE_SCOPE_BEGIN|[31]|versionIn|Double|false|false
+10:56:19.0 (159251190)|VARIABLE_ASSIGNMENT|[31]|versionIn|34.0
+10:56:19.0 (159253146)|VARIABLE_SCOPE_BEGIN|[31]|javaObj|java:sfdc.common.connect.api.output.common.MotifRepresentation|true|false
+10:56:19.0 (159321966)|VARIABLE_ASSIGNMENT|[31]|javaObj|"sfdc.common.connect.api.output.common.MotifRepresentation@73d4b12a"|0x73d4b12a
+10:56:19.0 (159539048)|SYSTEM_METHOD_EXIT|[5]|Reference
+10:56:19.0 (159545926)|HEAP_ALLOCATE|[28]|Bytes:28
+10:56:19.0 (159550328)|HEAP_ALLOCATE|[28]|Bytes:12
+10:56:19.0 (159553322)|HEAP_ALLOCATE|[28]|Bytes:8
+10:56:19.0 (159556816)|VARIABLE_SCOPE_BEGIN|[25]|this|ConnectApi.Reference|true|false
+10:56:19.0 (159577483)|VARIABLE_ASSIGNMENT|[25]|this|{}|0x1f306f6e
+10:56:19.0 (159580756)|VARIABLE_SCOPE_BEGIN|[25]|versionIn|Double|false|false
+10:56:19.0 (159584986)|VARIABLE_ASSIGNMENT|[25]|versionIn|34.0
+10:56:19.0 (159586809)|VARIABLE_SCOPE_BEGIN|[25]|javaObj|java:sfdc.common.connect.api.output.common.ReferenceRepresentation|true|false
+10:56:19.0 (159653238)|VARIABLE_ASSIGNMENT|[25]|javaObj|"sfdc.common.connect.api.output.common.ReferenceRepresentation@3628227e"|0x3628227e
+10:56:19.0 (160242008)|SYSTEM_METHOD_EXIT|[5]|ChatterLikePage
+10:56:19.0 (160250339)|HEAP_ALLOCATE|[38]|Bytes:84
+10:56:19.0 (160254894)|HEAP_ALLOCATE|[38]|Bytes:12
+10:56:19.0 (160258200)|HEAP_ALLOCATE|[38]|Bytes:8
+10:56:19.0 (160269309)|VARIABLE_SCOPE_BEGIN|[39]|this|ConnectApi.ChatterLikePage|true|false
+10:56:19.0 (160298103)|VARIABLE_ASSIGNMENT|[39]|this|{}|0x23507136
+10:56:19.0 (160301504)|VARIABLE_SCOPE_BEGIN|[39]|versionIn|Double|false|false
+10:56:19.0 (160305913)|VARIABLE_ASSIGNMENT|[39]|versionIn|34.0
+10:56:19.0 (160307933)|VARIABLE_SCOPE_BEGIN|[39]|javaObj|java:sfdc.chatter.connect.api.output.feeds.LikeCollectionRepresentation|true|false
+10:56:19.0 (160371397)|VARIABLE_ASSIGNMENT|[39]|javaObj|"sfdc.chatter.connect.api.output.feeds.LikeCollectionRepresentation@755bd997"|0x755bd997
+10:56:19.0 (160700781)|SYSTEM_METHOD_EXIT|[5]|ChatterLike
+10:56:19.0 (160708180)|HEAP_ALLOCATE|[59]|Bytes:44
+10:56:19.0 (160712435)|HEAP_ALLOCATE|[59]|Bytes:12
+10:56:19.0 (160715445)|HEAP_ALLOCATE|[59]|Bytes:8
+10:56:19.0 (160719158)|VARIABLE_SCOPE_BEGIN|[29]|this|ConnectApi.ChatterLike|true|false
+10:56:19.0 (160741798)|VARIABLE_ASSIGNMENT|[29]|this|{}|0x698c934d
+10:56:19.0 (160745289)|VARIABLE_SCOPE_BEGIN|[29]|versionIn|Double|false|false
+10:56:19.0 (160749695)|VARIABLE_ASSIGNMENT|[29]|versionIn|34.0
+10:56:19.0 (160751601)|VARIABLE_SCOPE_BEGIN|[29]|javaObj|java:sfdc.chatter.connect.api.output.feeds.LikeRepresentation|true|false
+10:56:19.0 (160819028)|VARIABLE_ASSIGNMENT|[29]|javaObj|"sfdc.chatter.connect.api.output.feeds.LikeRepresentation@1ec077d0"|0x1ec077d0
+10:56:19.0 (161179386)|SYSTEM_METHOD_EXIT|[5]|UserSummary
+10:56:19.0 (161187469)|HEAP_ALLOCATE|[44]|Bytes:164
+10:56:19.0 (161191864)|HEAP_ALLOCATE|[44]|Bytes:12
+10:56:19.0 (161195116)|HEAP_ALLOCATE|[44]|Bytes:8
+10:56:19.0 (161198946)|VARIABLE_SCOPE_BEGIN|[18]|this|ConnectApi.UserSummary|true|false
+10:56:19.0 (161230170)|HEAP_ALLOCATE|[44]|Bytes:344
+10:56:19.0 (161237250)|HEAP_ALLOCATE|[44]|Bytes:76
+10:56:19.0 (161268193)|SYSTEM_METHOD_ENTRY|[5]|User.User()
+10:56:19.0 (161270929)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (161278814)|SYSTEM_METHOD_EXIT|[5]|User
+10:56:19.0 (161293132)|HEAP_ALLOCATE|[44]|Bytes:204
+10:56:19.0 (161298839)|HEAP_ALLOCATE|[44]|Bytes:49
+10:56:19.0 (161307253)|SYSTEM_METHOD_ENTRY|[5]|ActorWithId.ActorWithId()
+10:56:19.0 (161309524)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (161315164)|SYSTEM_METHOD_EXIT|[5]|ActorWithId
+10:56:19.0 (161324570)|HEAP_ALLOCATE|[44]|Bytes:116
+10:56:19.0 (161329268)|HEAP_ALLOCATE|[44]|Bytes:40
+10:56:19.0 (161336429)|SYSTEM_METHOD_ENTRY|[5]|Actor.Actor()
+10:56:19.0 (161338556)|STATEMENT_EXECUTE|[5]
+10:56:19.0 (161343652)|SYSTEM_METHOD_EXIT|[5]|Actor
+10:56:19.0 (161358320)|VARIABLE_ASSIGNMENT|[18]|this|{}|0x3e396cff
+10:56:19.0 (161362222)|VARIABLE_SCOPE_BEGIN|[18]|versionIn|Double|false|false
+10:56:19.0 (161367792)|VARIABLE_ASSIGNMENT|[18]|versionIn|34.0
+10:56:19.0 (161369706)|VARIABLE_SCOPE_BEGIN|[18]|javaObj|java:sfdc.chatter.connect.api.output.user.UserSummaryRepresentation|true|false
+10:56:19.0 (161442098)|VARIABLE_ASSIGNMENT|[18]|javaObj|"\n\u003CUser id(00550000005d7KnAAI) name(Test User) /\u003E"|0x15859dce
+10:56:19.0 (162044527)|SYSTEM_METHOD_EXIT|[5]|Photo
+10:56:19.0 (162052882)|HEAP_ALLOCATE|[64]|Bytes:68
+10:56:19.0 (162061144)|HEAP_ALLOCATE|[64]|Bytes:12
+10:56:19.0 (162064792)|HEAP_ALLOCATE|[64]|Bytes:8
+10:56:19.0 (162068510)|VARIABLE_SCOPE_BEGIN|[35]|this|ConnectApi.Photo|true|false
+10:56:19.0 (162094765)|VARIABLE_ASSIGNMENT|[35]|this|{}|0x189e72c8
+10:56:19.0 (162098287)|VARIABLE_SCOPE_BEGIN|[35]|versionIn|Double|false|false
+10:56:19.0 (162103095)|VARIABLE_ASSIGNMENT|[35]|versionIn|34.0
+10:56:19.0 (162105002)|VARIABLE_SCOPE_BEGIN|[35]|javaObj|java:sfdc.chatter.connect.api.output.photo.PhotoRepresentation|true|false
+10:56:19.0 (162175039)|VARIABLE_ASSIGNMENT|[35]|javaObj|"sfdc.chatter.connect.api.output.photo.PhotoRepresentation@5fdf8fc"|0x5fdf8fc
+10:56:19.0 (165367894)|SYSTEM_METHOD_EXIT|[5]|CommentsCapability
+10:56:19.0 (165377175)|HEAP_ALLOCATE|[106]|Bytes:20
+10:56:19.0 (165382366)|HEAP_ALLOCATE|[106]|Bytes:12
+10:56:19.0 (165385568)|HEAP_ALLOCATE|[106]|Bytes:8
+10:56:19.0 (165389468)|VARIABLE_SCOPE_BEGIN|[18]|this|ConnectApi.CommentsCapability|true|false
+10:56:19.0 (165414888)|VARIABLE_ASSIGNMENT|[18]|this|{}|0x4904aa01
+10:56:19.0 (165418536)|VARIABLE_SCOPE_BEGIN|[18]|versionIn|Double|false|false
+10:56:19.0 (165423758)|VARIABLE_ASSIGNMENT|[18]|versionIn|34.0
+10:56:19.0 (165426032)|VARIABLE_SCOPE_BEGIN|[18]|javaObj|java:sfdc.chatter.connect.api.output.feeds.CommentsCapabilityRepresentation|true|false
+10:56:19.0 (165501856)|VARIABLE_ASSIGNMENT|[18]|javaObj|"sfdc.chatter.connect.api.output.feeds.CommentsCapabilityRepresentation@22e789db"|0x22e789db
+10:56:19.0 (165676113)|SYSTEM_METHOD_EXIT|[5]|CommentPage
+10:56:19.0 (165683231)|HEAP_ALLOCATE|[23]|Bytes:68
+10:56:19.0 (165688814)|HEAP_ALLOCATE|[23]|Bytes:12
+10:56:19.0 (165693815)|HEAP_ALLOCATE|[23]|Bytes:8
+10:56:19.0 (165699851)|VARIABLE_SCOPE_BEGIN|[35]|this|ConnectApi.CommentPage|true|false
+10:56:19.0 (165740018)|VARIABLE_ASSIGNMENT|[35]|this|{}|0x4837af63
+10:56:19.0 (165745092)|VARIABLE_SCOPE_BEGIN|[35]|versionIn|Double|false|false
+10:56:19.0 (165750492)|VARIABLE_ASSIGNMENT|[35]|versionIn|34.0
+10:56:19.0 (165752670)|VARIABLE_SCOPE_BEGIN|[35]|javaObj|java:sfdc.chatter.connect.api.output.feeds.FeedElementCommentCollectionRepresentation|true|false
+10:56:19.0 (165822278)|VARIABLE_ASSIGNMENT|[35]|javaObj|"sfdc.chatter.connect.api.output.feeds.FeedElementCommentCollectionRepresentation@9b1033f"|0x9b1033f
+10:56:19.0 (166322668)|SYSTEM_METHOD_EXIT|[5]|InteractionsCapability
+10:56:19.0 (166330982)|HEAP_ALLOCATE|[127]|Bytes:20
+10:56:19.0 (166335778)|HEAP_ALLOCATE|[127]|Bytes:12
+10:56:19.0 (166339019)|HEAP_ALLOCATE|[127]|Bytes:8
+10:56:19.0 (166342528)|VARIABLE_SCOPE_BEGIN|[18]|this|ConnectApi.InteractionsCapability|true|false
+10:56:19.0 (166363948)|VARIABLE_ASSIGNMENT|[18]|this|{}|0x6509e4aa
+10:56:19.0 (166367359)|VARIABLE_SCOPE_BEGIN|[18]|versionIn|Double|false|false
+10:56:19.0 (166372492)|VARIABLE_ASSIGNMENT|[18]|versionIn|34.0
+10:56:19.0 (166374418)|VARIABLE_SCOPE_BEGIN|[18]|javaObj|java:sfdc.chatter.connect.api.output.feeds.InteractionsCapabilityRepresentation|true|false
+10:56:19.0 (166439225)|VARIABLE_ASSIGNMENT|[18]|javaObj|"sfdc.chatter.connect.api.output.feeds.InteractionsCapabilityRepresentation@7bbe1081"|0x7bbe1081
+10:56:19.0 (166649726)|SYSTEM_METHOD_EXIT|[5]|MuteCapability
+10:56:19.0 (166656613)|HEAP_ALLOCATE|[136]|Bytes:20
+10:56:19.0 (166661022)|HEAP_ALLOCATE|[136]|Bytes:12
+10:56:19.0 (166664203)|HEAP_ALLOCATE|[136]|Bytes:8
+10:56:19.0 (166667800)|VARIABLE_SCOPE_BEGIN|[18]|this|ConnectApi.MuteCapability|true|false
+10:56:19.0 (166688683)|VARIABLE_ASSIGNMENT|[18]|this|{}|0xe87e422
+10:56:19.0 (166692357)|VARIABLE_SCOPE_BEGIN|[18]|versionIn|Double|false|false
+10:56:19.0 (166696781)|VARIABLE_ASSIGNMENT|[18]|versionIn|34.0
+10:56:19.0 (166698714)|VARIABLE_SCOPE_BEGIN|[18]|javaObj|java:sfdc.chatter.connect.api.output.feeds.MuteCapabilityRepresentation|true|false
+10:56:19.0 (166761965)|VARIABLE_ASSIGNMENT|[18]|javaObj|"sfdc.chatter.connect.api.output.feeds.MuteCapabilityRepresentation@f2eb636"|0xf2eb636
+10:56:19.0 (166990373)|SYSTEM_METHOD_EXIT|[5]|StatusCapability
+10:56:19.0 (166997259)|HEAP_ALLOCATE|[157]|Bytes:28
+10:56:19.0 (167001932)|HEAP_ALLOCATE|[157]|Bytes:12
+10:56:19.0 (167006279)|HEAP_ALLOCATE|[157]|Bytes:8
+10:56:19.0 (167010062)|VARIABLE_SCOPE_BEGIN|[20]|this|ConnectApi.StatusCapability|true|false
+10:56:19.0 (167032951)|VARIABLE_ASSIGNMENT|[20]|this|{}|0x25282fcd
+10:56:19.0 (167036324)|VARIABLE_SCOPE_BEGIN|[20]|versionIn|Double|false|false
+10:56:19.0 (167040672)|VARIABLE_ASSIGNMENT|[20]|versionIn|34.0
+10:56:19.0 (167042520)|VARIABLE_SCOPE_BEGIN|[20]|javaObj|java:sfdc.chatter.connect.api.output.feeds.StatusCapabilityRepresentation|true|false
+10:56:19.0 (167110781)|VARIABLE_ASSIGNMENT|[20]|javaObj|"sfdc.chatter.connect.api.output.feeds.StatusCapabilityRepresentation@2e9909f1"|0x2e9909f1
+10:56:19.0 (167501566)|SYSTEM_METHOD_EXIT|[5]|TopicsCapability
+10:56:19.0 (167508742)|HEAP_ALLOCATE|[160]|Bytes:28
+10:56:19.0 (167513314)|HEAP_ALLOCATE|[160]|Bytes:12
+10:56:19.0 (167516466)|HEAP_ALLOCATE|[160]|Bytes:8
+10:56:19.0 (167520624)|VARIABLE_SCOPE_BEGIN|[20]|this|ConnectApi.TopicsCapability|true|false
+10:56:19.0 (167543815)|VARIABLE_ASSIGNMENT|[20]|this|{}|0x1f0e4ef4
+10:56:19.0 (167547651)|VARIABLE_SCOPE_BEGIN|[20]|versionIn|Double|false|false
+10:56:19.0 (167552213)|VARIABLE_ASSIGNMENT|[20]|versionIn|34.0
+10:56:19.0 (167554098)|VARIABLE_SCOPE_BEGIN|[20]|javaObj|java:sfdc.chatter.connect.api.output.feeds.TopicsCapabilityRepresentation|true|false
+10:56:19.0 (167618457)|VARIABLE_ASSIGNMENT|[20]|javaObj|"sfdc.chatter.connect.api.output.feeds.TopicsCapabilityRepresentation@65ebc425"|0x65ebc425
+10:56:19.0 (167938771)|SYSTEM_METHOD_EXIT|[5]|Topic
+10:56:19.0 (167946268)|HEAP_ALLOCATE|[36]|Bytes:84
+10:56:19.0 (167950722)|HEAP_ALLOCATE|[36]|Bytes:12
+10:56:19.0 (167953837)|HEAP_ALLOCATE|[36]|Bytes:8
+10:56:19.0 (167957589)|VARIABLE_SCOPE_BEGIN|[39]|this|ConnectApi.Topic|true|false
+10:56:19.0 (167986541)|VARIABLE_ASSIGNMENT|[39]|this|{}|0x1d9c912
+10:56:19.0 (167990076)|VARIABLE_SCOPE_BEGIN|[39]|versionIn|Double|false|false
+10:56:19.0 (167994340)|VARIABLE_ASSIGNMENT|[39]|versionIn|34.0
+10:56:19.0 (167996166)|VARIABLE_SCOPE_BEGIN|[39]|javaObj|java:sfdc.chatter.connect.api.output.topics.TopicRepresentation|true|false
+10:56:19.0 (168063510)|VARIABLE_ASSIGNMENT|[39]|javaObj|"sfdc.chatter.connect.api.output.topics.TopicRepresentation@67698e59"|0x67698e59
+10:56:19.0 (168349385)|SYSTEM_METHOD_EXIT|[5]|TopicImages
+10:56:19.0 (168360562)|HEAP_ALLOCATE|[53]|Bytes:28
+10:56:19.0 (168368313)|HEAP_ALLOCATE|[53]|Bytes:12
+10:56:19.0 (168374117)|HEAP_ALLOCATE|[53]|Bytes:8
+10:56:19.0 (168380420)|VARIABLE_SCOPE_BEGIN|[25]|this|ConnectApi.TopicImages|true|false
+10:56:19.0 (168410274)|VARIABLE_ASSIGNMENT|[25]|this|{}|0xafd05ae
+10:56:19.0 (168415791)|VARIABLE_SCOPE_BEGIN|[25]|versionIn|Double|false|false
+10:56:19.0 (168421591)|VARIABLE_ASSIGNMENT|[25]|versionIn|34.0
+10:56:19.0 (168423698)|VARIABLE_SCOPE_BEGIN|[25]|javaObj|java:sfdc.chatter.connect.api.output.topics.TopicImagesRepresentation|true|false
+10:56:19.0 (168490236)|VARIABLE_ASSIGNMENT|[25]|javaObj|"sfdc.chatter.connect.api.output.topics.TopicImagesRepresentation@318c2238"|0x318c2238
+10:56:19.0 (170832033)|SYSTEM_METHOD_EXIT|[5]|RecordSummary
+10:56:19.0 (170840893)|HEAP_ALLOCATE|[68]|Bytes:68
+10:56:19.0 (170846036)|HEAP_ALLOCATE|[68]|Bytes:12
+10:56:19.0 (170849208)|HEAP_ALLOCATE|[68]|Bytes:8
+10:56:19.0 (170853013)|VARIABLE_SCOPE_BEGIN|[16]|this|ConnectApi.RecordSummary|true|false
+10:56:19.0 (170889674)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x55e2be97
+10:56:19.0 (170893455)|VARIABLE_SCOPE_BEGIN|[16]|versionIn|Double|false|false
+10:56:19.0 (170898381)|VARIABLE_ASSIGNMENT|[16]|versionIn|34.0
+10:56:19.0 (170900552)|VARIABLE_SCOPE_BEGIN|[16]|javaObj|java:sfdc.common.connect.api.output.records.RecordSummaryRepresentation|true|false
+10:56:19.0 (170972912)|VARIABLE_ASSIGNMENT|[16]|javaObj|"\n\u003CRecord type(Account) id(0015000001Bc4SPAAZ) name(Edge Communications) /\u003E"|0x37d011f0
+10:56:19.0 (198804939)|SYSTEM_METHOD_EXIT|[5]|Comment
+10:56:19.0 (198819384)|HEAP_ALLOCATE|[48]|Bytes:156
+10:56:19.0 (198826505)|HEAP_ALLOCATE|[48]|Bytes:12
+10:56:19.0 (198829896)|HEAP_ALLOCATE|[48]|Bytes:8
+10:56:19.0 (198834575)|VARIABLE_SCOPE_BEGIN|[57]|this|ConnectApi.Comment|true|false
+10:56:19.0 (198897457)|VARIABLE_ASSIGNMENT|[57]|this|{}|0xe44288d
+10:56:19.0 (198901477)|VARIABLE_SCOPE_BEGIN|[57]|versionIn|Double|false|false
+10:56:19.0 (198909518)|VARIABLE_ASSIGNMENT|[57]|versionIn|34.0
+10:56:19.0 (198911645)|VARIABLE_SCOPE_BEGIN|[57]|javaObj|java:sfdc.chatter.connect.api.output.feeds.CommentRepresentation|true|false
+10:56:19.0 (199094277)|VARIABLE_ASSIGNMENT|[57]|javaObj|"\n\u003CComment id(0D750000002KRgU) parent(sfdc.common.connect.api.output.common.ReferenceRepresentation@4e1239d4) \u003E\n\u003CFeedBody text(Test), isRichText(false) /\u003E\n\u003CUser id(00550000005d7KnAAI) name(Test User) /\u003E\n\u003C/Comment"|0x797afe77
+10:56:19.0 (199691839)|SYSTEM_METHOD_EXIT|[5]|CommentCapabilities
+10:56:19.0 (199699321)|HEAP_ALLOCATE|[68]|Bytes:28
+10:56:19.0 (199704112)|HEAP_ALLOCATE|[68]|Bytes:12
+10:56:19.0 (199707080)|HEAP_ALLOCATE|[68]|Bytes:8
+10:56:19.0 (199710800)|VARIABLE_SCOPE_BEGIN|[25]|this|ConnectApi.CommentCapabilities|true|false
+10:56:19.0 (199732382)|VARIABLE_ASSIGNMENT|[25]|this|{}|0x75ad5270
+10:56:19.0 (199735999)|VARIABLE_SCOPE_BEGIN|[25]|versionIn|Double|false|false
+10:56:19.0 (199741011)|VARIABLE_ASSIGNMENT|[25]|versionIn|34.0
+10:56:19.0 (199742949)|VARIABLE_SCOPE_BEGIN|[25]|javaObj|java:sfdc.chatter.connect.api.output.feeds.CommentCapabilitySetRepresentation|true|false
+10:56:19.0 (199812437)|VARIABLE_ASSIGNMENT|[25]|javaObj|"sfdc.chatter.connect.api.output.feeds.CommentCapabilitySetRepresentation@5a820c08"|0x5a820c08
+10:56:19.0 (201794716)|SYSTEM_METHOD_EXIT|[5]|MentionSegment
+10:56:19.0 (201803131)|HEAP_ALLOCATE|[43]|Bytes:60
+10:56:19.0 (201808081)|HEAP_ALLOCATE|[43]|Bytes:12
+10:56:19.0 (201811545)|HEAP_ALLOCATE|[43]|Bytes:8
+10:56:19.0 (201815724)|VARIABLE_SCOPE_BEGIN|[24]|this|ConnectApi.MentionSegment|true|false
+10:56:19.0 (201846594)|VARIABLE_ASSIGNMENT|[24]|this|{}|0x2ba69d94
+10:56:19.0 (201850450)|VARIABLE_SCOPE_BEGIN|[24]|versionIn|Double|false|false
+10:56:19.0 (201855069)|VARIABLE_ASSIGNMENT|[24]|versionIn|34.0
+10:56:19.0 (201857144)|VARIABLE_SCOPE_BEGIN|[24]|javaObj|java:sfdc.chatter.connect.api.output.feeds.MentionMessageSegmentRepresentation|true|false
+10:56:19.0 (201937987)|VARIABLE_ASSIGNMENT|[24]|javaObj|"Mention(\"Test User\",00550000005d7KnAAI,true)"|0x34076442
+10:56:19.0 (232232884)|METHOD_EXIT|[71]||ConnectApi.ChatterFeeds.getFeedElementsFromFeed(String, ConnectApi.FeedType, String)
+10:56:19.0 (232248601)|VARIABLE_SCOPE_BEGIN|[71]|fep|ConnectApi.FeedElementPage|true|false
+10:56:19.0 (232312089)|VARIABLE_ASSIGNMENT|[71]|fep|{}|0x13c21f8d
+10:56:19.0 (232323475)|STATEMENT_EXECUTE|[72]
+10:56:19.0 (232326459)|STATEMENT_EXECUTE|[72]
+10:56:19.0 (232401486)|HEAP_ALLOCATE|[72]|Bytes:84
+10:56:19.0 (232412611)|VARIABLE_SCOPE_BEGIN|[105]|this|ConnectApi.FeedElementPage|true|false
+10:56:19.0 (232443987)|VARIABLE_ASSIGNMENT|[105]|this|{}|0x13c21f8d
+10:56:19.0 (361703954)|USER_DEBUG|[72]|DEBUG|ConnectApi.FeedElementPage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/feeds/user-profile/00550000005d7KnAAI/feed-elements, elements=(ConnectApi.FeedItem[buildVersion=34.0, actor=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal], body=ConnectApi.FeedBody[buildVersion=34.0, messageSegments=(ConnectApi.MarkupBeginSegment[buildVersion=34.0, text=, type=MarkupBegin], ConnectApi.TextSegment[buildVersion=34.0, text=Account test 1, type=Text], ConnectApi.MarkupEndSegment[buildVersion=34.0, text=
+, type=MarkupEnd]), text=Account test 1
+], canShare=false, capabilities=ConnectApi.FeedElementCapabilities[buildVersion=34.0, approval=null, associatedActions=ConnectApi.AssociatedActionsCapability[buildVersion=34.0, platformActionGroups=()], banner=null, bookmarks=ConnectApi.BookmarksCapability[buildVersion=34.0, isBookmarkedByCurrentUser=false], bundle=null, canvas=null, caseComment=null, chatterLikes=ConnectApi.ChatterLikesCapability[buildVersion=34.0, isLikedByCurrentUser=true, likesMessage=ConnectApi.MessageBody[buildVersion=34.0, messageSegments=(ConnectApi.TextSegment[buildVersion=34.0, text=You and , type=Text], ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=00550000005d7KnAAI, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI], text=Test User, type=EntityLink], ConnectApi.TextSegment[buildVersion=34.0, text= like this., type=Text]), text=You and Test User like this.], myLike=ConnectApi.Reference[buildVersion=34.0, id=0I050000001eP8zCAE, url=/services/data/v34.0/chatter/likes/0I050000001eP8zCAE], page=ConnectApi.ChatterLikePage[buildVersion=34.0, currentPageToken=0, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF/capabilities/chatter-likes/items, items=(ConnectApi.ChatterLike[buildVersion=34.0, id=0I050000001ePDLCA2, likedItem=ConnectApi.Reference[buildVersion=34.0, id=0D55000003LnC3uCAF, url=/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF], url=/services/data/v34.0/chatter/likes/0I050000001ePDLCA2, user=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal]], ConnectApi.ChatterLike[buildVersion=34.0, id=0I050000001eP8zCAE, likedItem=ConnectApi.Reference[buildVersion=34.0, id=0D55000003LnC3uCAF, url=/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF], url=/services/data/v34.0/chatter/likes/0I050000001eP8zCAE, user=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=bfffollow1.4689653052892656E12, companyName=BFFFollow, displayName=Jaswinder Rattanpal, firstName=Jaswinder, id=00550000005cg71AAA, isActive=true, isInThisCommunity=true, lastName=Rattanpal, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=null, name=Jaswinder Rattanpal, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005cg71AAA/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005cg71AAA, userType=Internal]]), nextPageToken=null, nextPageUrl=null, previousPageToken=null, previousPageUrl=null, total=2]], comments=ConnectApi.CommentsCapability[buildVersion=34.0, page=ConnectApi.CommentPage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF/capabilities/comments/items, items=(), nextPageToken=null, nextPageUrl=null, total=0]], content=null, dashboardComponentSnapshot=null, edit=null, emailMessage=null, enhancedLink=null, link=null, moderation=null, origin=null, poll=null, questionAndAnswers=null, recommendations=null, recordSnapshot=null, topics=ConnectApi.TopicsCapability[buildVersion=34.0, canAssignTopics=true, items=(ConnectApi.Topic[buildVersion=34.0, createdDate=2016-07-21 14:44:49, description=null, id=0TO50000000YKN1GAO, images=ConnectApi.TopicImages[buildVersion=34.0, coverImageUrl=null, featuredImageUrl=null], isBeingDeleted=false, name=Topic 1, talkingAbout=0, url=/services/data/v34.0/connect/topics/0TO50000000YKN1GAO], ConnectApi.Topic[buildVersion=34.0, createdDate=2016-07-21 14:44:57, description=null, id=0TO50000000YKNBGA4, images=ConnectApi.TopicImages[buildVersion=34.0, coverImageUrl=null, featuredImageUrl=null], isBeingDeleted=false, name=Topic 2, talkingAbout=0, url=/services/data/v34.0/connect/topics/0TO50000000YKNBGA4])], trackedChanges=null], clientInfo=null, createdDate=2016-07-21 10:44:31, event=false, feedElementType=FeedItem, header=ConnectApi.MessageBody[buildVersion=34.0, messageSegments=(ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=7F8DE1, largeIconUrl=/img/icon/accounts64.png, mediumIconUrl=/img/icon/accounts32.png, smallIconUrl=/img/icon/accounts16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=0015000001Bc4SPAAZ, url=/services/data/v34.0/chatter/records/0015000001Bc4SPAAZ], text=Edge Communications, type=EntityLink], ConnectApi.TextSegment[buildVersion=34.0, text= — , type=Text], ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=00550000005d7KnAAI, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI], text=Test User, type=EntityLink]), text=Edge Communications — Test User], id=0D55000003LnC3uCAF, isDeleteRestricted=false, modifiedDate=2016-07-21 10:44:31, originalFeedItem=null, originalFeedItemActor=null, parent=ConnectApi.RecordSummary[buildVersion=34.0, id=0015000001Bc4SPAAZ, motif=ConnectApi.Motif[buildVersion=34.0, color=7F8DE1, largeIconUrl=/img/icon/accounts64.png, mediumIconUrl=/img/icon/accounts32.png, smallIconUrl=/img/icon/accounts16.png, svgIconUrl=null], mySubscription=null, name=Edge Communications, type=Account, url=/services/data/v34.0/chatter/records/0015000001Bc4SPAAZ], photoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, relativeCreatedDate=Yesterday at 10:44 AM, type=TextPost, url=/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF, visibility=InternalUsers], ConnectApi.FeedItem[buildVersion=34.0, actor=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal], body=ConnectApi.FeedBody[buildVersion=34.0, messageSegments=(ConnectApi.MarkupBeginSegment[buildVersion=34.0, text=, type=MarkupBegin], ConnectApi.TextSegment[buildVersion=34.0, text=Test 3, type=Text], ConnectApi.MarkupEndSegment[buildVersion=34.0, text=
+, type=MarkupEnd]), text=Test 3
+], canShare=true, capabilities=ConnectApi.FeedElementCapabilities[buildVersion=34.0, approval=null, associatedActions=ConnectApi.AssociatedActionsCapability[buildVersion=34.0, platformActionGroups=()], banner=null, bookmarks=ConnectApi.BookmarksCapability[buildVersion=34.0, isBookmarkedByCurrentUser=false], bundle=null, canvas=null, caseComment=null, chatterLikes=ConnectApi.ChatterLikesCapability[buildVersion=34.0, isLikedByCurrentUser=false, likesMessage=null, myLike=null, page=ConnectApi.ChatterLikePage[buildVersion=34.0, currentPageToken=0, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003Ln9wICAR/capabilities/chatter-likes/items, items=(), nextPageToken=null, nextPageUrl=null, previousPageToken=null, previousPageUrl=null, total=0]], comments=ConnectApi.CommentsCapability[buildVersion=34.0, page=ConnectApi.CommentPage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003Ln9wICAR/capabilities/comments/items, items=(), nextPageToken=null, nextPageUrl=null, total=0]], content=null, dashboardComponentSnapshot=null, edit=null, emailMessage=null, enhancedLink=null, link=null, moderation=null, origin=null, poll=null, questionAndAnswers=null, recommendations=null, recordSnapshot=null, topics=ConnectApi.TopicsCapability[buildVersion=34.0, canAssignTopics=true, items=()], trackedChanges=null], clientInfo=null, createdDate=2016-07-21 10:41:59, event=false, feedElementType=FeedItem, header=ConnectApi.MessageBody[buildVersion=34.0, messageSegments=(ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=00550000005d7KnAAI, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI], text=Test User, type=EntityLink]), text=Test User], id=0D55000003Ln9wICAR, isDeleteRestricted=false, modifiedDate=2016-07-21 10:41:59, originalFeedItem=null, originalFeedItemActor=null, parent=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal], photoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, relativeCreatedDate=Yesterday at 10:41 AM, type=TextPost, url=/services/data/v34.0/chatter/feed-elements/0D55000003Ln9wICAR, visibility=AllUsers], ConnectApi.FeedItem[buildVersion=34.0, actor=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal], body=ConnectApi.FeedBody[buildVersion=34.0, messageSegments=(ConnectApi.MarkupBeginSegment[buildVersion=34.0, text=, type=MarkupBegin], ConnectApi.TextSegment[buildVersion=34.0, text=Test 2, type=Text], ConnectApi.MarkupEndSegment[buildVersion=34.0, text=
+, type=MarkupEnd]), text=Test 2
+], canShare=true, capabilities=ConnectApi.FeedElementCapabilities[buildVersion=34.0, approval=null, associatedActions=ConnectApi.AssociatedActionsCapability[buildVersion=34.0, platformActionGroups=()], banner=null, bookmarks=ConnectApi.BookmarksCapability[buildVersion=34.0, isBookmarkedByCurrentUser=false], bundle=null, canvas=null, caseComment=null, chatterLikes=ConnectApi.ChatterLikesCapability[buildVersion=34.0, isLikedByCurrentUser=false, likesMessage=null, myLike=null, page=ConnectApi.ChatterLikePage[buildVersion=34.0, currentPageToken=0, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003LmBshCAF/capabilities/chatter-likes/items, items=(), nextPageToken=null, nextPageUrl=null, previousPageToken=null, previousPageUrl=null, total=0]], comments=ConnectApi.CommentsCapability[buildVersion=34.0, page=ConnectApi.CommentPage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003LmBshCAF/capabilities/comments/items, items=(), nextPageToken=null, nextPageUrl=null, total=0]], content=null, dashboardComponentSnapshot=null, edit=null, emailMessage=null, enhancedLink=null, link=null, moderation=null, origin=null, poll=null, questionAndAnswers=null, recommendations=null, recordSnapshot=null, topics=ConnectApi.TopicsCapability[buildVersion=34.0, canAssignTopics=true, items=()], trackedChanges=null], clientInfo=null, createdDate=2016-07-21 00:34:39, event=false, feedElementType=FeedItem, header=ConnectApi.MessageBody[buildVersion=34.0, messageSegments=(ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=00550000005d7KnAAI, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI], text=Test User, type=EntityLink]), text=Test User], id=0D55000003LmBshCAF, isDeleteRestricted=false, modifiedDate=2016-07-21 00:34:39, originalFeedItem=null, originalFeedItemActor=null, parent=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal], photoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, relativeCreatedDate=Yesterday at 12:34 AM, type=TextPost, url=/services/data/v34.0/chatter/feed-elements/0D55000003LmBshCAF, visibility=AllUsers], ConnectApi.FeedItem[buildVersion=34.0, actor=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=bfffollow1.4689653052892656E12, companyName=BFFFollow, displayName=Jaswinder Rattanpal, firstName=Jaswinder, id=00550000005cg71AAA, isActive=true, isInThisCommunity=true, lastName=Rattanpal, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=null, name=Jaswinder Rattanpal, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005cg71AAA/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005cg71AAA, userType=Internal], body=ConnectApi.FeedBody[buildVersion=34.0, messageSegments=(ConnectApi.MarkupBeginSegment[buildVersion=34.0, text=, type=MarkupBegin], ConnectApi.TextSegment[buildVersion=34.0, text=Test 1, type=Text], ConnectApi.MarkupEndSegment[buildVersion=34.0, text=
+, type=MarkupEnd]), text=Test 1
+], canShare=true, capabilities=ConnectApi.FeedElementCapabilities[buildVersion=34.0, approval=null, associatedActions=ConnectApi.AssociatedActionsCapability[buildVersion=34.0, platformActionGroups=()], banner=null, bookmarks=ConnectApi.BookmarksCapability[buildVersion=34.0, isBookmarkedByCurrentUser=false], bundle=null, canvas=null, caseComment=null, chatterLikes=ConnectApi.ChatterLikesCapability[buildVersion=34.0, isLikedByCurrentUser=false, likesMessage=ConnectApi.MessageBody[buildVersion=34.0, messageSegments=(ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=00550000005d7KnAAI, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI], text=Test User, type=EntityLink], ConnectApi.TextSegment[buildVersion=34.0, text= likes this., type=Text]), text=Test User likes this.], myLike=null, page=ConnectApi.ChatterLikePage[buildVersion=34.0, currentPageToken=0, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV/capabilities/chatter-likes/items, items=(ConnectApi.ChatterLike[buildVersion=34.0, id=0I050000001eN0WCAU, likedItem=ConnectApi.Reference[buildVersion=34.0, id=0D55000003LmBsDCAV, url=/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV], url=/services/data/v34.0/chatter/likes/0I050000001eN0WCAU, user=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal]]), nextPageToken=null, nextPageUrl=null, previousPageToken=null, previousPageUrl=null, total=1]], comments=ConnectApi.CommentsCapability[buildVersion=34.0, page=ConnectApi.CommentPage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV/capabilities/comments/items, items=(ConnectApi.Comment[buildVersion=34.0, body=ConnectApi.FeedBody[buildVersion=34.0, messageSegments=(ConnectApi.TextSegment[buildVersion=34.0, text=Test, type=Text]), text=Test], capabilities=ConnectApi.CommentCapabilities[buildVersion=34.0, content=null, edit=null], clientInfo=null, createdDate=2016-07-21 10:45:26, feedElement=ConnectApi.Reference[buildVersion=34.0, id=0D55000003LmBsDCAV, url=/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV], id=0D750000002KRgUCAW, isDeleteRestricted=false, likes=ConnectApi.ChatterLikePage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/comments/0D750000002KRgUCAW/likes, items=(), nextPageToken=null, nextPageUrl=null, previousPageToken=null, previousPageUrl=null, total=0], likesMessage=null, moderationFlags=null, myLike=null, parent=ConnectApi.Reference[buildVersion=34.0, id=00550000005cg71AAA, url=/services/data/v34.0/chatter/users/00550000005cg71AAA], relativeCreatedDate=Yesterday at 10:45 AM, type=TextComment, url=/services/data/v34.0/chatter/comments/0D750000002KRgUCAW, user=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal]], ConnectApi.Comment[buildVersion=34.0, body=ConnectApi.FeedBody[buildVersion=34.0, messageSegments=(ConnectApi.MentionSegment[buildVersion=34.0, accessible=true, name=Test User, record=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=jrattanpal, companyName=null, displayName=Test User, firstName=Test, id=00550000005d7KnAAI, isActive=true, isInThisCommunity=true, lastName=User, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=ConnectApi.Reference[buildVersion=34.0, id=0E85000000Dvxc2CAB, url=/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB], name=Test User, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005d7KnAAI, userType=Internal], text=@Test User, type=Mention]), text=@Test User], capabilities=ConnectApi.CommentCapabilities[buildVersion=34.0, content=null, edit=null], clientInfo=null, createdDate=2016-07-21 10:45:59, feedElement=ConnectApi.Reference[buildVersion=34.0, id=0D55000003LmBsDCAV, url=/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV], id=0D750000002KRl0CAG, isDeleteRestricted=false, likes=ConnectApi.ChatterLikePage[buildVersion=34.0, currentPageToken=null, currentPageUrl=/services/data/v34.0/chatter/comments/0D750000002KRl0CAG/likes, items=(), nextPageToken=null, nextPageUrl=null, previousPageToken=null, previousPageUrl=null, total=0], likesMessage=null, moderationFlags=null, myLike=null, parent=ConnectApi.Reference[buildVersion=34.0, id=00550000005cg71AAA, url=/services/data/v34.0/chatter/users/00550000005cg71AAA], relativeCreatedDate=Yesterday at 10:45 AM, type=TextComment, url=/services/data/v34.0/chatter/comments/0D750000002KRl0CAG, user=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=bfffollow1.4689653052892656E12, companyName=BFFFollow, displayName=Jaswinder Rattanpal, firstName=Jaswinder, id=00550000005cg71AAA, isActive=true, isInThisCommunity=true, lastName=Rattanpal, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=null, name=Jaswinder Rattanpal, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005cg71AAA/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005cg71AAA, userType=Internal]]), nextPageToken=null, nextPageUrl=null, total=2]], content=null, dashboardComponentSnapshot=null, edit=null, emailMessage=null, enhancedLink=null, link=null, moderation=null, origin=null, poll=null, questionAndAnswers=null, recommendations=null, recordSnapshot=null, topics=ConnectApi.TopicsCapability[buildVersion=34.0, canAssignTopics=true, items=()], trackedChanges=null], clientInfo=null, createdDate=2016-07-21 00:33:49, event=false, feedElementType=FeedItem, header=ConnectApi.MessageBody[buildVersion=34.0, messageSegments=(ConnectApi.EntityLinkSegment[buildVersion=34.0, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], reference=ConnectApi.Reference[buildVersion=34.0, id=00550000005cg71AAA, url=/services/data/v34.0/chatter/users/00550000005cg71AAA], text=Jaswinder Rattanpal, type=EntityLink]), text=Jaswinder Rattanpal], id=0D55000003LmBsDCAV, isDeleteRestricted=false, modifiedDate=2016-07-21 10:45:59, originalFeedItem=null, originalFeedItemActor=null, parent=ConnectApi.UserSummary[buildVersion=34.0, additionalLabel=null, communityNickname=bfffollow1.4689653052892656E12, companyName=BFFFollow, displayName=Jaswinder Rattanpal, firstName=Jaswinder, id=00550000005cg71AAA, isActive=true, isInThisCommunity=true, lastName=Rattanpal, motif=ConnectApi.Motif[buildVersion=34.0, color=65CAE4, largeIconUrl=/img/icon/profile64.png, mediumIconUrl=/img/icon/profile32.png, smallIconUrl=/img/icon/profile16.png, svgIconUrl=null], mySubscription=null, name=Jaswinder Rattanpal, photo=ConnectApi.Photo[buildVersion=34.0, fullEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1, largePhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F, photoVersionId=null, smallPhotoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, standardEmailPhotoUrl=https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1, url=/services/data/v34.0/chatter/users/00550000005cg71AAA/photo], reputation=null, title=null, type=User, url=/services/data/v34.0/chatter/users/00550000005cg71AAA, userType=Internal], photoUrl=https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T, relativeCreatedDate=Yesterday at 12:33 AM, type=TextPost, url=/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV, visibility=AllUsers]), isModifiedToken=null, isModifiedUrl=null, nextPageToken=null, nextPageUrl=null, updatesToken=null, updatesUrl=null]
+10:56:19.0 (361965700)|STATEMENT_EXECUTE|[73]
+10:56:19.0 (361993262)|METHOD_ENTRY|[73]||System.JSON.serialize(Object)
+10:56:19.0 (396650992)|METHOD_EXIT|[73]||System.JSON.serialize(Object)
+10:56:19.0 (396674447)|METHOD_EXIT|[15]|01p50000002D8iw|BFFFollow_Controller.fetchUserFeed(Id)
+10:56:19.0 (396765774)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller"}|0xdfeb296
+10:56:19.0 (396780350)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"{\"currentPageToken\": (26554 more) ..."
+10:56:19.0 (396795799)|VARIABLE_ASSIGNMENT|[12]|this.output|"{\"currentPageToken\": (26554 more) ..."|0xdfeb296
+10:56:19.0 (396805545)|STATEMENT_EXECUTE|[16]
+10:56:19.0 (396869434)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller","output":"{\"currentPageToken\": (26554 more) ..."}|0xdfeb296
+10:56:19.0 (396923125)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller","output":"{\"currentPageToken\": (26554 more) ..."}|0xdfeb296
+10:56:19.0 (396934228)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+10:56:19.0 (396939832)|HEAP_ALLOCATE|[15]|Bytes:5
+10:56:19.0 (396949967)|VARIABLE_ASSIGNMENT|[15]|this.outputFlag|true|0xdfeb296
+10:56:19.0 (396962406)|STATEMENT_EXECUTE|[19]
+10:56:19.0 (396963970)|STATEMENT_EXECUTE|[19]
+10:56:19.0 (396972382)|HEAP_ALLOCATE|[19]|Bytes:11
+10:56:19.0 (397186561)|HEAP_ALLOCATE|[19]|Bytes:26772
+10:56:19.0 (397223743)|HEAP_ALLOCATE|[19]|Bytes:26783
+10:56:19.0 (397241810)|USER_DEBUG|[19]|DEBUG|data AFTER:ETLC_ApexBridge_Data:[debug=true, input={"mode":"fetchUserFeed","userId":"00550000005d7KnAAI"}, isSuccess=null, messages=null, operation=BFFFollow_Controller, output={"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/feeds/user-profile/00550000005d7KnAAI/feed-elements","elements":[{"actor":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"},"body":{"messageSegments":[{"text":"","type":"MarkupBegin"},{"text":"Account test 1","type":"Text"},{"text":"\n","type":"MarkupEnd"}],"text":"Account test 1\n"},"canShare":false,"capabilities":{"associatedActions":{"platformActionGroups":[]},"bookmarks":{"isBookmarkedByCurrentUser":false},"chatterLikes":{"isLikedByCurrentUser":true,"likesMessage":{"messageSegments":[{"text":"You and ","type":"Text"},{"motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"reference":{"id":"00550000005d7KnAAI","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI"},"text":"Test User","type":"EntityLink"},{"text":" like this.","type":"Text"}],"text":"You and Test User like this."},"myLike":{"id":"0I050000001eP8zCAE","url":"/services/data/v34.0/chatter/likes/0I050000001eP8zCAE"},"page":{"currentPageToken":0,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF/capabilities/chatter-likes/items","items":[{"id":"0I050000001ePDLCA2","likedItem":{"id":"0D55000003LnC3uCAF","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF"},"url":"/services/data/v34.0/chatter/likes/0I050000001ePDLCA2","user":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"}},{"id":"0I050000001eP8zCAE","likedItem":{"id":"0D55000003LnC3uCAF","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF"},"url":"/services/data/v34.0/chatter/likes/0I050000001eP8zCAE","user":{"additionalLabel":null,"communityNickname":"bfffollow1.4689653052892656E12","companyName":"BFFFollow","displayName":"Jaswinder Rattanpal","firstName":"Jaswinder","id":"00550000005cg71AAA","isActive":true,"isInThisCommunity":true,"lastName":"Rattanpal","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":null,"name":"Jaswinder Rattanpal","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA","userType":"Internal"}}],"nextPageToken":null,"nextPageUrl":null,"previousPageToken":null,"previousPageUrl":null,"total":2}},"comments":{"page":{"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF/capabilities/comments/items","items":[],"nextPageToken":null,"nextPageUrl":null,"total":0}},"topics":{"canAssignTopics":true,"items":[{"createdDate":"2016-07-21T18:44:49.000Z","description":null,"id":"0TO50000000YKN1GAO","images":{"coverImageUrl":null,"featuredImageUrl":null},"isBeingDeleted":false,"name":"Topic 1","talkingAbout":0,"url":"/services/data/v34.0/connect/topics/0TO50000000YKN1GAO"},{"createdDate":"2016-07-21T18:44:57.000Z","description":null,"id":"0TO50000000YKNBGA4","images":{"coverImageUrl":null,"featuredImageUrl":null},"isBeingDeleted":false,"name":"Topic 2","talkingAbout":0,"url":"/services/data/v34.0/connect/topics/0TO50000000YKNBGA4"}]}},"clientInfo":null,"createdDate":"2016-07-21T14:44:31.000Z","event":false,"feedElementType":"FeedItem","header":{"messageSegments":[{"motif":{"color":"7F8DE1","largeIconUrl":"/img/icon/accounts64.png","mediumIconUrl":"/img/icon/accounts32.png","smallIconUrl":"/img/icon/accounts16.png","svgIconUrl":null},"reference":{"id":"0015000001Bc4SPAAZ","url":"/services/data/v34.0/chatter/records/0015000001Bc4SPAAZ"},"text":"Edge Communications","type":"EntityLink"},{"text":" — ","type":"Text"},{"motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"reference":{"id":"00550000005d7KnAAI","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI"},"text":"Test User","type":"EntityLink"}],"text":"Edge Communications — Test User"},"id":"0D55000003LnC3uCAF","isDeleteRestricted":false,"modifiedDate":"2016-07-21T14:44:31.000Z","originalFeedItem":null,"originalFeedItemActor":null,"parent":{"id":"0015000001Bc4SPAAZ","motif":{"color":"7F8DE1","largeIconUrl":"/img/icon/accounts64.png","mediumIconUrl":"/img/icon/accounts32.png","smallIconUrl":"/img/icon/accounts16.png","svgIconUrl":null},"mySubscription":null,"name":"Edge Communications","type":"Account","url":"/services/data/v34.0/chatter/records/0015000001Bc4SPAAZ"},"photoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","relativeCreatedDate":"Yesterday at 10:44 AM","type":"TextPost","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LnC3uCAF","visibility":"InternalUsers"},{"actor":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"},"body":{"messageSegments":[{"text":"","type":"MarkupBegin"},{"text":"Test 3","type":"Text"},{"text":"\n","type":"MarkupEnd"}],"text":"Test 3\n"},"canShare":true,"capabilities":{"associatedActions":{"platformActionGroups":[]},"bookmarks":{"isBookmarkedByCurrentUser":false},"chatterLikes":{"isLikedByCurrentUser":false,"likesMessage":null,"myLike":null,"page":{"currentPageToken":0,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003Ln9wICAR/capabilities/chatter-likes/items","items":[],"nextPageToken":null,"nextPageUrl":null,"previousPageToken":null,"previousPageUrl":null,"total":0}},"comments":{"page":{"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003Ln9wICAR/capabilities/comments/items","items":[],"nextPageToken":null,"nextPageUrl":null,"total":0}},"topics":{"canAssignTopics":true,"items":[]}},"clientInfo":null,"createdDate":"2016-07-21T14:41:59.000Z","event":false,"feedElementType":"FeedItem","header":{"messageSegments":[{"motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"reference":{"id":"00550000005d7KnAAI","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI"},"text":"Test User","type":"EntityLink"}],"text":"Test User"},"id":"0D55000003Ln9wICAR","isDeleteRestricted":false,"modifiedDate":"2016-07-21T14:41:59.000Z","originalFeedItem":null,"originalFeedItemActor":null,"parent":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"},"photoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","relativeCreatedDate":"Yesterday at 10:41 AM","type":"TextPost","url":"/services/data/v34.0/chatter/feed-elements/0D55000003Ln9wICAR","visibility":"AllUsers"},{"actor":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"},"body":{"messageSegments":[{"text":"","type":"MarkupBegin"},{"text":"Test 2","type":"Text"},{"text":"\n","type":"MarkupEnd"}],"text":"Test 2\n"},"canShare":true,"capabilities":{"associatedActions":{"platformActionGroups":[]},"bookmarks":{"isBookmarkedByCurrentUser":false},"chatterLikes":{"isLikedByCurrentUser":false,"likesMessage":null,"myLike":null,"page":{"currentPageToken":0,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBshCAF/capabilities/chatter-likes/items","items":[],"nextPageToken":null,"nextPageUrl":null,"previousPageToken":null,"previousPageUrl":null,"total":0}},"comments":{"page":{"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBshCAF/capabilities/comments/items","items":[],"nextPageToken":null,"nextPageUrl":null,"total":0}},"topics":{"canAssignTopics":true,"items":[]}},"clientInfo":null,"createdDate":"2016-07-21T04:34:39.000Z","event":false,"feedElementType":"FeedItem","header":{"messageSegments":[{"motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"reference":{"id":"00550000005d7KnAAI","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI"},"text":"Test User","type":"EntityLink"}],"text":"Test User"},"id":"0D55000003LmBshCAF","isDeleteRestricted":false,"modifiedDate":"2016-07-21T04:34:39.000Z","originalFeedItem":null,"originalFeedItemActor":null,"parent":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"},"photoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","relativeCreatedDate":"Yesterday at 12:34 AM","type":"TextPost","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBshCAF","visibility":"AllUsers"},{"actor":{"additionalLabel":null,"communityNickname":"bfffollow1.4689653052892656E12","companyName":"BFFFollow","displayName":"Jaswinder Rattanpal","firstName":"Jaswinder","id":"00550000005cg71AAA","isActive":true,"isInThisCommunity":true,"lastName":"Rattanpal","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":null,"name":"Jaswinder Rattanpal","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA","userType":"Internal"},"body":{"messageSegments":[{"text":"","type":"MarkupBegin"},{"text":"Test 1","type":"Text"},{"text":"\n","type":"MarkupEnd"}],"text":"Test 1\n"},"canShare":true,"capabilities":{"associatedActions":{"platformActionGroups":[]},"bookmarks":{"isBookmarkedByCurrentUser":false},"chatterLikes":{"isLikedByCurrentUser":false,"likesMessage":{"messageSegments":[{"motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"reference":{"id":"00550000005d7KnAAI","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI"},"text":"Test User","type":"EntityLink"},{"text":" likes this.","type":"Text"}],"text":"Test User likes this."},"myLike":null,"page":{"currentPageToken":0,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV/capabilities/chatter-likes/items","items":[{"id":"0I050000001eN0WCAU","likedItem":{"id":"0D55000003LmBsDCAV","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV"},"url":"/services/data/v34.0/chatter/likes/0I050000001eN0WCAU","user":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"}}],"nextPageToken":null,"nextPageUrl":null,"previousPageToken":null,"previousPageUrl":null,"total":1}},"comments":{"page":{"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV/capabilities/comments/items","items":[{"body":{"messageSegments":[{"text":"Test","type":"Text"}],"text":"Test"},"capabilities":{},"clientInfo":null,"createdDate":"2016-07-21T14:45:26.000Z","feedElement":{"id":"0D55000003LmBsDCAV","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV"},"id":"0D750000002KRgUCAW","isDeleteRestricted":false,"likes":{"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/comments/0D750000002KRgUCAW/likes","items":[],"nextPageToken":null,"nextPageUrl":null,"previousPageToken":null,"previousPageUrl":null,"total":0},"likesMessage":null,"moderationFlags":null,"myLike":null,"parent":{"id":"00550000005cg71AAA","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA"},"relativeCreatedDate":"Yesterday at 10:45 AM","type":"TextComment","url":"/services/data/v34.0/chatter/comments/0D750000002KRgUCAW","user":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"}},{"body":{"messageSegments":[{"accessible":true,"name":"Test User","record":{"additionalLabel":null,"communityNickname":"jrattanpal","companyName":null,"displayName":"Test User","firstName":"Test","id":"00550000005d7KnAAI","isActive":true,"isInThisCommunity":true,"lastName":"User","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":{"id":"0E85000000Dvxc2CAB","url":"/services/data/v34.0/chatter/subscriptions/0E85000000Dvxc2CAB"},"name":"Test User","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005d7KnAAI","userType":"Internal"},"text":"@Test User","type":"Mention"}],"text":"@Test User"},"capabilities":{},"clientInfo":null,"createdDate":"2016-07-21T14:45:59.000Z","feedElement":{"id":"0D55000003LmBsDCAV","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV"},"id":"0D750000002KRl0CAG","isDeleteRestricted":false,"likes":{"currentPageToken":null,"currentPageUrl":"/services/data/v34.0/chatter/comments/0D750000002KRl0CAG/likes","items":[],"nextPageToken":null,"nextPageUrl":null,"previousPageToken":null,"previousPageUrl":null,"total":0},"likesMessage":null,"moderationFlags":null,"myLike":null,"parent":{"id":"00550000005cg71AAA","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA"},"relativeCreatedDate":"Yesterday at 10:45 AM","type":"TextComment","url":"/services/data/v34.0/chatter/comments/0D750000002KRl0CAG","user":{"additionalLabel":null,"communityNickname":"bfffollow1.4689653052892656E12","companyName":"BFFFollow","displayName":"Jaswinder Rattanpal","firstName":"Jaswinder","id":"00550000005cg71AAA","isActive":true,"isInThisCommunity":true,"lastName":"Rattanpal","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":null,"name":"Jaswinder Rattanpal","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA","userType":"Internal"}}],"nextPageToken":null,"nextPageUrl":null,"total":2}},"topics":{"canAssignTopics":true,"items":[]}},"clientInfo":null,"createdDate":"2016-07-21T04:33:49.000Z","event":false,"feedElementType":"FeedItem","header":{"messageSegments":[{"motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"reference":{"id":"00550000005cg71AAA","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA"},"text":"Jaswinder Rattanpal","type":"EntityLink"}],"text":"Jaswinder Rattanpal"},"id":"0D55000003LmBsDCAV","isDeleteRestricted":false,"modifiedDate":"2016-07-21T14:45:59.000Z","originalFeedItem":null,"originalFeedItemActor":null,"parent":{"additionalLabel":null,"communityNickname":"bfffollow1.4689653052892656E12","companyName":"BFFFollow","displayName":"Jaswinder Rattanpal","firstName":"Jaswinder","id":"00550000005cg71AAA","isActive":true,"isInThisCommunity":true,"lastName":"Rattanpal","motif":{"color":"65CAE4","largeIconUrl":"/img/icon/profile64.png","mediumIconUrl":"/img/icon/profile32.png","smallIconUrl":"/img/icon/profile16.png","svgIconUrl":null},"mySubscription":null,"name":"Jaswinder Rattanpal","photo":{"fullEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_200.png?fromEmail=1","largePhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/F","photoVersionId":null,"smallPhotoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","standardEmailPhotoUrl":"https://bfffollow-dev-ed.my.salesforce.com/img/userprofile/default_profile_45.png?fromEmail=1","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA/photo"},"reputation":null,"title":null,"type":"User","url":"/services/data/v34.0/chatter/users/00550000005cg71AAA","userType":"Internal"},"photoUrl":"https://bfffollow-dev-ed--c.na3.content.force.com/profilephoto/005/T","relativeCreatedDate":"Yesterday at 12:33 AM","type":"TextPost","url":"/services/data/v34.0/chatter/feed-elements/0D55000003LmBsDCAV","visibility":"AllUsers"}],"isModifiedToken":null,"isModifiedUrl":null,"nextPageToken":null,"nextPageUrl":null,"updatesToken":null,"updatesUrl":null}, outputFlag=true, records=null]
+10:56:19.0 (397449185)|METHOD_EXIT|[9]|01p50000002D8iw|BFFFollow_Controller.process(ETLC_ApexBridge_Data)
+10:56:19.0 (397454060)|STATEMENT_EXECUTE|[24]
+10:56:19.0 (397475839)|METHOD_ENTRY|[24]|01p50000002CIEo|ETLC_ApexBridge_Data.toJSON()
+10:56:19.0 (397497546)|VARIABLE_SCOPE_BEGIN|[57]|this|ETLC_ApexBridge_Data|true|false
+10:56:19.0 (397533733)|VARIABLE_ASSIGNMENT|[57]|this|{"debug":true,"input":"{\"mode\":\"fetchUserFe (34 more) ...","operation":"BFFFollow_Controller","output":"{\"currentPageToken\": (26554 more) ...","outputFlag":true}|0xdfeb296
+10:56:19.0 (397540490)|STATEMENT_EXECUTE|[57]
+10:56:19.0 (397541759)|STATEMENT_EXECUTE|[58]
+10:56:19.0 (397555428)|METHOD_ENTRY|[58]||System.JSON.serialize(Object)
+10:56:19.0 (397626012)|STATEMENT_EXECUTE|[22]
+10:56:19.0 (397630624)|STATEMENT_EXECUTE|[23]
+10:56:19.0 (397639458)|HEAP_ALLOCATE|[23]|Bytes:5
+10:56:19.0 (397648755)|VARIABLE_ASSIGNMENT|[23]|this.isSuccess|true|0xdfeb296
+10:56:19.0 (397651638)|STATEMENT_EXECUTE|[24]
+10:56:19.0 (397696658)|STATEMENT_EXECUTE|[31]
+10:56:19.0 (397700806)|STATEMENT_EXECUTE|[32]
+10:56:19.0 (397708531)|HEAP_ALLOCATE|[32]|Bytes:4
+10:56:19.0 (397781445)|VARIABLE_ASSIGNMENT|[32]|this.messages|{"s":1,"v":{}}|0xdfeb296
+10:56:19.0 (397785524)|STATEMENT_EXECUTE|[33]
+10:56:19.0 (398390608)|METHOD_EXIT|[58]||System.JSON.serialize(Object)
+10:56:19.0 (398398347)|METHOD_EXIT|[24]|01p50000002CIEo|ETLC_ApexBridge_Data.toJSON()
+10:56:19.0 (398406891)|SYSTEM_MODE_EXIT|false
+10:56:19.398 (398451450)|CUMULATIVE_LIMIT_USAGE
+10:56:19.398 (398451450)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 122 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:56:19.398 (398451450)|CUMULATIVE_LIMIT_USAGE_END
+
+10:56:19.0 (398500417)|CODE_UNIT_FINISHED|ETLC_ApexBridge_Controller.execute

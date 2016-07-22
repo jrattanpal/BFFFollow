@@ -1,5 +1,8 @@
 ({
-	fetchFollowedUsers : function(component, BFFHelper, selectedUser) {
+    /**
+     * Fetch User feed
+     */
+	fetchUserFeed : function(component, BFFHelper, selectedUser) {
 		var apexBridge = component.find("ApexBridge");
         apexBridge.callApex({
             component: component, 
@@ -10,12 +13,13 @@
             },
             callBackMethod: function (data) {
             	if(data.outputFlag == true){
-                    BFFHelper.hideToast();
-
                     component.set('v.currentDisplayedUser', selectedUser);
                     component.set('v.feedElements', data.output.elements);
+                    if(data.output.elements.length <=0){
+                        $A.util.toggleClass(component.find('noPostsForUser'), 'slds-hide');
+                    }
                 }else{
-                    BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Error occured while getting feed data'})
+                    BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Error occurred while getting feed data'})
                 }
             }
         });

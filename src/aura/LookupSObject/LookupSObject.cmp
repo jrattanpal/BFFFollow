@@ -7,9 +7,10 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
 <aura:component controller="LookupSObjectController" >
 
     <aura:attribute name="SLDSVERSION" type="String" />   
-    <aura:attribute name="debug" type="boolean" />  
+    <aura:attribute name="debug" type="boolean" />
 
 
+    <!-- Component for helper functions like log, gotoURL, showToast -->
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
 
     <!-- Attributes -->
@@ -21,7 +22,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
         description="The static resource path to the svg icon to use." />
     <aura:attribute name="listIconClass" type="String" default="slds-icon-custom-11" description="The SLDS class to use for the icon." />
     <aura:attribute name="searchString" type="String"  description="The search string to find." />
-    <aura:attribute name="matches" type="LookupSObjectController.Result[]" description="The resulting matches returned by the Apex controller." />
+    <aura:attribute name="matches" type="BFFFollow.LookupSObjectControllerResult[]" description="The resulting matches returned by the Apex controller." />
 
 
     <aura:attribute name="placeholder" type="String"  description="Placeholder for Input Field" />

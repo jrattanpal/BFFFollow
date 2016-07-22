@@ -4,6 +4,12 @@
      */
     handleIdUpdate : function(component, event, helper) {
 		var BFFHelper = component.find("BFFFollow_Helper");
+        BFFHelper.hideToast();
+
+		if(component.get('v.followedUsers').length >= component.get('v.maxFollowedUsers')){
+            BFFHelper.showToast({s: 'message', t: 'Limit exceeded!', m: 'Maximum number of allowed users ('+component.get('v.maxFollowedUsers')+') have already been followed!'});
+            return;
+        }
 
         // Get the Id from the Event
         var recordId = event.getParam("sObjectId");
@@ -14,9 +20,6 @@
         component.set('v.recordName', recordName);
 
         if(typeof(recordId) != 'undefined' && typeof(recordName) != 'undefined'){
-            //In case Toast was visible before, hide it now to not confuse users
-            BFFHelper.hideToast();
-
             helper.saveFollowedUsers(component, helper, BFFHelper, recordId, recordName);
         }else{
             BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Search and Select at least one user'});

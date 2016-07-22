@@ -1,2 +1,3 @@
-.THIS {
+.THIS .uiInput--select.select:not([multiple]){
+    background-image: none;
 }
