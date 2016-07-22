@@ -1,12 +1,5 @@
 ({
-	fetchFollowedUsers : function(component, BFFHelper) {
-		var selectedUser = component.find('UserList').get('v.value');                	
-		if(selectedUser == 0){
-			return;
-		}
-        if(selectedUser == component.get('v.currentDisplayedUser')){
-            return;
-        }
+	fetchFollowedUsers : function(component, BFFHelper, selectedUser) {
 		var apexBridge = component.find("ApexBridge");
         apexBridge.callApex({
             component: component, 
@@ -17,12 +10,12 @@
             },
             callBackMethod: function (data) {
             	if(data.outputFlag == true){
-                	BFFHelper.log({m: 'data.output :'});
-            		BFFHelper.log({m: data.output});
-                    BFFHelper.log({m: data.output.elements});
-                    
+                    BFFHelper.hideToast();
+
                     component.set('v.currentDisplayedUser', selectedUser);
                     component.set('v.feedElements', data.output.elements);
+                }else{
+                    BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Error occured while getting feed data'})
                 }
             }
         });

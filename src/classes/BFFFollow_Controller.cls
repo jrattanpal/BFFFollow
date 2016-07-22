@@ -43,6 +43,9 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 	 */
 	public boolean saveFollowedUsers(Id followedById, String followedUsers){
 		try{
+			if(followedUsers == null){
+				return false;
+			}
 			String soql = 'SELECT Id FROM BFFFollow__c WHERE FollowedBy__c=\''+followedById+'\' limit 1';
 
 			if(debugFlag){System.debug('fetchFollowedUsers:soql:'+soql);}
@@ -63,9 +66,10 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 	}
 
 	public String fetchUserFeed(Id userId){
+		System.debug('userId:' + userId);
 		try{
 			ConnectApi.FeedElementPage fep = ConnectApi.ChatterFeeds.getFeedElementsFromFeed(Network.getNetworkId(), ConnectApi.FeedType.UserProfile, userId);
-			System.debug(fep);
+			if(debugFlag){ System.debug(fep); }
 			return JSON.serialize(fep);
 		}catch(Exception e){
 			System.debug(e.getMessage());

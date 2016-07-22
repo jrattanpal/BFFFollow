@@ -1,14 +1,15 @@
 ({
 	
-	saveFollowedUsers : function(component, helper, BFFHelper) {
+	saveFollowedUsers : function(component, helper, BFFHelper, recordId, recordName) {
 		//Add current user to existing user list
-		var followedUsers = this.processFollowedUsers(component, BFFHelper);
+		var followedUsers = this.processFollowedUsers(component, BFFHelper, recordId, recordName);
 
 		//If no changes were made then no need for Apex call
 		if(followedUsers == null){
+            BFFHelper.showToast({s: 'info', t: 'Info!', m: 'You have already followed selected user.'});
 			return;
 		}
-		BFFHelper.log({m: followedUsers});
+		BFFHelper.log({m: 'BFFFollow_UserHelper.js:saveFollowedusers:followedUsers:: ' + followedUsers});
 
 		
 		var apexBridge = component.find("ApexBridge");
@@ -20,11 +21,11 @@
                 debug: component.get('v.debug')
             },
             callBackMethod: function (data) {
-
-            	BFFHelper.log({m: data});
         		if(data.outputFlag == true){
-        			//component.set('v.followedUsers', followedUsers);
+            		BFFHelper.showToast({s: 'confirm', t: 'Success!', m: 'You are now following "'+recordName+'" .'});
         			helper.alertForFollowedUsers(component, BFFHelper, followedUsers);
+        		}else{
+            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while following user.'});
         		}
             }
         });
@@ -38,13 +39,10 @@
 		BFFHelper.log({m: 'Firing e.c:BFFFollow_UsersUpdated'});
 		appEvent.fire();
 	},
-	processFollowedUsers: function(component, BFFHelper){
+	processFollowedUsers: function(component, BFFHelper, recordId, recordName){
 		var followedUsers = component.get('v.followedUsers');
 
 		var followedUsersNew = Array();
-		
-		var recordId = component.get('v.recordId');
-		var recordName = component.get('v.recordName');
 
 		var recordExists = false;
 

@@ -13,7 +13,7 @@
                 }
             ],
             "location": {
-                "column": 21,
+                "column": 24,
                 "line": 4
             },
             "modifiers": [
@@ -22,27 +22,6 @@
                 "testMethod"
             ],
             "name": "BFFFollow_Controller_saveFollowedUsers_Positive_Test",
-            "parameters": [],
-            "references": [],
-            "returnType": "void",
-            "type": null
-        },
-        {
-            "annotations": [
-                {
-                    "name": "IsTest"
-                }
-            ],
-            "location": {
-                "column": 21,
-                "line": 23
-            },
-            "modifiers": [
-                "static",
-                "public",
-                "testMethod"
-            ],
-            "name": "BFFFollow_Controller_fetchFollowedUserss_Positive_Test",
             "parameters": [],
             "references": [],
             "returnType": "void",
@@ -76,8 +55,30 @@
         {
             "annotations": [],
             "location": {
-                "column": 23,
+                "column": 17,
                 "line": 5
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 7
             },
             "modifiers": [],
             "name": "data",
@@ -88,7 +89,7 @@
             "annotations": [],
             "location": {
                 "column": 30,
-                "line": 9
+                "line": 10
             },
             "modifiers": [],
             "name": "d1",
@@ -98,87 +99,32 @@
         {
             "annotations": [],
             "location": {
-                "column": 16,
-                "line": 14
+                "column": 33,
+                "line": 17
             },
             "modifiers": [],
-            "name": "strD2",
+            "name": "testPage",
             "references": [],
-            "type": "String"
+            "type": "FeedItemPage"
         },
         {
             "annotations": [],
             "location": {
-                "column": 30,
-                "line": 15
+                "column": 35,
+                "line": 18
             },
             "modifiers": [],
-            "name": "d2",
-            "references": [],
-            "type": "ETLC_ApexBridge_Data"
-        },
-        {
-            "annotations": [],
-            "location": {
-                "column": 28,
-                "line": 19
-            },
-            "modifiers": [],
-            "name": "objList",
+            "name": "testItemList",
             "references": [],
             "type": "LIST"
         },
         {
             "annotations": [],
             "location": {
-                "column": 28,
+                "column": 16,
                 "line": 26
             },
             "modifiers": [],
-            "name": "objList",
-            "references": [],
-            "type": "LIST"
-        },
-        {
-            "annotations": [],
-            "location": {
-                "column": 10,
-                "line": 30
-            },
-            "modifiers": [],
-            "name": "followedUsers",
-            "references": [],
-            "type": "String"
-        },
-        {
-            "annotations": [],
-            "location": {
-                "column": 10,
-                "line": 31
-            },
-            "modifiers": [],
-            "name": "data",
-            "references": [],
-            "type": "String"
-        },
-        {
-            "annotations": [],
-            "location": {
-                "column": 30,
-                "line": 32
-            },
-            "modifiers": [],
-            "name": "d1",
-            "references": [],
-            "type": "ETLC_ApexBridge_Data"
-        },
-        {
-            "annotations": [],
-            "location": {
-                "column": 16,
-                "line": 37
-            },
-            "modifiers": [],
             "name": "strD2",
             "references": [],
             "type": "String"
@@ -187,7 +133,7 @@
             "annotations": [],
             "location": {
                 "column": 30,
-                "line": 39
+                "line": 27
             },
             "modifiers": [],
             "name": "d2",

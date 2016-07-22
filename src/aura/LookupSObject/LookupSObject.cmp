@@ -56,7 +56,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
                     <ui:inputText placeholder="{!v.placeholder}" aura:id="lookup" value="{!v.searchString}" class="slds-input" updateOn="keyup" keyup="{!c.search}" />
                 </div>
                 <div class="slds-form-element">
-                <button onclick="{!c.fireEvent}" class="slds-button slds-button--brand">
+                <button aura:id="lookup-button" onclick="{!c.fireEvent}" class="slds-button slds-button--brand slds-hide">
                      {!v.buttonLabel}
                 </button>
                 </div>

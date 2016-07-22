@@ -1,8 +1,8 @@
 ({
 	removeFollowedUsers: function(component, BFFHelper){
-		var selectedUser = component.find('removeSelectedUsers').get('v.value');
-		
-		if(selectedUser == 0){
+		var selectedUserId = component.find('removeSelectedUsersSelect').get('v.value');
+
+		if(selectedUserId == 0){
 			return null;
 		}
 
@@ -11,8 +11,11 @@
 		var followedUsersNew = Array();
 
 		for(var i=0; i < followedUsers.length; i++){
-			if(followedUsers[i].id !=  selectedUser){
+			if(followedUsers[i].id !=  selectedUserId){
 				followedUsersNew.push({id: followedUsers[i].id, name: followedUsers[i].name});
+			}else{
+				component.set('v.selectedUserId', followedUsers[i].id);
+				component.set('v.selectedUserName', followedUsers[i].name);
 			}
 		}
 
@@ -30,6 +33,7 @@
 		if(followedUsers == null){
 			return;
 		}
+
 		BFFHelper.log({m: followedUsers});
 
 		
@@ -42,11 +46,11 @@
                 debug: component.get('v.debug')
             },
             callBackMethod: function (data) {
-
-            	BFFHelper.log({m: data});
         		if(data.outputFlag == true){
-        			//component.set('v.followedUsers', followedUsers);
+            		BFFHelper.showToast({s: 'success', t: 'Success!', m: 'You have successfully Un-Followed "'+component.get('v.selectedUserName')+'".'});
         			helper.alertForFollowedUsers(component, BFFHelper, followedUsers);
+        		}else{
+            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while Un-Following user.'});
         		}
             }
         });

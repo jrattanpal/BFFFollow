@@ -3,10 +3,11 @@
     <aura:attribute name="followedUsers" type="Object[]" />
     <aura:attribute name="currentDisplayedUser" type="String" />
 
+
     <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"/>
     
-    <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
+    <aura:handler event="c:BFFFollow_UsersUpdated" action="{!c.handleUsersUpdated}"/>
 
     <aura:attribute name="feedElements" type="Object[]" />
     <div class="slds-form--inline">
@@ -21,9 +22,11 @@
             </div>
         </div>
         <div class="slds-form-element">
-            <button type="button" onclick="{!c.refreshFeed}" class="slds-button slds-button--brand">
-                Refresh Feed
-            </button>
+            <aura:if isTrue="{!v.feedElements.length > 0}">
+                <button aura:id="refreshButton" type="button" onclick="{!c.refreshFeed}" class="slds-button slds-button--brand">
+                    Refresh Feed
+                </button>
+            </aura:if>
         </div>
     </div>
 

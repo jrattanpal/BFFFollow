@@ -1,6 +1,10 @@
 <aura:component >
-	
-    <aura:attribute name="debug" type="Boolean" default="false" />    
-    <aura:method name="log" action="{!c.log}" access="public" />
+    <aura:attribute name="debug" type="Boolean" default="false" />
 
+    <aura:method name="log" action="{!c.log}" access="public" />   
+    <aura:method name="showToast" action="{!c.showToast}" access="public" />
+    <aura:method name="hideToast" action="{!c.hideToast}" access="public" />
+
+
+    <div aura:id="showToastDiv" id="test"></div>
 </aura:component>

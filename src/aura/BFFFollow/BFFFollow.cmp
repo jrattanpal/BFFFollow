@@ -7,10 +7,10 @@
 	<c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
 
-
     <aura:attribute name="followedUsers" type="Object[]" />
     
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="activeTabNumber" type="String" default="1" />
 
 	
 	<aura:handler event="c:BFFFollow_UsersUpdated" action="{!c.handleUsersUpdated}"/>
@@ -19,31 +19,31 @@
 		<div class="slds-tabs--scoped">
 			<ul class="slds-tabs--scoped__nav" role="tablist">
 				<li aura:id="tab-li-scoped-1"
-					class="slds-tabs--scoped__item slds-text-heading--label slds-active" title="Item One" role="presentation">
+					class="{! 'slds-tabs--scoped__item slds-text-heading--label ' + (v.activeTabNumber == '1'?'slds-active':'')}" title="Item One" role="presentation">
 					<a aura:id="tabA" class="slds-tabs--scoped__link" href="javascript:void(0);" 
 						role="tab" tabindex="1" aria-selected="true"
 						id="tab-scoped-1__item" onclick="{!c.onClick}">Feed</a>
 				</li>
 				<li aura:id="tab-li-scoped-2"
-					class="slds-tabs--scoped__item slds-text-heading--label" title="Item Two" role="presentation">
+					class="{! 'slds-tabs--scoped__item slds-text-heading--label ' + (v.activeTabNumber == '2'?'slds-active':'')}" title="Item Two" role="presentation">
 					<a aura:id="tabA" class="slds-tabs--scoped__link" href="javascript:void(0);" 
 						role="tab" tabindex="2" aria-selected="false" 
 						id="tab-scoped-2__item" onclick="{!c.onClick}">Follow</a>
 				</li>
 				<li aura:id="tab-li-scoped-3"
-					class="slds-tabs--scoped__item slds-text-heading--label" title="Item Three" role="presentation">
+					class="{! 'slds-tabs--scoped__item slds-text-heading--label ' + (v.activeTabNumber == '3'?'slds-active':'')}" title="Item Three" role="presentation">
 					<a aura:id="tabA" class="slds-tabs--scoped__link" href="javascript:void(0);" 
 						role="tab" tabindex="3" aria-selected="false" 
 						id="tab-scoped-3__item" onclick="{!c.onClick}">Un-Follow</a>
 				</li>
 			</ul>
-			<div aura:id="tab-div-scoped-1" class="slds-tabs--scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item">
+			<div aura:id="tab-div-scoped-1" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '1'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-1__item">
 				<c:BFFFollow_Feed debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 			</div>
-			<div aura:id="tab-div-scoped-2" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-2__item">
+			<div aura:id="tab-div-scoped-2" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '2'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-2__item">
 				<c:BFFFollow_Users debug="{!v.debug}" followedUsers="{!v.followedUsers}" SLDSVERSION="{!v.SLDSVERSION}"/>
 			</div>
-			<div aura:id="tab-div-scoped-3" class="slds-tabs--scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-3__item">
+			<div aura:id="tab-div-scoped-3" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '3'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-3__item">
 				<c:BFFFollow_UsersRemove debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 			</div>
 		</div>

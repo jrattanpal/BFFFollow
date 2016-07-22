@@ -6,11 +6,14 @@
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"/>
     
     <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
+
+    <aura:attribute name="selectedUserId" type="String" Default="0" access='private' />
+    <aura:attribute name="selectedUserName" type="String" access='private' />
 	
     <div class="slds-form--inline">
         <div class="slds-form-element">
             <div class="slds-select_container">
-                <ui:inputSelect class="slds-select" aura:id="removeSelectedUsers">
+                <ui:inputSelect class="slds-select" aura:id="removeSelectedUsersSelect" change="{!c.onSelectChange}">
                     <ui:inputSelectOption text="0" label="Select a User"/>
                     <aura:iteration items="{!v.followedUsers}" var="obj">
                          <ui:inputSelectOption text="{!obj.id}" label="{!obj.name}"/>
@@ -20,7 +23,7 @@
         </div>
         <div class="slds-form-element">        
             <aura:if isTrue="{! v.followedUsers.length > 0 }">
-                <button onclick="{!c.removeSelectedUsers}" class="slds-button slds-button--brand">
+                <button aura:id="removeSelectedUsers" onclick="{!c.removeSelectedUsers}" class="slds-button slds-button--brand slds-hide">
                     Remove Selected User
                 </button>
             </aura:if> 

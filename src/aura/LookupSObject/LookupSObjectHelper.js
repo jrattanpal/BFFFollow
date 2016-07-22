@@ -91,14 +91,9 @@
 
         // The Object label is the inner text)
         var objectLabel = event.currentTarget.innerText;
-
-        // Log the Object Id and Label to the console
-        console.log('objectId=' + objectId);
-        console.log('objectLabel=' + objectLabel);
                 
         cmp.set('v.objectId',objectId);
         cmp.set('v.objectLabel', objectLabel);
-
 
         // Update the Searchstring with the Label
         cmp.set("v.searchString", objectLabel);
@@ -114,6 +109,10 @@
         // Show the Lookup pill
         var lookupPill = cmp.find("lookup-pill");
         $A.util.removeClass(lookupPill, 'slds-hide');
+
+        // Show the Lookup button
+        var lookupButton = cmp.find("lookup-button");
+        $A.util.removeClass(lookupButton, 'slds-hide');
 
         // Lookup Div has selection
         var inputElement = cmp.find('lookup-div');
@@ -133,8 +132,7 @@
         
         // Get the Instance Id of the Component
         var instanceId = cmp.get('v.instanceId');
-console.log('objectId:' + objectId);
-console.log('objectLabel:' + objectLabel);
+
         // Populate the event with the selected Object Id and Instance Id
         updateEvent.setParams({
             "sObjectId" : objectId, 
@@ -170,6 +168,10 @@ console.log('objectLabel:' + objectLabel);
         // Hide the Lookup pill
         var lookupPill = cmp.find("lookup-pill");
         $A.util.addClass(lookupPill, 'slds-hide');
+
+        // Show the Lookup button
+        var lookupButton = cmp.find("lookup-button");
+        $A.util.addClass(lookupButton, 'slds-hide');
 
         // Show the Input Element
         var inputElement = cmp.find('lookup');

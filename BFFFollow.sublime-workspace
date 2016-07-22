@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"obj",
+				"objectLabel"
+			],
+			[
+				"fee",
+				"feedElement"
+			],
+			[
+				"feed",
+				"feedElementProcessed"
+			],
+			[
 				"check",
 				"checkboxData"
 			],
@@ -184,23 +196,18 @@
 			"file": "src/classes/BFFFollow_Controller.cls",
 			"settings":
 			{
-				"buffer_size": 2422,
+				"buffer_size": 2610,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/aura/LookupSObject/LookupSObject.cmp",
+			"contents": "<aura:component >	\n    <aura:attribute name=\"debug\" type=\"Boolean\" default=\"false\" />\n    <aura:attribute name=\"followedUsers\" type=\"Object[]\" />\n    <aura:attribute name=\"currentDisplayedUser\" type=\"String\" />\n\n    <c:ETLC_ApexBridge aura:id=\"ApexBridge\" debugClient=\"{!v.debug}\" debugServer=\"{!v.debug}\"/>\n    <c:BFFFollow_Helper aura:id=\"BFFFollow_Helper\" debug=\"{!v.debug}\"/>\n    \n    <aura:registerEvent name=\"BFFFollow_UsersUpdated\" type=\"c:BFFFollow_UsersUpdated\" />\n\n    <aura:attribute name=\"feedElements\" type=\"Object[]\" />\n    <div class=\"slds-form--inline\">\n        <div class=\"slds-form-element\">\n            <div class=\"slds-select_container\">\n                <ui:inputSelect class=\"slds-select\" aura:id=\"UserList\"  change=\"{!c.onSelectChange}\">\n                    <ui:inputSelectOption text=\"0\" label=\"Select a User\"/>\n                    <aura:iteration items=\"{!v.followedUsers}\" var=\"obj\">\n                         <ui:inputSelectOption text=\"{!obj.id}\" label=\"{!obj.name}\"/>\n                    </aura:iteration>\n                </ui:inputSelect>\n            </div>\n        </div>\n        <div class=\"slds-form-element\">\n            <aura:if isTrue=\n            <button type=\"button\" onclick=\"{!c.refreshFeed}\" class=\"slds-button slds-button--brand\">\n                Refresh Feed\n            </button>\n        </div>\n    </div>\n\n    <aura:if isTrue=\"{!v.feedElements.length > 0}\">\n        <div class=\"slds-feed\">\n            <ul class=\"slds-feed__list\">\n                <aura:iteration items=\"{!v.feedElements}\" var=\"obj\">\n                    &nbsp;\n                    <aura:if isTrue=\"{! obj.body.text != null}\">\n                        <c:BFFFollow_FeedItem feedElement=\"{!obj}\" />\n                    </aura:if>\n                </aura:iteration>\n            </ul>\n        </div>\n    </aura:if>\n</aura:component>",
+			"file": "src/aura/BFFFollow_Feed/BFFFollow_Feed.cmp",
+			"file_size": 1847,
+			"file_write_time": 131136076966007537,
 			"settings":
 			{
-				"buffer_size": 4819,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/aura/BFFFollow/BFFFollow.cmp",
-			"settings":
-			{
-				"buffer_size": 2811,
+				"buffer_size": 1835,
 				"line_ending": "Windows"
 			}
 		}
@@ -272,6 +279,7 @@
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_FeedItem",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersUpdated",
@@ -279,33 +287,41 @@
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/DemoApp",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_ApexBridge",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_PleaseWait",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/inputLookup",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/svg",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/staticresources"
 	],
 	"file_history":
 	[
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_Feed.cmp",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_FeedHelper.js",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_FeedController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObjectHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObjectController.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove/BFFFollow_UsersRemove.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObject.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_Feed.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_Users.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_UsersController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_FeedItem/BFFFollow_FeedItem.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_FeedController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Feed/BFFFollow_FeedHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollow.cmp",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_FeedItem/BFFFollow_FeedItemController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_ApexBridge/ETLC_ApexBridgeHelper.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollowController.js",
+		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Resources/BFFFollow_Resources.cmp",
+		"/C/Users/jrattanpal/Downloads/tabs/CraigslistAppHelper.js",
+		"/C/Users/jrattanpal/Downloads/tabs/CraigslistApp.app",
+		"/C/Users/jrattanpal/Downloads/tabs/CraigslistAppController.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_UsersHelper.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove/BFFFollow_UsersRemoveHelper.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersRemove/BFFFollow_UsersRemoveController.js",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_Users.cmp",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollowController.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Helper/BFFFollow_Helper.cmp",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/DemoApp/DemoApp.app",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollow.cmp",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Resources/BFFFollow_Resources.cmp",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/ETLC_ApexBridge/ETLC_ApexBridgeHelper.js",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObject.cmp",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Users/BFFFollow_UsersController.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/classes/BFFFollow_Controller_Test.cls",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow/BFFFollowHelper.js",
 		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/aura/AccountList/AccountListController.js",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_UsersUpdated/BFFFollow_UsersUpdated.evt",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/BFFFollow_Helper/BFFFollow_HelperController.js",
-		"/C/Server/Workspace/MavensMate/BFFFollow/src/aura/LookupSObject/LookupSObjectHelper.js",
 		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/aura/AccountList/AccountList.cmp",
 		"/C/Server/Workspace/MavensMate/BFFFollow/src/classes/ETLC_ApexBridge_Data.cls",
 		"/C/Users/jrattanpal/Downloads/ETLC_ApexBridge-master/src/classes/ContactsController.cls",
@@ -405,13 +421,7 @@
 		"/C/Server/web/symfony/LightningOut/app/config/config.yml",
 		"/C/Server/web/php/LOut/index.html",
 		"/C/Server/web/php-getting-started/composer.json",
-		"/C/Server/web/php-getting-started/web/index.php",
-		"/C/Server/web/LOut_php/composer.json",
-		"/C/Server/web/LOut_php/.gitignore",
-		"/C/Server/web/LOut_php/readme.txt",
-		"/C/Server/web/LOut_php/web/demo_rest.php",
-		"/C/Server/web/LOut_php/commit.bat",
-		"/C/Server/web/php-getting-started/web/views/layout.html"
+		"/C/Server/web/php-getting-started/web/index.php"
 	],
 	"find":
 	{
@@ -434,6 +444,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"objectId",
+			"callBackMethod",
+			"childNodes",
+			"{!feedElement",
+			"!obj",
+			"Jason Rogers",
+			"21",
+			"svg",
+			"cmp",
 			"followedUsersArr",
 			"symbols.svg",
 			"SLDSVERSION",
@@ -507,6 +526,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"{!v.feedElement",
+			"!feedElement",
+			"{!obj.actor.name}",
+			"component",
 			"followedUsersNew",
 			"v.SLDSVERSION",
 			"\"",
@@ -529,7 +552,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -557,7 +580,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -566,43 +589,43 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2422,
+						"buffer_size": 2610,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2204,
-								2204
+								2364,
+								2411
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
-						"translation.x": 0.0,
-						"translation.y": 924.0,
+						"translation.x": 120.0,
+						"translation.y": 703.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/aura/LookupSObject/LookupSObject.cmp",
+					"file": "src/aura/BFFFollow_Feed/BFFFollow_Feed.cmp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4819,
+						"buffer_size": 1835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								319,
-								330
+								1400,
+								1353
 							]
 						],
 						"settings":
@@ -612,39 +635,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 396.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/aura/BFFFollow/BFFFollow.cmp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2811,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2299,
-								2299
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 528.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

@@ -75,7 +75,7 @@
             "annotations": [],
             "location": {
                 "column": 16,
-                "line": 65
+                "line": 68
             },
             "modifiers": [
                 "public"
@@ -207,7 +207,7 @@
             "annotations": [],
             "location": {
                 "column": 11,
-                "line": 46
+                "line": 49
             },
             "modifiers": [],
             "name": "soql",
@@ -218,7 +218,7 @@
             "annotations": [],
             "location": {
                 "column": 18,
-                "line": 49
+                "line": 52
             },
             "modifiers": [],
             "name": "dbRecords",
@@ -229,7 +229,7 @@
             "annotations": [],
             "location": {
                 "column": 17,
-                "line": 50
+                "line": 53
             },
             "modifiers": [],
             "name": "record",
@@ -240,7 +240,7 @@
             "annotations": [],
             "location": {
                 "column": 33,
-                "line": 65
+                "line": 68
             },
             "modifiers": [],
             "name": "userId",
@@ -251,7 +251,7 @@
             "annotations": [],
             "location": {
                 "column": 31,
-                "line": 67
+                "line": 71
             },
             "modifiers": [],
             "name": "fep",

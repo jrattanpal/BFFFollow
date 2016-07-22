@@ -1,18 +1,5 @@
 ({
-	
-	followUser : function(component, event, helper) {
-		var BFFHelper = component.find("BFFFollow_Helper");
-                	
-		helper.saveFollowedUsers(component, helper, BFFHelper);
-	},
-    removeSelectedUsers: function(component, event, helper){
-        var checkboxData = component.find('checkbox');
-        for(var i=0; i<checkboxData.length; i++){
-            console.log(checkboxData[i].get('v.value'));
-        }
-        console.log(JSON.stringify(checkboxData));
-    },
-	/**
+    /**
      * Handler for receiving the updateLookupIdEvent event
      */
     handleIdUpdate : function(component, event, helper) {
@@ -26,9 +13,14 @@
         component.set('v.recordId', recordId);        
         component.set('v.recordName', recordName);
 
-        var BFFHelper = component.find("BFFFollow_Helper");
-                    
-        helper.saveFollowedUsers(component, helper, BFFHelper);
+        if(typeof(recordId) != 'undefined' && typeof(recordName) != 'undefined'){
+            //In case Toast was visible before, hide it now to not confuse users
+            BFFHelper.hideToast();
+
+            helper.saveFollowedUsers(component, helper, BFFHelper, recordId, recordName);
+        }else{
+            BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Search and Select at least one user'});
+        }
     },
  
     /**
