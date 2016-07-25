@@ -43,33 +43,63 @@ There are 2 ways to use this component.
 
 ## Technical Details ##
 Events:
-1. COMPONENT: **UpdateLookId** (Lightning-Lookup)
-2. COMPONENT: **ClearLookId** (Lightning-Lookup)
-3. APPLICATION: **BFFFollow_UsersUpdated**
-- Fired when new friends are followed or user removed old followed friend
-- Idea is to update JSON list of followed friends in BFFHelper which, in turn, will pass that data to other components
+<ol>
+    <li>COMPONENT: **UpdateLookId** (Lightning-Lookup)</li>
+    <li>COMPONENT: **ClearLookId** (Lightning-Lookup)</li>
+    <li>APPLICATION: **BFFFollow_UsersUpdated**
+        <ul>
+            <li>- Fired when new friends are followed or user removed old followed friend</li>
+            <li>- Idea is to update JSON list of followed friends in BFFHelper which, in turn, will pass that data to other components</li>
+    </li>
+</ol>
+    
+
+
 
 Components:
-1. **BFFFollow**
-- Global Attributes
----- debug: true/false: If true then display log with console.log or System.debug (in Apex)
----- maxFollowedUsers: Number: Restricts users to follow only upto specified number of users
-- How it works
----- BFFFollow will fire a fetch event to retrieve list of followed friends for current user
----- If no friends are followed then current user will be advised to follow one/more friends
----- This component has 3 tabs which include 3 components
----- First tab, **BFFFollow**_Feed, 
--------- Shows a drop down of followed friends. If a friend is selected then their feed will be fetched.
--------- If No friends are followed then a message will be displayed asking user to add one/more friends
----- Second tab, **BFFFollow_Users**,
--------- Has a lookup field to search for users
--------- Once a user has been searched, it will allow user to select that user as friend and add it to their followed users
--------- After friend has been followed, a new JSON will be generated and an event fired
--------- BFFFollow will catch that event and update followedUsers attribute. which will then traverse down to other components in tabs and update their drop downs etc
----- Third tab, **BFFFollow_UsersRemove**,
--------- Displays list of followed friends as Drop down
--------- User can select a friend and decide to remove that user from the list
--------- After successful removal, component will fire event to let other components know about updated list and refresh other components
+<ul>
+	<li>**BFFFollow**
+	<ul>
+		<li>Global Attributes
+		<ul>
+			<li><strong>debug</strong>: true/false: If true then display log with console.log or System.debug (in Apex)</li>
+			<li><strong>maxFollowedUser</strong>s: Number: Restricts users to follow only upto specified number of users</li>
+		</ul>
+		</li>
+		<li>How it works
+		<ul>
+			<li>BFFFollow will fire a fetch event to retrieve list of followed friends for current user</li>
+			<li>If no friends are followed then current user will be advised to follow one/more friends</li>
+			<li>This component has 3 tabs which include 3 components
+			<ul>
+				<li>First tab, **BFFFollow_Feed**,
+				<ul>
+					<li>Shows a drop down of followed friends. If a friend is selected then their feed will be fetched.</li>
+					<li>If No friends are followed then a message will be displayed asking user to add one/more friends</li>
+				</ul>
+				</li>
+				<li>Second tab, **BFFFollow_Users**,
+				<ul>
+					<li>Has a lookup field to search for users</li>
+					<li>Once a user has been searched, it will allow user to select that user as friend and add it to their followed users</li>
+					<li>After friend has been followed, a new JSON will be generated and an event fired</li>
+					<li>BFFFollow will catch that event and update followedUsers attribute. which will then traverse down to other components in tabs and update their drop downs etc</li>
+				</ul>
+				</li>
+				<li>Third tab, **BFFFollow_UsersRemove**,
+				<ul>
+					<li>Displays list of followed friends as Drop down</li>
+					<li>User can select a friend and decide to remove that user from the list</li>
+					<li>After successful removal, component will fire event to let other components know about updated list and refresh other components</li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
 
 ## Technical Specifications ##
 <img alt="BFFFollow - Diagram" src="resources/BFFFollow_TechDiagram.png" /> 
@@ -77,15 +107,20 @@ Components:
 ## Credits
 Following are some of the component/libraries that I have used in this component. 
 
-1. ETLC_ApexBridge
-1.1 https://eltoro.secure.force.com/ETLC_ApexBridge
-1.2 http://github.com/eltoroit/ETLC_ApexBridge
-
-2. Lookup
-2.1 https://developer.salesforce.com/blogs/developer-relations/2015/06/salesforce-lightning-inputlookup-missing-component.html
-2.2 https://github.com/tscottdev/Lightning-Lookup
-
-
+<ol>
+    <li>ETLC_ApexBridge
+        <ol>
+            <li>https://eltoro.secure.force.com/ETLC_ApexBridge</li>
+            <li>http://github.com/eltoroit/ETLC_ApexBridge</li>
+        </ol>
+    </li>
+    <li>Lookup
+        <ol>
+            <li>https://developer.salesforce.com/blogs/developer-relations/2015/06/salesforce-lightning-inputlookup-missing-component.html</li>
+            <li>https://github.com/tscottdev/Lightning-Lookup</li>
+        </ol>
+    </li>
+</ol>
 
 ## About Me
 I, Jaswinder Rattanpal,  love to work on new things. This time, I tried my hands at creating a new Lightning Component to publish on App Exchange.
