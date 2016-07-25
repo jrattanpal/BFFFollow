@@ -21,8 +21,10 @@ You can use App exchange listing to install the managed package. Or you can use 
 
 **Requirements**
 <ul>
-    <li>Chatter</li>
-    <li>Access to Chatter for the user who need to use the component</li>
+    <li>Chatter
+        <ul><li>Access to Chatter for the user who need to use the component</li></ul>
+    </li>
+    <li>My Domain</li>
     <li>Allow Read/Create/Edit access on "BFFFollow" object after installation
         <ul>
             <li>Users need to upsert a record in this object to store their followed users</li>

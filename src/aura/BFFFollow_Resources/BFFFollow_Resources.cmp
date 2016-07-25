@@ -1,7 +1,8 @@
 <aura:component >
-	
-    <aura:attribute name="SLDSVERSION" type="String" />
 
-    <ltng:require styles="{!'/resource/'+ v.SLDSVERSION + '/assets/styles/salesforce-lightning-design-system.css'}" />
+    <aura:attribute name="SLDSVERSION" type="String" />
+    <aura:attribute name="NAMESPACE" type="String" />
+
+    <ltng:require styles="{!'/resource/'+ v.NAMESPACE +'__' + v.SLDSVERSION + '/assets/styles/salesforce-lightning-design-system.css'}" />
 
 </aura:component>

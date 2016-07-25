@@ -1,15 +1,17 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
 	<!--
-	<design:component>
-		<design:attribute name="debug" label="Show debug information" description="If true, then show debug information in browser console" default="false" />
-		<design:attribute name="maxFollowedUsers" label="Maximum followed users allowed" description="Maximum number of users someone can follow" default="5" />
-	</design:component>
-	--> 
-	
+
+    <design:component>
+        <design:attribute name="debug" label="Show debug information" description="If true, then show debug information in browser console" default="false" />
+        <design:attribute name="maxFollowedUsers" label="Maximum followed users allowed" description="Maximum number of users someone can follow" default="5" />
+    </design:component>
+    -->
+
     <aura:attribute name="debug" type="Boolean" default="false" access="GLOBAL"/>
     <aura:attribute name="maxFollowedUsers" type="Integer" default="5" access="GLOBAL" required="true" />
 
     <aura:attribute name="SLDSVERSION" type="String"  default="SLDS202" />
+    <aura:attribute name="NAMESPACE" type="String"  default="BFFFollow" />
     <!-- keeps track of which tab is enabled; used later on to show/hide tabs -->
     <aura:attribute name="activeTabNumber" type="String" default="1" />
 	<!-- Keeps track of whether chatter is enabled or not; used to decide whether to show tabs or show a message -->
@@ -18,7 +20,7 @@
     <aura:attribute name="followedUsers" type="Object[]" />
 
 	<!-- Load resources like SLDS or other required libraries-->
-    <c:BFFFollow_Resources SLDSVERSION="{!v.SLDSVERSION}" />
+    <c:BFFFollow_Resources SLDSVERSION="{!v.SLDSVERSION}" NAMESPACE="{!v.NAMESPACE}" />
 
 	<!-- https://github.com/eltoroit/ETLC_ApexBridge -->
 	<c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
@@ -59,7 +61,7 @@
 					<c:BFFFollow_Feed debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 				</div>
 				<div aura:id="tab-div-scoped-2" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '2'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-2__item">
-					<c:BFFFollow_Users debug="{!v.debug}" followedUsers="{!v.followedUsers}" SLDSVERSION="{!v.SLDSVERSION}" maxFollowedUsers="{!v.maxFollowedUsers}"/>
+					<c:BFFFollow_Users debug="{!v.debug}" followedUsers="{!v.followedUsers}" SLDSVERSION="{!v.SLDSVERSION}" maxFollowedUsers="{!v.maxFollowedUsers}" NAMESPACE="{!v.NAMESPACE}"/>
 				</div>
 				<div aura:id="tab-div-scoped-3" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '3'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-3__item">
 					<c:BFFFollow_UsersRemove debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
