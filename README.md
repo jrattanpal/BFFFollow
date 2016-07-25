@@ -16,6 +16,13 @@ You can use App exchange listing to install the managed package. Or you can use 
   <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 
+**Requirements**
+- Chatter
+- Access to Chatter for the user who need to use the component
+- Allow Read/Create/Edit access on "BFFFollow" object after installation
+---- Users need to upsert a record in this object to store their followed users
+---- OWD setting can be Private as users don't need to see records for other users
+---- New record will be created when friend is followed; updated if there already is one
 
 ## Usage ##
 There are 2 ways to use this component. 
