@@ -58,7 +58,7 @@ Components:
 -------- After successful removal, component will fire event to let other components know about updated list and refresh other components
 
 ## Technical Specifications ##
-<img alt="BFFFollow - Diagram" src="resources/BFFFollow_Diagram.png" /
+<img alt="BFFFollow - Diagram" src="resources/BFFFollow_Diagram.png" />
 
 ## Credits
 Following are some of the component/libraries that I have used in this component. 
