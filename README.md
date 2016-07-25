@@ -10,7 +10,7 @@ Component uses SLDS and it's Feed component (https://www.lightningdesignsystem.c
 
 How does this component will look like?
 
-<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_Screen.png" /> 
+<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot.png" /> 
 
 ## Installation
 You can use App exchange listing to install the managed package. Or you can use following Deploy button to deploy this code to a salesforce org.
