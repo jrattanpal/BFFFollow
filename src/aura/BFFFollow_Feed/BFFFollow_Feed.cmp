@@ -1,0 +1,57 @@
+<aura:component >	
+    <aura:attribute name="debug" type="Boolean" default="false" />
+    <aura:attribute name="followedUsers" type="Object[]" />
+    <aura:attribute name="currentDisplayedUser" type="String" />
+    <aura:attribute name="feedElements" type="Object[]" />
+
+    <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
+    <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
+
+    <!-- Component for helper functions like log, gotoURL, showToast -->
+    <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
+
+    <!-- Capture event so feedElements can be cleared as user list has changed -->
+    <!-- It might be that current selected user has been removed so we need to wipe the feed -->
+    <aura:handler event="c:BFFFollow_UsersUpdated" action="{!c.handleUsersUpdated}"/>
+
+    <!-- Select list on Feed page to select a user -->
+    <div class="slds-form--inline">
+        <div class="slds-form-element">
+            <div class="slds-select_container">
+                <ui:inputSelect class="slds-select" aura:id="UserList"  change="{!c.getUserFeed}">
+                    <ui:inputSelectOption text="0" label="Select a User"/>
+                    <aura:iteration items="{!v.followedUsers}" var="obj">
+                         <ui:inputSelectOption text="{!obj.id}" label="{!obj.name}"/>
+                    </aura:iteration>
+                </ui:inputSelect>
+            </div>
+        </div>
+        <!-- Allow users to refresh feed for selected user -->
+        <div class="slds-form-element">
+            <aura:if isTrue="{!v.feedElements.length > 0}">
+                <button aura:id="refreshButton" type="button" onclick="{!c.getUserFeed}" class="slds-button slds-button--brand">
+                    Refresh Feed
+                </button>
+            </aura:if>
+        </div>
+    </div>
+
+    <!-- Show feed for selected user. This will only return first page of data -->
+    <aura:if isTrue="{!v.feedElements.length > 0}">
+        <div class="slds-feed">
+            <ul class="slds-feed__list">
+                <aura:iteration items="{!v.feedElements}" var="obj">
+                    &nbsp;
+                    <!--<aura:if isTrue="{! obj.body.text != null}">-->
+                        <c:BFFFollow_FeedItem feedElement="{!obj}" />
+                    <!--</aura:if>-->
+                </aura:iteration>
+            </ul>
+        </div>
+        <aura:set attribute="else">
+            <ui:message aura:id="noPostsForUser" title="No Posts!" severity="message" class="slds-hide">
+                There are currently no posts for this user.
+            </ui:message>
+        </aura:set>
+    </aura:if>
+</aura:component>

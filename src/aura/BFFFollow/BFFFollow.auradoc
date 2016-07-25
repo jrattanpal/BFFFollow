@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>
+		<p>BFFFollow can be used in App Builder. Or you can use it as following:</p>
+		<p>&lt;BFFFollow:BFFFollow debug="true" maxFollowedUsers="5" /&gt;</p>
+	</aura:description>
+</aura:documentation>

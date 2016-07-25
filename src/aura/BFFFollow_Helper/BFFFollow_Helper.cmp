@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="debug" type="Boolean" default="false" />
+
+    <aura:method name="log" action="{!c.log}" access="public" />
+    <aura:method name="gotoURL" action="{!c.gotoURL}" access="public" />
+    <aura:method name="showToast" action="{!c.showToast}" access="public" />
+    <aura:method name="hideToast" action="{!c.hideToast}" access="public" />
+
+    <!-- Div where message will be displayed when showToast is used -->
+    <div aura:id="showToastDiv" id="test"></div>
+</aura:component>
