@@ -7,7 +7,7 @@
 	--> 
 	
     <aura:attribute name="debug" type="Boolean" default="false" access="GLOBAL"/>
-    <aura:attribute name="maxFollowedUsers" type="Integer" default="1" access="GLOBAL"/>
+    <aura:attribute name="maxFollowedUsers" type="Integer" default="5" access="GLOBAL" required="true" />
 
     <aura:attribute name="SLDSVERSION" type="String"  default="SLDS202" />
     <!-- keeps track of which tab is enabled; used later on to show/hide tabs -->

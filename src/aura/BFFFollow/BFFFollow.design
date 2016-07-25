@@ -1,4 +1,4 @@
 <design:component>
-        <design:attribute name="debug" label="Show debug information" description="If true, then show debug information in browser console" default="false" />
-        <design:attribute name="maxFollowedUsers" label="Maximum followed users allowed" description="Maximum number of users someone can follow" default="5" />
+        <design:attribute name="debug" label="Show debug information" description="If true, then show debug information in browser console" default="false"  />
+        <design:attribute name="maxFollowedUsers" label="Maximum followed users allowed" description="Maximum number of users someone can follow" default="5" required="true" />
 </design:component>
