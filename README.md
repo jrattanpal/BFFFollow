@@ -26,9 +26,7 @@ There are 2 ways to use this component.
 
 <BSSFollow:BSSFollow debug="false" maxFollowedUsers="maxFollowedUsers" />
 
-
-## Technical Specifications ##
-<img alt="BFFFollow - Diagram" src="resources/BFFFollow_Diagram.png" />
+>
 
 
 
@@ -61,6 +59,9 @@ Components:
 -------- Displays list of followed friends as Drop down
 -------- User can select a friend and decide to remove that user from the list
 -------- After successful removal, component will fire event to let other components know about updated list and refresh other components
+
+## Technical Specifications ##
+<img alt="BFFFollow - Diagram" src="resources/BFFFollow_Diagram.png" /
 
 ## Credits
 Following are some of the component/libraries that I have used in this component. 
