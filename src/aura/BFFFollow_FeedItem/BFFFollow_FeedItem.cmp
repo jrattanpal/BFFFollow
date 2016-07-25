@@ -1,6 +1,6 @@
 <aura:component >	
     <aura:attribute name="debug" type="Boolean" default="false" />
-    <aura:attribute name="feedElement" type="Object" /> 
+    <aura:attribute name="feedElement" type="Object" />
 
     <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
     <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>

@@ -31,19 +31,22 @@ public with sharing class BFFFollow_Controller_Test {
 
         //https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/connectAPI_TestingApex.htm
         // Build a simple feed item
-        ConnectApi.FeedItemPage testPage = new ConnectApi.FeedItemPage();
+        //https://gist.github.com/alouie-sfdc/2ac9bf52fefc72e3049c0e9ab2b933c9
+        ConnectApi.FeedElementPage testPage = new ConnectApi.FeedElementPage();
         List<ConnectApi.FeedItem> testItemList = new List<ConnectApi.FeedItem>();
         testItemList.add(new ConnectApi.FeedItem());
         testItemList.add(new ConnectApi.FeedItem());
-        //testPage.items = testItemList;
+        testPage.elements = testItemList;
 
-        //ConnectApi.ChatterFeeds.setTestGetFeedElementsFromFeed(Network.getNetworkId(), ConnectApi.FeedType.UserProfile, u.Id, testPage);
+        // Set the test data
+        ConnectApi.ChatterFeeds.setTestGetFeedElementsFromFeed(Network.getNetworkId(),
+                ConnectApi.FeedType.UserProfile, u.id, testPage);
 
 
-        //String strD2 =  ETLC_ApexBridge_Controller.execute(d1.toJson());
-        //ETLC_ApexBridge_Data d2 = ETLC_ApexBridge_Data.fromJSON(strD2);
-        //System.assertEquals(d2.outputFlag, false);
-        //System.assertEquals(d2.output, null);
+        String strD2 =  ETLC_ApexBridge_Controller.execute(d1.toJson());
+        ETLC_ApexBridge_Data d2 = ETLC_ApexBridge_Data.fromJSON(strD2);
+        System.assertEquals(d2.outputFlag, true);
+        //System.assertEquals(d2.output.elements.size(), 2);
 
     }
 
