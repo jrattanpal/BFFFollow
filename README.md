@@ -24,10 +24,7 @@ There are 2 ways to use this component.
 
 2) You can also use this component programmatically and add it to your other components; as needed.
 
-<BSSFollow:BSSFollow debug="false" maxFollowedUsers="maxFollowedUsers" />
-
->
-
+&lt;BSSFollow:BSSFollow debug="false" maxFollowedUsers="maxFollowedUsers" /&gt;
 
 
 ## Technical Details ##
