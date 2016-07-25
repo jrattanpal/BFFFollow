@@ -8,6 +8,9 @@ Users can use a User Lookup field to select Friend and follow her. Followed frie
  
 Component uses SLDS and it's Feed component (https://www.lightningdesignsystem.com/components/feeds/) to style the feed and display to user.
 
+How does this component will look like?
+
+<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_Screen.png" /> 
 
 ## Installation
 You can use App exchange listing to install the managed package. Or you can use following Deploy button to deploy this code to a salesforce org.
