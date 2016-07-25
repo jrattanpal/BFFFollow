@@ -16,11 +16,24 @@ public with sharing class LookupSObjectController
     @AuraEnabled
     public static LookupSObjectControllerResult[] lookup(String searchString, String sObjectAPIName)
     {
+
         // Sanitze the input
         String sanitizedSearchString = String.escapeSingleQuotes(searchString);
         String sanitizedSObjectAPIName = String.escapeSingleQuotes(sObjectAPIName);
 
-		List<LookupSObjectControllerResult> results = new List<LookupSObjectControllerResult>();
+        List<LookupSObjectControllerResult> results = new List<LookupSObjectControllerResult>();
+
+        // Contact fields that will be copied from the Lead
+        String [] userFields = new String [] {'Name'};
+
+        // Obtaining the field name/token map for the Contact object
+        Map<String,Schema.SObjectField> m = Schema.SObjectType.User.fields.getMap();
+        for (String fieldToCheck: userFields) {
+            // Check if the user has create access on the each field
+            if (!m.get(fieldToCheck).getDescribe().isAccessible()) {
+                return results;
+            }
+        }
 
         // Build our SOSL query
         String searchQuery = 'FIND \'' + sanitizedSearchString + '*\' IN ALL FIELDS RETURNING ' + sanitizedSObjectAPIName + '(id,name) Limit 50'; 
@@ -28,12 +41,13 @@ public with sharing class LookupSObjectController
         // Execute the Query
         List<List<SObject>> searchList = search.query(searchQuery);
 
-        // Create a list of matches to return
-		for (SObject so : searchList[0])
-        {
-            results.add(new LookupSObjectControllerResult((String)so.get('Name'), so.Id));
+        if(searchList.size() > 0) {
+            // Create a list of matches to return
+            for (SObject so : searchList[0]) {
+                results.add(new LookupSObjectControllerResult((String) so.get('Name'), so.Id));
+            }
         }
-        
+
         return results;
     }
     

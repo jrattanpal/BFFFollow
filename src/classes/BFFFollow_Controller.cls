@@ -60,10 +60,33 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 	 */
 	public boolean saveFollowedUsers(Id followedById, String followedUsers){
 		try{
+
 			if(followedUsers == null){
 				return false;
 			}
-			String soql = 'SELECT Id FROM BFFFollow__c WHERE FollowedBy__c=\''+followedById+'\' limit 1';
+
+			List<LookupSObjectControllerResult> results = new List<LookupSObjectControllerResult>();
+
+			// Contact fields that will be copied from the Lead
+			String [] fields = new String [] {'Name', 'bfffollow__followedBy__c', 'bfffollow__followedUsers__c'};
+
+			// Obtaining the field name/token map for the Contact object
+			Map<String,Schema.SObjectField> m = Schema.SObjectType.BFFFollow__c.fields.getMap();
+			for (String fieldToCheck: fields) {
+				// Check if the user has create access on the each field
+
+				//if not accessible then return false
+				//If not updatable then return false; update part of update
+				//If not createdable then return false; insert part of upsert
+				if (!m.get(fieldToCheck).getDescribe().isAccessible() ||
+						!m.get(fieldToCheck).getDescribe().isUpdateable() ||
+						!m.get(fieldToCheck).getDescribe().isCreateable()) {
+					return false;
+				}
+			}
+
+			//extra fields are not required but just passing those through ETLC_SecuredDB for accessibility check
+			String soql = 'SELECT Id, followedBy__c, followedUsers__c FROM BFFFollow__c WHERE FollowedBy__c=\''+followedById+'\' limit 1';
 
 			if(debugFlag){System.debug('fetchFollowedUsers:soql:'+soql);}
 			List<sObject> dbRecords = ETLC_SecuredDB.query(soql);
