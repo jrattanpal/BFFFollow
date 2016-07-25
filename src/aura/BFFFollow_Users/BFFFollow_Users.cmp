@@ -30,14 +30,14 @@
             listIconSVGPath="{!'/resource/'+v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
             listIconClass="slds-icon-standard-user"
             instanceId="BFFFollow_Users"
-            buttonLabel="Follow User"
-            placeholder="Search User"
+            buttonLabel="Follow Friend"
+            placeholder="Search Friend"
             SLDSVERSION="{!v.SLDSVERSION}"
             debug="{!v.debug}"
         />
 		<aura:set attribute="else">
             <ui:message title="Info!" severity="info">
-                Maximum number of allowed users ({!v.maxFollowedUsers}) have already been followed!
+                Maximum number of allowed friends ({!v.maxFollowedUsers}) have already been followed!
             </ui:message>
         </aura:set>
 	</aura:if>

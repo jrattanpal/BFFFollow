@@ -50,7 +50,7 @@
             		BFFHelper.showToast({s: 'success', t: 'Success!', m: 'You have successfully Un-Followed "'+component.get('v.selectedUserName')+'".'});
         			helper.alertForFollowedUsers(component, BFFHelper, followedUsers);
         		}else{
-            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while Un-Following user.'});
+            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while Un-Following Friend.'});
         		}
             }
         });
