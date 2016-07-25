@@ -20,22 +20,26 @@ You can use App exchange listing to install the managed package. Or you can use 
 </a>
 
 **Requirements**
-- Chatter
-- Access to Chatter for the user who need to use the component
-- Allow Read/Create/Edit access on "BFFFollow" object after installation
----- Users need to upsert a record in this object to store their followed users
----- OWD setting can be Private as users don't need to see records for other users
----- New record will be created when friend is followed; updated if there already is one
+<ul>
+    <li>Chatter</li>
+    <li>Access to Chatter for the user who need to use the component</li>
+    <li>Allow Read/Create/Edit access on "BFFFollow" object after installation
+        <ul>
+            <li>Users need to upsert a record in this object to store their followed users</li>
+            <li>OWD setting can be Private as users don't need to see records for other users</li>
+            <li>New record will be created when friend is followed; updated if there already is one</li>
+        </ul>
+    </li>
+</ul>
 
 ## Usage ##
 There are 2 ways to use this component. 
-
-1) You can use App Builder to add this component to a Lightning Page and/or tab. Or you can use latest App Builder feature to edit LEX home/record page and add the component there.
-
-2) You can also use this component programmatically and add it to your other components; as needed.
-
-&lt;BSSFollow:BSSFollow debug="false" maxFollowedUsers="5" /&gt;
-
+<ol>
+    <li>You can use App Builder to add this component to a Lightning Page and/or tab. Or you can use latest App Builder feature to edit LEX home/record page and add the component there.</li>
+    <li>You can also use this component programmatically and add it to your other components; as needed.
+        <ul><li>&lt;BSSFollow:BSSFollow debug="false" maxFollowedUsers="5" /&gt;</li></ul>
+    </li>
+</ol>
 
 ## Technical Details ##
 Events:
