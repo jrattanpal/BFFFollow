@@ -12,7 +12,9 @@ Component uses SLDS and it's Feed component (https://www.lightningdesignsystem.c
 
 How does this component will look like?
 
-<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot.png" /> 
+<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot_1.png" /><br/> 
+<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot_2.png" /><br/>
+<img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot_3.png" /> 
 
 ## Installation
 You can use App exchange listing to install the managed package. Or you can use following Deploy button to deploy this code to a salesforce org.
@@ -48,9 +50,9 @@ There are 2 ways to use this component.
 ## Technical Details ##
 Events:
 <ol>
-    <li>COMPONENT: **UpdateLookId** (Lightning-Lookup)</li>
-    <li>COMPONENT: **ClearLookId** (Lightning-Lookup)</li>
-    <li>APPLICATION: **BFFFollow_UsersUpdated**
+    <li>COMPONENT: <strong>UpdateLookId</strong> (Lightning-Lookup)</li>
+    <li>COMPONENT: <strong>ClearLookId</strong> (Lightning-Lookup)</li>
+    <li>APPLICATION: <strong>BFFFollow_UsersUpdated</strong>
         <ul>
             <li>- Fired when new friends are followed or user removed old followed friend</li>
             <li>- Idea is to update JSON list of followed friends in BFFHelper which, in turn, will pass that data to other components</li>
@@ -62,7 +64,7 @@ Events:
 
 Components:
 <ul>
-	<li>**BFFFollow**
+	<li><strong>BFFFollow</strong>
 	<ul>
 		<li>Global Attributes
 		<ul>
@@ -76,13 +78,13 @@ Components:
 			<li>If no friends are followed then current user will be advised to follow one/more friends</li>
 			<li>This component has 3 tabs which include 3 components
 			<ul>
-				<li>First tab, **BFFFollow_Feed**,
+				<li>First tab, <strong>BFFFollow_Feed</strong>,
 				<ul>
 					<li>Shows a drop down of followed friends. If a friend is selected then their feed will be fetched.</li>
 					<li>If No friends are followed then a message will be displayed asking user to add one/more friends</li>
 				</ul>
 				</li>
-				<li>Second tab, **BFFFollow_Users**,
+				<li>Second tab, <strong>BFFFollow_Users</strong>,
 				<ul>
 					<li>Has a lookup field to search for users</li>
 					<li>Once a user has been searched, it will allow user to select that user as friend and add it to their followed users</li>
@@ -90,7 +92,7 @@ Components:
 					<li>BFFFollow will catch that event and update followedUsers attribute. which will then traverse down to other components in tabs and update their drop downs etc</li>
 				</ul>
 				</li>
-				<li>Third tab, **BFFFollow_UsersRemove**,
+				<li>Third tab, <strong>BFFFollow_UsersRemove</strong>,
 				<ul>
 					<li>Displays list of followed friends as Drop down</li>
 					<li>User can select a friend and decide to remove that user from the list</li>
