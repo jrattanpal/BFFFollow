@@ -71,7 +71,7 @@ Components:
 		<li>Global Attributes
 		<ul>
 			<li><strong>debug</strong>: true/false: If true then display log with console.log or System.debug (in Apex)</li>
-			<li><strong>maxFollowedUser</strong>s: Number: Restricts users to follow only upto specified number of users</li>
+			<li><strong>maxFollowedUser</strong>s: Number: Restricts users to follow only upto specified number of records</li>
 		</ul>
 		</li>
 		<li>How it works
@@ -88,9 +88,9 @@ Components:
 				</li>
 				<li>Second tab, <strong>BFFFollow_Users</strong>,
 				<ul>
-					<li>Has a lookup field to search for users</li>
-					<li>Once a user has been searched, it will allow user to select that user as friend and add it to their followed users</li>
-					<li>After friend has been followed, a new JSON will be generated and an event fired</li>
+					<li>Has a lookup field to search for records</li>
+					<li>Once a record has been searched, it will allow user to follow that record</li>
+					<li>After recordfriend has been followed, a new JSON will be generated and an event fired</li>
 					<li>BFFFollow will catch that event and update followedUsers attribute. which will then traverse down to other components in tabs and update their drop downs etc</li>
 				</ul>
 				</li>
