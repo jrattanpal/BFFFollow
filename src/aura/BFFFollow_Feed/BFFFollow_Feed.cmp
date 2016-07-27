@@ -13,7 +13,7 @@
 
     <!-- Capture event so feedElements can be cleared as user list has changed -->
     <!-- It might be that current selected user has been removed so we need to wipe the feed -->
-    <aura:handler event="c:BFFFollow_UsersUpdated" action="{!c.handleUsersUpdated}"/>
+    <aura:handler event="c:BFFFollow_RecordsUpdated" action="{!c.handleUsersUpdated}"/>
 
     <!-- Select list on Feed page to select a user -->
     <div class="slds-form--inline">

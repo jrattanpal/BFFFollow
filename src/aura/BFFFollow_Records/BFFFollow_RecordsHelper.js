@@ -39,10 +39,10 @@
 	 * Raise event when usrs have been successfully followed
 	 */
 	alertForFollowedUsers: function(component, BFFHelper, followedUsers){
-		var appEvent = $A.get("e.c:BFFFollow_UsersUpdated");
+		var appEvent = $A.get("e.c:BFFFollow_RecordsUpdated");
 		BFFHelper.log({m: 'appEvent: '+ appEvent});
 		appEvent.setParams({ "followedUsers" : JSON.parse(followedUsers) });
-		BFFHelper.log({m: 'Firing e.c:BFFFollow_UsersUpdated'});
+		BFFHelper.log({m: 'Firing e.c:BFFFollow_RecordsUpdated'});
 		appEvent.fire();
 	},
 	/**

@@ -31,7 +31,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
 	<!-- Catch event which will be raised when Followed users are updated (added/removed) -->
-	<aura:handler event="c:BFFFollow_UsersUpdated" action="{!c.handleUsersUpdated}"/>
+	<aura:handler event="c:BFFFollow_RecordsUpdated" action="{!c.handleUsersUpdated}"/>
     
     <div class="slds">
 		<!-- Only show tabs if Chatter is enabled. If not then this app is not going to work -->
@@ -61,10 +61,10 @@
 					<c:BFFFollow_Feed debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 				</div>
 				<div aura:id="tab-div-scoped-2" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '2'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-2__item">
-					<c:BFFFollow_Users debug="{!v.debug}" followedUsers="{!v.followedUsers}" SLDSVERSION="{!v.SLDSVERSION}" maxFollowedUsers="{!v.maxFollowedUsers}" NAMESPACE="{!v.NAMESPACE}"/>
+					<c:BFFFollow_Records debug="{!v.debug}" followedUsers="{!v.followedUsers}" SLDSVERSION="{!v.SLDSVERSION}" maxFollowedUsers="{!v.maxFollowedUsers}" NAMESPACE="{!v.NAMESPACE}"/>
 				</div>
 				<div aura:id="tab-div-scoped-3" class="{! 'slds-tabs--scoped__content ' + (v.activeTabNumber == '3'? 'slds-show': 'slds-hide')}" role="tabpanel" aria-labelledby="tab-scoped-3__item">
-					<c:BFFFollow_UsersRemove debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
+					<c:BFFFollow_RecordsRemove debug="{!v.debug}" followedUsers="{!v.followedUsers}" />
 				</div>
 			</div>
 			<aura:set attribute="else">

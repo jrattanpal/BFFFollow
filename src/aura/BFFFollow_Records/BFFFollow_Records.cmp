@@ -20,7 +20,7 @@
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
 
     <!-- Fire event when new users are added -->
-    <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
+    <aura:registerEvent name="BFFFollow_RecordsUpdated" type="c:BFFFollow_RecordsUpdated" />
 
     <!-- Event handlers -->
     <!-- Fired (& caught) when a user is searched and selected -->
@@ -39,7 +39,7 @@
     <aura:if isTrue="{!lessthan(v.followedUsers.length,v.maxFollowedUsers) }">
         <!-- Lookup component -->
         <div aura:id="LookupSObject" class="slds-hide">
-            <c:LookupSObject  label="{!v.selectedObjLabel}" pluralLabel="{!v.selectedObjLabelPlural}" sObjectAPIName="{!v.selectedObjApi}"
+            <c:LookupSObject label="{!v.selectedObjLabel}" pluralLabel="{!v.selectedObjLabelPlural}" sObjectAPIName="{!v.selectedObjApi}"
                 listIconSVGPath="{!'/resource/' + v.NAMESPACE + '__' +v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
                 listIconClass="slds-icon-standard-user"
                 instanceId="BFFFollow_Users"

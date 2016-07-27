@@ -10,7 +10,7 @@
     <!-- Component for helper functions like log, gotoURL, showToast -->
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />
     
-    <aura:registerEvent name="BFFFollow_UsersUpdated" type="c:BFFFollow_UsersUpdated" />
+    <aura:registerEvent name="BFFFollow_RecordsUpdated" type="c:BFFFollow_RecordsUpdated" />
 
 	
     <div class="slds-form--inline">

@@ -51,7 +51,7 @@
 
 					$A.util.removeClass(component.find('removeSelectedUsers'), 'slds-show');
 					$A.util.addClass(component.find('removeSelectedUsers'), 'slds-hide');
-
+					
         			helper.alertForFollowedUsers(component, BFFHelper, followedUsers);
         		}else{
             		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while Un-Following record.'});
@@ -62,10 +62,10 @@
         
 	},
 	alertForFollowedUsers: function(component, BFFHelper, followedUsers){
-		var appEvent = $A.get("e.c:BFFFollow_UsersUpdated");
+		var appEvent = $A.get("e.c:BFFFollow_RecordsUpdated");
 		BFFHelper.log({m: 'appEvent: '+ appEvent});
 		appEvent.setParams({ "followedUsers" : JSON.parse(followedUsers) });
-		BFFHelper.log({m: 'Firing e.c:BFFFollow_UsersUpdated'});
+		BFFHelper.log({m: 'Firing e.c:BFFFollow_RecordsUpdated'});
 		appEvent.fire();
 	}
 })
