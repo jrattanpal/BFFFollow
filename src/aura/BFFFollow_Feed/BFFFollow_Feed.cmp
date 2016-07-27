@@ -2,6 +2,7 @@
     <aura:attribute name="debug" type="Boolean" default="false" />
     <aura:attribute name="followedUsers" type="Object[]" />
     <aura:attribute name="currentDisplayedUser" type="String" />
+    <aura:attribute name="currentDisplayedLabel" type="String" />
     <aura:attribute name="feedElements" type="Object[]" />
 
     <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
@@ -19,7 +20,7 @@
         <div class="slds-form-element">
             <div class="slds-select_container">
                 <ui:inputSelect class="slds-select" aura:id="UserList"  change="{!c.getUserFeed}">
-                    <ui:inputSelectOption text="0" label="Select a Friend"/>
+                    <ui:inputSelectOption text="0" label="Select an item"/>
                     <aura:iteration items="{!v.followedUsers}" var="obj">
                          <ui:inputSelectOption text="{!obj.id}" label="{!obj.name}"/>
                     </aura:iteration>
@@ -50,7 +51,7 @@
         </div>
         <aura:set attribute="else">
             <ui:message aura:id="noPostsForUser" title="No Posts!" severity="message" class="slds-hide">
-                There are currently no posts for this user.
+                There are currently no posts for this item.
             </ui:message>
         </aura:set>
     </aura:if>

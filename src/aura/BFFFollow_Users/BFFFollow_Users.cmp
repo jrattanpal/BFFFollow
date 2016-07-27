@@ -8,7 +8,10 @@
     <aura:attribute name="maxFollowedUsers" type="Integer" default="1" />
     <aura:attribute name="recordId" type="Id" description="The current record Id to display" />
     <aura:attribute name="recordName" type="String" description="The current record name to display" />
-
+    <aura:attribute name="selectedObjLabel" type="String" />
+    <aura:attribute name="selectedObjLabelPlural" type="String" />
+    <aura:attribute name="selectedObjApi" type="String" />
+    <aura:attribute name="selectedObjFieldToReturn" type="String" />
 
     <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
     <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
@@ -24,22 +27,34 @@
     <aura:handler name="updateLookupIdEvent" event="c:UpdateLookupId" action="{!c.handleIdUpdate}"/>
     <aura:handler name="clearLookupIdEvent" event="c:ClearLookupId" action="{!c.handleIdClear}"/>
 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="slds-form--inline">
+        <div class="slds-form-element">
+            <div class="slds-select_container">
+                <ui:inputSelect class="slds-select" aura:id="InputSelectDynamic"  change="{!c.onSelectChange}"/>
+            </div>
+        </div>
+    </div>
 
-	<aura:if isTrue="{!lessthan(v.followedUsers.length,v.maxFollowedUsers) }">
+    <aura:if isTrue="{!lessthan(v.followedUsers.length,v.maxFollowedUsers) }">
         <!-- Lookup component -->
-        <c:LookupSObject label="User" pluralLabel="Users" sObjectAPIName="User"
-            listIconSVGPath="{!'/resource/' + v.NAMESPACE + '__' +v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
-            listIconClass="slds-icon-standard-user"
-            instanceId="BFFFollow_Users"
-            buttonLabel="Follow Friend"
-            placeholder="Search Friend"
-            SLDSVERSION="{!v.SLDSVERSION}"
-            debug="{!v.debug}"
-            NAMESPACE="{!v.NAMESPACE}"
-        />
+        <div aura:id="LookupSObject" class="slds-hide">
+            <c:LookupSObject  label="{!v.selectedObjLabel}" pluralLabel="{!v.selectedObjLabelPlural}" sObjectAPIName="{!v.selectedObjApi}"
+                listIconSVGPath="{!'/resource/' + v.NAMESPACE + '__' +v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
+                listIconClass="slds-icon-standard-user"
+                instanceId="BFFFollow_Users"
+                buttonLabel="{! 'Follow ' + v.selectedObjLabel}"
+                placeholder="{! 'Search ' + v.selectedObjLabel}"
+                SLDSVERSION="{!v.SLDSVERSION}"
+                debug="{!v.debug}"
+                NAMESPACE="{!v.NAMESPACE}"
+                objectFieldToReturn="{!v.selectedObjFieldToReturn}"
+
+            />
+        </div>
 		<aura:set attribute="else">
             <ui:message title="Info!" severity="info">
-                Maximum number of allowed friends ({!v.maxFollowedUsers}) have already been followed!
+                Maximum number of allowed objects ({!v.maxFollowedUsers}) have already been followed!
             </ui:message>
         </aura:set>
 	</aura:if>

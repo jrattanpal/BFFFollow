@@ -1,10 +1,12 @@
 # BFFFollow
-BFF Follow allows users to follow their friends. Users can select their followed friends to see their feed.
+BFF Follow allows users to follow their friends (Users), Accounts, Cases and topics. Users can select their followed records to see corresponding feed.
 
-The idea is to allow users to follow 5 of the top friends they want to follow and see their feed. Currently, in chatter, users' feed can show all of the followed users (friends) and it's hard to see friend specific feed.
+The idea is to allow users to follow defined number of  records that user is really interested in; to allow users to focus on data important to them. 
+
+Currently, in chatter, users' feed can show all of the followed friends, records and it's hard to see record specific feed (without opening the record).
 
 ## Synopsis
-Users can use a User Lookup field to select Friend and follow her. Followed friends will show up in a drop down in "Feed" tab. Selecting a friend in Feed tab will use ConnectApi.ChatterFeeds.getFeedElementsFromFeed() to fetch a feed for a user and return it to component.
+Users can use a  Lookup field to select Friend, Account etc and follow the record. SOSL is used to search the text for specific object type.  Returned result will show up in a list and can be followed. Followed records will show up in drop down in "Feed" tab. Selecting a record in Feed tab will use ConnectApi.ChatterFeeds.getFeedElementsFromFeed() to fetch record for a user.
  
 Component uses SLDS and it's Feed component (https://www.lightningdesignsystem.com/components/feeds/) to style the feed and display to user.
 

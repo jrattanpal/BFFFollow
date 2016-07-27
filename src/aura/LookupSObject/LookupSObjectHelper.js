@@ -30,6 +30,8 @@
         // Get the API Name
         var sObjectAPIName = cmp.get('v.sObjectAPIName');
 
+        var sObjectFieldToReturn = cmp.get('v.objectFieldToReturn');
+
         // Create an Apex action
         var action = cmp.get('c.lookup');
 
@@ -37,7 +39,7 @@
         action.setAbortable();
 
         // Set the parameters
-        action.setParams({ "searchString" : searchString, "sObjectAPIName" : sObjectAPIName});
+        action.setParams({ "searchString" : searchString, "sObjectAPIName" : sObjectAPIName, "fieldToReturn": sObjectFieldToReturn});
                           
         // Define the callback
         action.setCallback(this, function(response) {

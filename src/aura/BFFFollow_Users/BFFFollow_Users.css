@@ -1,2 +1,9 @@
-.THIS {
+.THIS .slds-dropdown{
+    max-width: 100%;
+}
+.THIS .slds-dropdown__item > a{
+    justify-content: flex-start;
+}
+.THIS .uiInput--select.select:not([multiple]){
+    background-image: none;
 }

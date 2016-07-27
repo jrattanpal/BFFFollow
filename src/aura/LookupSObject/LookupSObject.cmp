@@ -33,6 +33,7 @@ http://creativecommons.org/licenses/by/3.0/deed.en_US
 
     <aura:attribute name="objectId" type="String"  description="Object ID selected." />
     <aura:attribute name="objectLabel" type="String"  description="Object Name selected." />
+    <aura:attribute name="objectFieldToReturn" type="String"  description="Object Field To return." />
 
     
     <!-- Events -->

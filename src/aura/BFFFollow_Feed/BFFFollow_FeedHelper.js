@@ -8,7 +8,7 @@
             component: component, 
             data: {
                 operation: "BFFFollow_Controller",
-                input: {mode: 'fetchUserFeed', 'userId' : selectedUser},
+                input: {mode: 'fetchObjectFeed', 'recId' : selectedUser},
                 debug: component.get('v.debug')
             },
             callBackMethod: function (data) {

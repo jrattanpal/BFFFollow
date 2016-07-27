@@ -8,7 +8,7 @@
 
 		//If no changes were made then no need for Apex call
 		if(followedUsers == null){
-            BFFHelper.showToast({s: 'info', t: 'Info!', m: 'You have already followed selected user.'});
+            BFFHelper.showToast({s: 'info', t: 'Info!', m: 'You have already followed selected record.'});
 			return;
 		}
 
@@ -20,7 +20,7 @@
             component: component, 
             data: {
                 operation: "BFFFollow_Controller",
-                input: {mode: 'saveFollowedUsers', followedUsers: followedUsers},
+                input: {mode: 'saveFollowedRecords', followedRecords: followedUsers},
                 debug: component.get('v.debug')
             },
             callBackMethod: function (data) {
@@ -28,7 +28,7 @@
             		BFFHelper.showToast({s: 'confirm', t: 'Success!', m: 'You are now following "'+recordName+'" .'});
         			helper.alertForFollowedUsers(component, BFFHelper, followedUsers);
         		}else{
-            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while following user.'});
+            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while following record.'});
         		}
             }
         });

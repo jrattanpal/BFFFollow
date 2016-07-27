@@ -32,7 +32,7 @@
                 component: component,
                 data: {
                     operation: "BFFFollow_Controller",
-                    input: {mode: 'fetchFollowedUsers'},
+                    input: {mode: 'fetchFollowedRecords'},
                     debug: component.get('v.debug')
                 },
                 callBackMethod: function (data) {
@@ -42,7 +42,7 @@
                         BFFHelper.hideToast();
                         component.set('v.followedUsers', data.output);
                     }else{
-                        BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occurred while getting data. Make sure you have Followed at least 1 user.'});
+                        BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occurred while getting data. Make sure you have Followed at least 1 record.'});
                     }
                 }
             });

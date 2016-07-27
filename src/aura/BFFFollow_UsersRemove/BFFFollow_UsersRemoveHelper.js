@@ -42,15 +42,19 @@
             component: component, 
             data: {
                 operation: "BFFFollow_Controller",
-                input: {mode: 'saveFollowedUsers', followedUsers: followedUsers},
+                input: {mode: 'saveFollowedRecords', followedRecords: followedUsers},
                 debug: component.get('v.debug')
             },
             callBackMethod: function (data) {
         		if(data.outputFlag == true){
             		BFFHelper.showToast({s: 'success', t: 'Success!', m: 'You have successfully Un-Followed "'+component.get('v.selectedUserName')+'".'});
+
+					$A.util.removeClass(component.find('removeSelectedUsers'), 'slds-show');
+					$A.util.addClass(component.find('removeSelectedUsers'), 'slds-hide');
+
         			helper.alertForFollowedUsers(component, BFFHelper, followedUsers);
         		}else{
-            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while Un-Following Friend.'});
+            		BFFHelper.showToast({s: 'error', t: 'Error!', m: 'Some error occured while Un-Following record.'});
         		}
             }
         });
