@@ -1,5 +1,5 @@
 # BFFFollow
-BFF Follow allows users to follow their friends (Users), Accounts, Cases and topics. Users can select their followed records to see corresponding feed.
+BFF Follow allows users to follow their records (Users), Accounts, Cases and topics. Users can select their followed records to see corresponding feed.
 
 The idea is to allow users to follow defined number of  records that user is really interested in; to allow users to focus on data important to them. 
 
@@ -17,7 +17,9 @@ How does this component will look like?
 <img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot_3.png" /> 
 
 ## Installation
-You can use App exchange listing to install the managed package. Or you can use following Deploy button to deploy this code to a salesforce org.
+You can use App exchange listing to install the managed package. 
+
+Or you can use following Deploy button to deploy this code to a salesforce org.
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=jrattanpal&repo=BFFFollow">
   <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
@@ -31,9 +33,9 @@ You can use App exchange listing to install the managed package. Or you can use 
     <li>My Domain</li>
     <li>Allow Read/Create/Edit access on "BFFFollow" object after installation
         <ul>
-            <li>Users need to upsert a record in this object to store their followed users</li>
+            <li>Users need to upsert a record in this object to store their followed records</li>
             <li>OWD setting can be Private as users don't need to see records for other users</li>
-            <li>New record will be created when friend is followed; updated if there already is one</li>
+            <li>New record will be created when record is followed; updated if there already is one</li>
         </ul>
     </li>
 </ul>
@@ -54,8 +56,8 @@ Events:
     <li>COMPONENT: <strong>ClearLookId</strong> (Lightning-Lookup)</li>
     <li>APPLICATION: <strong>BFFFollow_UsersUpdated</strong>
         <ul>
-            <li>- Fired when new friends are followed or user removed old followed friend</li>
-            <li>- Idea is to update JSON list of followed friends in BFFHelper which, in turn, will pass that data to other components</li>
+            <li>- Fired when new records are followed or followed records are removed</li>
+            <li>- Idea is to update JSON list of followed records in BFFHelper which, in turn, will pass that data to other components</li>
     </li>
 </ol>
     
@@ -74,14 +76,14 @@ Components:
 		</li>
 		<li>How it works
 		<ul>
-			<li>BFFFollow will fire a fetch event to retrieve list of followed friends for current user</li>
-			<li>If no friends are followed then current user will be advised to follow one/more friends</li>
+			<li>BFFFollow will fire a fetch event to retrieve list of followed records for current user</li>
+			<li>If no records are followed then current user will be advised to follow one/more records</li>
 			<li>This component has 3 tabs which include 3 components
 			<ul>
 				<li>First tab, <strong>BFFFollow_Feed</strong>,
 				<ul>
-					<li>Shows a drop down of followed friends. If a friend is selected then their feed will be fetched.</li>
-					<li>If No friends are followed then a message will be displayed asking user to add one/more friends</li>
+					<li>Shows a drop down of followed records. If a friend is selected then their feed will be fetched.</li>
+					<li>If No records are followed then a message will be displayed asking user to add one/more records</li>
 				</ul>
 				</li>
 				<li>Second tab, <strong>BFFFollow_Users</strong>,
@@ -94,7 +96,7 @@ Components:
 				</li>
 				<li>Third tab, <strong>BFFFollow_UsersRemove</strong>,
 				<ul>
-					<li>Displays list of followed friends as Drop down</li>
+					<li>Displays list of followed records as Drop down</li>
 					<li>User can select a friend and decide to remove that user from the list</li>
 					<li>After successful removal, component will fire event to let other components know about updated list and refresh other components</li>
 				</ul>
