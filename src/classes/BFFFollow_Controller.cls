@@ -82,9 +82,9 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 				//if not accessible then return false
 				//If not updatable then return false; update part of update
 				//If not createdable then return false; insert part of upsert
-				if (!m.get(fieldToCheck) && (!m.get(fieldToCheck).getDescribe().isAccessible() ||
+				if (!m.get(fieldToCheck).getDescribe().isAccessible() ||
 						!m.get(fieldToCheck).getDescribe().isUpdateable() ||
-						!m.get(fieldToCheck).getDescribe().isCreateable())) {
+						!m.get(fieldToCheck).getDescribe().isCreateable()) {
 					return false;
 				}
 			}
