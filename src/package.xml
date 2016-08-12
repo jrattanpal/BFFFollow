@@ -5,6 +5,11 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>BFFFOllow__c.FollowedBy__c</members>
+		<members>BFFFOllow__c.FollowedRecords__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>ApexClass</name>
 	</types>
