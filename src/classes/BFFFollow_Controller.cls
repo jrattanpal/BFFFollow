@@ -67,8 +67,11 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 
 			List<LookupSObjectControllerResult> results = new List<LookupSObjectControllerResult>();
 
+			ApexClass cs =[select NamespacePrefix from ApexClass where Name ='BFFFollow_Controller'];
+			String nameSpacePrefix= cs.NamespacePrefix;
+			nameSpacePrefix = (String.isEmpty(nameSpacePrefix))?'':nameSpacePrefix+'__';
 
-			String [] fields = new String [] {'Name', 'bfffollow__followedBy__c', 'bfffollow__FollowedRecords__c'};
+			String [] fields = new String [] {'Name', nameSpacePrefix + 'followedBy__c', nameSpacePrefix + 'FollowedRecords__c'};
 
 			//Although, ETLC_SecuredDB will check CRUD/FLS, we need to check Createable and updateable permissions for upsert
             // Obtaining the field name/token map for the Contact object
@@ -79,9 +82,9 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 				//if not accessible then return false
 				//If not updatable then return false; update part of update
 				//If not createdable then return false; insert part of upsert
-				if (!m.get(fieldToCheck).getDescribe().isAccessible() ||
+				if (!m.get(fieldToCheck) && (!m.get(fieldToCheck).getDescribe().isAccessible() ||
 						!m.get(fieldToCheck).getDescribe().isUpdateable() ||
-						!m.get(fieldToCheck).getDescribe().isCreateable()) {
+						!m.get(fieldToCheck).getDescribe().isCreateable())) {
 					return false;
 				}
 			}
