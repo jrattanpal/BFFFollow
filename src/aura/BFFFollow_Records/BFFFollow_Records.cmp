@@ -14,7 +14,7 @@
     <aura:attribute name="selectedObjFieldToReturn" type="String" />
 
     <!-- https://github.com/eltoroit/ETLC_ApexBridge -->
-    <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/>
+    <c:ETLC_ApexBridge aura:id="ApexBridge" debugClient="{!v.debug}" debugServer="{!v.debug}"/> 
 
     <!-- Component for helper functions like log, gotoURL, showToast -->
     <c:BFFFollow_Helper aura:id="BFFFollow_Helper" debug="{!v.debug}"  />

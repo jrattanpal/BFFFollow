@@ -5,6 +5,18 @@ The idea is to allow users to follow defined number of  records that user is rea
 
 Currently, in chatter, users' feed can show all of the followed friends, records and it's hard to see record specific feed (without opening the record).
 
+## Installation
+
+<strong>Read Before Install</strong><br/>
+<ul>
+    <li>Make sure to give permisison on BFFFollow__c object fields to profile used in your org (even System Admin)</li>
+    <li>You might also need to add Custom Object tab</li>
+</ul>
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=jrattanpal&repo=BFFFollow">
+  <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
 ## Synopsis
 Users can use a  Lookup field to select Friend, Account etc and follow the record. SOSL is used to search the text for specific object type.  Returned result will show up in a list and can be followed. Followed records will show up in drop down in "Feed" tab. Selecting a record in Feed tab will use ConnectApi.ChatterFeeds.getFeedElementsFromFeed() to fetch record for a user.
  
@@ -16,14 +28,6 @@ How does this component will look like?
 <img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot_2.png" /><br/>
 <img alt="BFFFollow - Screen Shot" src="resources/BFFFollow_ScreenShot_3.png" /> 
 
-## Installation
-You can use App exchange listing to install the managed package. 
-
-Or you can use following Deploy button to deploy this code to a salesforce org.
-
-<a href="https://githubsfdeploy.herokuapp.com?owner=jrattanpal&repo=BFFFollow">
-  <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
-</a>
 
 **Requirements**
 <ul>

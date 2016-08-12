@@ -33,7 +33,7 @@
 	<!-- Catch event which will be raised when Followed users are updated (added/removed) -->
 	<aura:handler event="c:BFFFollow_RecordsUpdated" action="{!c.handleUsersUpdated}"/>
     
-    <div class="slds">
+    <div class="slds"> 
 		<!-- Only show tabs if Chatter is enabled. If not then this app is not going to work -->
 		<aura:if isTrue="{!v.checkChatterEnabled == true}">
 			<div class="slds-tabs--scoped">
