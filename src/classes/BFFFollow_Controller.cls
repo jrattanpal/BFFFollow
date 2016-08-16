@@ -25,15 +25,16 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 	 *
 	 */
 	public Boolean checkChatterEnabled(){
+        Boolean chatterEnabled = false;
 		try{
 			Map<String, Schema.SObjectType> gd = Schema.getGlobalDescribe();
 			if(gd.containsKey('FeedItem')){
-				return true;
+				chatterEnabled = true;
 			}
 		}catch(Exception e){
 			System.debug(e.getMessage());
 		}
-		return false;
+		return chatterEnabled;
 	}
 	/**
 	 *
@@ -59,6 +60,7 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 	 *
 	 */
 	public boolean saveFollowedRecords(Id followedById, String followedRecords){
+        Boolean returnFlag = false;
 		try{
 
 			if(followedRecords == null){
@@ -84,9 +86,7 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 				//If not createdable then return false; insert part of upsert
 				if (!m.get(fieldToCheck).getDescribe().isAccessible() ||
 						!m.get(fieldToCheck).getDescribe().isUpdateable() ||
-						!m.get(fieldToCheck).getDescribe().isCreateable()) {
-					return false;
-				}
+						!m.get(fieldToCheck).getDescribe().isCreateable()) {return false;	}
 			}
 
 			//extra fields are not required but just passing those through ETLC_SecuredDB for accessibility check
@@ -103,11 +103,11 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 			record.followedBy__c = followedById;
 			upsert record;
 			if(debugFlag){ System.debug(record); }
-			return true;
+			returnFlag = true;
 		}catch(Exception e){
 			System.debug(e.getMessage());
 		}
-		return false;
+		return returnFlag;
 	}
     /**
      * Return Object feed
@@ -115,10 +115,9 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
      * If Case then use Record otherwise UserProfile
      */
 	public String fetchObjectFeed(Id objId){
+        String returnString = null;
 		try{
-			if(!checkChatterEnabled()){
-				return null;
-			}
+			if(!checkChatterEnabled()){return returnString;	}
 			String objectName = findObjectNameFromRecordIdPrefix(objId);
 			ConnectApi.FeedElementPage fep;
 
@@ -131,11 +130,11 @@ public with sharing class BFFFollow_Controller extends ETLC_ApexBridge_Abstract 
 				fep = ConnectApi.ChatterFeeds.getFeedElementsFromFeed(Network.getNetworkId(), ConnectApi.FeedType.Record, objId);
 			}
 			if(debugFlag){ System.debug(fep); }
-			return JSON.serialize(fep);
+			returnString = JSON.serialize(fep);
 		}catch(Exception e){
 			System.debug(e.getMessage());
 		}
-		return null;
+		return returnString;
 	}
 
 	public static String findObjectNameFromRecordIdPrefix(String recordIdOrPrefix){
