@@ -1,5 +1,5 @@
-# BFFFollow
-BFF Follow allows users to follow their records (Users), Accounts, Cases and topics. Users can select their followed records to see corresponding feed.
+# Follow Anything (previously "BFF Follow"; still used interchangeably)
+Follow Anything allows users to follow their records (Users), Accounts, Cases and topics. Users can select their followed records to see corresponding feed.
 
 The idea is to allow users to follow defined number of  records that user is really interested in; to allow users to focus on data important to them. 
 
