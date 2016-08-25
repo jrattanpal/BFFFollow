@@ -53,7 +53,7 @@ There are 2 ways to use this component.
 <ol>
     <li>You can use App Builder to add this component to a Lightning Page and/or tab. Or you can use latest App Builder feature to edit LEX home/record page and add the component there.</li>
     <li>You can also use this component programmatically and add it to your other components; as needed.
-        <ul><li>&lt;BSSFollow:BSSFollow debug="false" maxFollowedUsers="5" /&gt;</li></ul>
+        <ul><li>&lt;BFFFollow:BFFFollow debug="false" maxFollowedUsers="5" /&gt;</li></ul>
     </li>
 </ol>
 
