@@ -13,6 +13,10 @@ Currently, in chatter, users' feed can show all of the followed friends, records
     <li>You might also need to add Custom Object tab</li>
 </ul>
 
+You can install this from <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A000000s5BVUAY">AppExchange</a>
+<br/>
+OR
+<br/>
 <a href="https://githubsfdeploy.herokuapp.com?owner=jrattanpal&repo=BFFFollow">
   <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
