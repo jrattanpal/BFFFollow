@@ -40,7 +40,7 @@
         <!-- Lookup component -->
         <div aura:id="LookupSObject" class="slds-hide">
             <c:LookupSObject label="{!v.selectedObjLabel}" pluralLabel="{!v.selectedObjLabelPlural}" sObjectAPIName="{!v.selectedObjApi}"
-                listIconSVGPath="{!'/resource/' + v.NAMESPACE + '__' +v.SLDSVERSION+'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
+                listIconSVGPath="{! $Resource.SLDS202 +'/assets/icons/standard-sprite/svg/symbols.svg#user'}"
                 listIconClass="slds-icon-standard-user"
                 instanceId="BFFFollow_Users"
                 buttonLabel="{! 'Follow ' + v.selectedObjLabel}"

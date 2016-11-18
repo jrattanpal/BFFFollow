@@ -38,7 +38,7 @@
         // Mark the action as abortable, this is to prevent multiple events from the keyup executing
         action.setAbortable();
 
-        console.log('sObjectFieldToReturn:' + sObjectFieldToReturn);
+        //console.log('sObjectFieldToReturn:' + sObjectFieldToReturn);
 
         // Set the parameters
         action.setParams({ "searchString" : searchString, "sObjectAPIName" : sObjectAPIName, "fieldToReturn": sObjectFieldToReturn});
@@ -205,4 +205,4 @@
         var BFFHelper = cmp.find("BFFFollow_Helper");
         BFFHelper.showToast({s: 'error', t: title, m: message});
     }
-})
+});

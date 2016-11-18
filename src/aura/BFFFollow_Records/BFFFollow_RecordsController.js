@@ -30,7 +30,6 @@
         opts["User"] = { api: "User", value: "User", labelPlural: "Users", fieldToReturn: "Name" };
         opts["Account"] = { api: "Account", value: "Account", labelPlural: "Accounts", fieldToReturn: "Name" };
         opts["Topic"] = { api: "Topic", value: "Topic", labelPlural: "Topics", fieldToReturn: "Name" };
-        console.log(opts[selected].api);
         component.set('v.selectedObjLabel', opts[selected].value);
         component.set('v.selectedObjLabelPlural', opts[selected].labelPlural);
         component.set('v.selectedObjApi', opts[selected].api);
@@ -82,4 +81,4 @@
         component.set('v.recordId', null);      
         component.set('v.recordName', null);
     }
-})
+});
